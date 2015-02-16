@@ -1,0 +1,16 @@
+NOTES ON CURRENT STATUS OF DTK FILES
+S.Goldin 2/21/05
+
+tool-sa.c	- essentially empty; everything cond. compiled out
+toolcmd.c	- appears to be obsolete, superceded by toolcmd6.c
+toolcmd6.c	- currently used in the Dragon server
+toolerr.c	- needs revision to use IPC mechanisms if Dragon is running
+toolfile.c	- looks like it should be ok for current use
+toolgraf.c	- completely obsolete?
+toolifil.c	- Image file functions should be updated to use new
+		  lower level functions; image memory functions and
+		  image file load/save should be removed
+toolihdr.c	- useful fns for dealing with header, need complete rewrite
+toolkit.c	- mostly obsolete (many funs removed)
+toolmaus.c	- completely obsolete
+toolsig.c	- not yet implemented? No real code here. (not in manual)

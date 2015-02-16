@@ -1,0 +1,79 @@
+# -----------------------------------------------------------------
+# @(#) $Id: MakeLinux,v 1.7 2014/12/17 07:20:39 rudahl Exp $
+# $Revision: 1.7 $
+# Makefile for dtk under Linux or Mingw
+# ~~ Copyright
+# only those modules needed for CGATE
+# Kurt Rudahl 6/3/2000
+# ~~ EndC
+# $Id: MakeLinux,v 1.7 2014/12/17 07:20:39 rudahl Exp $
+# $Log: MakeLinux,v $
+# Revision 1.7  2014/12/17 07:20:39  rudahl
+# consolidating Dragon and OpenDragon
+#
+# Revision 1.6  2004/12/23 12:09:14  rudahl
+# cleanup
+#
+# Revision 1.5  2004/12/14 12:04:59  rudahl
+# added toolerr, toolkit
+#
+# Revision 1.4  2004/11/30 09:45:11  rudahl
+# adapt for mingw
+#
+# Revision 1.4  2004/11/30 04:31:44  rudahl
+# adapt for Mingw
+#
+# -----------------------------------------------------------------
+#
+ifeq ($(OSTYPE),linux)
+	LIBDIR	=../../lib/linux
+	EXEC	=DragonServer
+else
+	LIBDIR	=../../lib/mingw
+	EXEC	=DragonServer.exe
+endif
+
+.SUFFIXES: .c .cpp .o
+
+CINCL		=-I ../../common/inc -I ../IPC -I ./inc 
+CBASEFLAGS	=-Wall -DQSTATIC= -DEXPORT= -DGRS_EXP_CALL= 
+
+.c.o :
+	gcc -c $(CBASEFLAGS) $(CINCL) -D$(COMP) $*.c
+
+.cpp.o :
+	gcc -c $(CBASEFLAGS) $(CINCL) -D$(COMP) $*.cpp
+
+OBJS	=erdimag.o \
+	imagfile.o \
+	pcx-wrt.o \
+	readimag.o \
+	rosefuns.o \
+	tiff-wrt.o \
+	tiff.o \
+	tiffimag.o \
+	tifnames.o \
+	toolcmd6.o \
+	toolerr.o \
+	toolkit.o
+
+#	ob.o 
+
+ALL :	$(LIBDIR)/dtk.a $(OBJS)
+
+$(LIBDIR)/dtk.a : $(OBJS)
+	ar -r $(LIBDIR)/dtk.a $(OBJS)
+
+erdimag.o : erdimag.cpp
+imagfile.o : imagfile.cpp
+ob.o : ob.cpp
+pcx-wrt.o : pcx-wrt.c
+readimag.o : readimag.cpp
+rosefuns.o : rosefuns.c
+tiff-wrt.o : tiff-wrt.c
+tiff.o : tiff.cpp
+tiffimag.o : tiffimag.cpp
+tifnames.o : tifnames.c
+
+clean :
+	-@rm $(OBJS) *.log *.jnk *~

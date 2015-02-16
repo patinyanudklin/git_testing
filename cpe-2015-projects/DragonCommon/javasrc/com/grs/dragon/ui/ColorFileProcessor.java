@@ -1,0 +1,565 @@
+/**
+ * ColorFileProcessor.java
+ * 
+ * Copyright  2001-2007  by Sally Goldin & Kurt Rudahl
+ *
+ * Created by Sally Goldin, 10/31/2001
+ *
+ * $Id: ColorFileProcessor.java,v 1.7 2007/01/05 07:41:57 rudahl Exp $
+ * $Log: ColorFileProcessor.java,v $
+ * Revision 1.7  2007/01/05 07:41:57  rudahl
+ * added Whatis info
+ *
+ * Revision 1.6  2005/09/15 08:32:47  goldin
+ * Move color chooser to UI package, invoke directly from the UI
+ *
+ * Revision 1.11  2005/02/06 09:17:30  goldin
+ * Fix javadoc warnings
+ *
+ * Revision 1.10  2002/09/05 00:59:47  rudahl
+ * fixed initialization problem
+ *
+ * Revision 1.9  2002/01/04 19:08:42  goldin
+ * Fix bugs in color mapping, add new labels
+ *
+ * Revision 1.8  2001/11/28 12:09:15  goldin
+ * Add remapping to registers
+ *
+ * Revision 1.7  2001/11/21 11:40:09  goldin
+ * Add Undo/Redo, interface to C, prelim. error reporting
+ *
+ * Revision 1.6  2001/11/20 18:46:59  goldin
+ * Continue refinements of color chooser functionality
+ *
+ * Revision 1.5  2001/11/16 16:37:47  goldin
+ * Begin moving UI code to other packages as relevant
+ *
+ * Revision 1.4  2001/11/15 20:47:03  rudahl
+ * moved viewport java files to their own package
+ *
+ * Revision 1.3  2001/11/15 18:08:40  goldin
+ * Add classified img display functionality
+ *
+ * Revision 1.2  2001/11/12 16:04:19  goldin
+ * Begin implementation of ColorChooser
+ *
+ * Revision 1.1  2001/11/12 10:26:34  goldin
+ * Move ColorFileProcessor.java fromUI
+ *
+ * Revision 1.4  2001/11/05 13:59:14  goldin
+ * Put UI code in a package
+ *
+ * Revision 1.3  2001/11/05 10:29:15  goldin
+ * Update with latest changes
+ *
+ * Revision 1.2  2001/11/02 10:40:06  goldin
+ * Handle case where file exists but has not been written
+ *
+ * Revision 1.1  2001/10/31 16:26:52  goldin
+ * Begin work on color file processing
+ */
+package com.grs.dragon.ui;
+
+import com.grs.gui.*;
+import java.io.*;
+import java.util.*;
+import java.awt.*;
+
+/**
+ * This class encapsulates the reading and writing of Dragon color
+ * files, as well as the maintenance of an internal color representation.
+ */
+public class ColorFileProcessor
+    {
+    public static final int BasicMap[] = {
+      0x0,0x0,0x0, 0x0,0x0,0x30, 0x0,0x0,0x60, 0x0,0x0,0x90, 
+      0x0,0x0,0xC0, 0x0,0x0,0xF0, 0x0,0x30,0x0, 0x0,0x30,0x30, 
+      0x0,0x30,0x60, 0x0,0x30,0x90, 0x0,0x30,0xC0, 0x0,0x30,0xF0, 
+      0x0,0x60,0x0, 0x0,0x60,0x30, 0x0,0x60,0x60, 0x0,0x60,0x90, 
+      0x0,0x60,0xC0, 0x0,0x60,0xF0, 0x0,0x90,0x0, 0x0,0x90,0x30, 
+      0x0,0x90,0x60, 0x0,0x90,0x90, 0x0,0x90,0xC0, 0x0,0x90,0xF0, 
+      0x0,0xC0,0x0, 0x0,0xC0,0x30, 0x0,0xC0,0x60, 0x0,0xC0,0x90, 
+      0x0,0xC0,0xC0, 0x0,0xC0,0xF0, 0x0,0xF0,0x0, 0x0,0xF0,0x30, 
+      0x0,0xF0,0x60, 0x0,0xF0,0x90, 0x0,0xF0,0xC0, 0x0,0xF0,0xF0, 
+      0x30,0x0,0x0, 0x30,0x0,0x30, 0x30,0x0,0x60, 0x30,0x0,0x90, 
+      0x30,0x0,0xC0, 0x30,0x0,0xF0, 0x30,0x30,0x0, 0x30,0x30,0x30, 
+      0x30,0x30,0x60, 0x30,0x30,0x90, 0x30,0x30,0xC0, 0x30,0x30,0xF0, 
+      0x30,0x60,0x0, 0x30,0x60,0x30, 0x30,0x60,0x60, 0x30,0x60,0x90, 
+      0x30,0x60,0xC0, 0x30,0x60,0xF0, 0x30,0x90,0x0, 0x30,0x90,0x30, 
+      0x30,0x90,0x60, 0x30,0x90,0x90, 0x30,0x90,0xC0, 0x30,0x90,0xF0, 
+      0x30,0xC0,0x0, 0x30,0xC0,0x30, 0x30,0xC0,0x60, 0x30,0xC0,0x90, 
+      0x30,0xC0,0xC0, 0x30,0xC0,0xF0, 0x30,0xF0,0x0, 0x30,0xF0,0x30, 
+      0x30,0xF0,0x60, 0x30,0xF0,0x90, 0x30,0xF0,0xC0, 0x30,0xF0,0xF0, 
+      0x60,0x0,0x0, 0x60,0x0,0x30, 0x60,0x0,0x60, 0x60,0x0,0x90, 
+      0x60,0x0,0xC0, 0x60,0x0,0xF0, 0x60,0x30,0x0, 0x60,0x30,0x30, 
+      0x60,0x30,0x60, 0x60,0x30,0x90, 0x60,0x30,0xC0, 0x60,0x30,0xF0, 
+      0x60,0x60,0x0, 0x60,0x60,0x30, 0x60,0x60,0x60, 0x60,0x60,0x90, 
+      0x60,0x60,0xC0, 0x60,0x60,0xF0, 0x60,0x90,0x0, 0x60,0x90,0x30, 
+      0x60,0x90,0x60, 0x60,0x90,0x90, 0x60,0x90,0xC0, 0x60,0x90,0xF0, 
+      0x60,0xC0,0x0, 0x60,0xC0,0x30, 0x60,0xC0,0x60, 0x60,0xC0,0x90, 
+      0x60,0xC0,0xC0, 0x60,0xC0,0xF0, 0x60,0xF0,0x0, 0x60,0xF0,0x30, 
+      0x60,0xF0,0x60, 0x60,0xF0,0x90, 0x60,0xF0,0xC0, 0x60,0xF0,0xF0, 
+      0x90,0x0,0x0, 0x90,0x0,0x30, 0x90,0x0,0x60, 0x90,0x0,0x90, 
+      0x90,0x0,0xC0, 0x90,0x0,0xF0, 0x90,0x30,0x0, 0x90,0x30,0x30, 
+      0x90,0x30,0x60, 0x90,0x30,0x90, 0x90,0x30,0xC0, 0x90,0x30,0xF0, 
+      0x90,0x60,0x0, 0x90,0x60,0x30, 0x90,0x60,0x60, 0x90,0x60,0x90, 
+      0x90,0x60,0xC0, 0x90,0x60,0xF0, 0x90,0x90,0x0, 0x90,0x90,0x30, 
+      0x90,0x90,0x60, 0x90,0x90,0x90, 0x90,0x90,0xC0, 0x90,0x90,0xF0, 
+      0x90,0xC0,0x0, 0x90,0xC0,0x30, 0x90,0xC0,0x60, 0x90,0xC0,0x90, 
+      0x90,0xC0,0xC0, 0x90,0xC0,0xF0, 0x90,0xF0,0x0, 0x90,0xF0,0x30, 
+      0x90,0xF0,0x60, 0x90,0xF0,0x90, 0x90,0xF0,0xC0, 0x90,0xF0,0xF0, 
+      0xC0,0x0,0x0, 0xC0,0x0,0x30, 0xC0,0x0,0x60, 0xC0,0x0,0x90, 
+      0xC0,0x0,0xC0, 0xC0,0x0,0xF0, 0xC0,0x30,0x0, 0xC0,0x30,0x30, 
+      0xC0,0x30,0x60, 0xC0,0x30,0x90, 0xC0,0x30,0xC0, 0xC0,0x30,0xF0, 
+      0xC0,0x60,0x0, 0xC0,0x60,0x30, 0xC0,0x60,0x60, 0xC0,0x60,0x90, 
+      0xC0,0x60,0xC0, 0xC0,0x60,0xF0, 0xC0,0x90,0x0, 0xC0,0x90,0x30, 
+      0xC0,0x90,0x60, 0xC0,0x90,0x90, 0xC0,0x90,0xC0, 0xC0,0x90,0xF0, 
+      0xC0,0xC0,0x0, 0xC0,0xC0,0x30, 0xC0,0xC0,0x60, 0xC0,0xC0,0x90, 
+      0xBC,0xBC,0xBC, 0xC0,0xC0,0xF0, 0xC0,0xF0,0x0, 0xC0,0xF0,0x30, 
+      0xC0,0xF0,0x60, 0xC0,0xF0,0x90, 0xC0,0xF0,0xC0, 0xC0,0xF0,0xF0, 
+      0xF0,0x0,0x0, 0xF0,0x0,0x30, 0xF0,0x0,0x60, 0xF0,0x0,0x90, 
+      0xF0,0x0,0xC0, 0xF0,0x0,0xF0, 0xF0,0x30,0x0, 0xF0,0x30,0x30, 
+      0xF0,0x30,0x60, 0xF0,0x30,0x90, 0xF0,0x30,0xC0, 0xF0,0x30,0xF0, 
+      0xF0,0x60,0x0, 0xF0,0x60,0x30, 0xF0,0x60,0x60, 0xF0,0x60,0x90, 
+      0xF0,0x60,0xC0, 0xF0,0x60,0xF0, 0xF0,0x90,0x0, 0xF0,0x90,0x30, 
+      0xF0,0x90,0x60, 0xF0,0x90,0x90, 0xF0,0x90,0xC0, 0xF0,0x90,0xF0, 
+      0xF0,0xC0,0x0, 0xF0,0xC0,0x30, 0xF0,0xC0,0x60, 0xF0,0xC0,0x90, 
+      0xF0,0xC0,0xC0, 0xF0,0xC0,0xF0, 0xF0,0xF0,0x0, 0xF0,0xF0,0x30, 
+      0xF0,0xF0,0x60, 0xF0,0xF0,0x90, 0xF0,0xF0,0xC0, 0xEC,0xEC,0xEC, 
+      0x4,0x4,0x4, 0x8,0x8,0x8, 0xC,0xC,0xC, 0x14,0x14,0x14, 
+      0x18,0x18,0x18, 0x1C,0x1C,0x1C, 0x24,0x24,0x24, 0x28,0x28,0x28, 
+      0x2C,0x2C,0x2C, 0x34,0x34,0x34, 0x38,0x38,0x38, 0x3C,0x3C,0x3C, 
+      0x44,0x44,0x44, 0x48,0x48,0x48, 0x4C,0x4C,0x4C, 0x54,0x54,0x54, 
+      0x58,0x58,0x58, 0x5C,0x5C,0x5C, 0x64,0x64,0x64, 0x68,0x68,0x68, 
+      0x6C,0x6C,0x6C, 0x74,0x74,0x74, 0x78,0x78,0x78, 0x7C,0x7C,0x7C, 
+      0x84,0x84,0x84, 0x88,0x88,0x88, 0x8C,0x8C,0x8C, 0x94,0x94,0x94, 
+      0x98,0x98,0x98, 0x9C,0x9C,0x9C, 0xA4,0xA4,0xA4, 0xAC,0xAC,0xAC, 
+      0xB4,0xB4,0xB4, 0xC4,0xC4,0xC4, 0xCC,0xCC,0xCC, 0xD4,0xD4,0xD4, 
+      0xDC,0xDC,0xDC, 0xE4,0xE4,0xE4, 0xF4,0xF4,0xF4, 0xFC,0xFC,0xFC };
+
+      /**
+       * Maps the triples above, which are in 3ba order, to
+       * the actual register map.
+       */
+    protected static final int RegToTbaMap[] = {
+      0, 216, 217, 218, 219, 220, 221, 222,  
+      223, 224, 43, 225, 226, 227, 228, 229,  
+      230, 231, 232, 233, 86, 234, 235, 236,  
+      237, 238, 239, 240, 241, 242, 129, 243,  
+      1, 44, 2, 3, 9, 4, 10, 5,  
+      11, 41, 17, 46, 47, 53, 88, 89,  
+      7, 8, 50, 15, 51, 16, 52, 22,  
+      58, 23, 29, 59, 65, 100, 101, 137,  
+      6, 49, 12, 18, 24, 60, 30, 31,  
+      66, 61, 67, 103, 25, 98, 104, 135,  
+      13, 19, 55, 20, 92, 56, 26, 62,  
+      32, 33, 68, 69, 99, 105, 141, 177,  
+      14, 21, 57, 27, 63, 28, 64, 34,  
+      70, 35, 71, 106, 107, 142, 143, 179,  
+      42, 85, 48, 54, 90, 91, 96, 97,  
+      102, 132, 133, 138, 139, 175, 134, 140,  
+      36, 72, 108, 144, 180, 181, 186, 150,  
+      156, 151, 187, 158, 194, 165, 193, 199,  
+      37, 38, 39, 45, 40, 75, 80, 81,  
+      76, 82, 77, 113, 83, 119, 124, 125,  
+      74, 111, 117, 147, 153, 148, 154, 183,  
+      184, 189, 190, 185, 191, 197, 203, 209,  
+      73, 79, 109, 115, 110, 116, 145, 146,  
+      152, 182, 188, 159, 195, 201, 206, 207,  
+      78, 114, 120, 121, 157, 192, 198, 170,  
+      171, 164, 200, 160, 196, 202, 167, 173,  
+      84, 126, 127, 162, 163, 168, 169, 174,  
+      176, 204, 205, 210, 211, 212, 213, 214,  
+      94, 95, 112, 118, 149, 155, 161, 166,  
+      130, 136, 178, 131, 93, 122, 123, 128,  
+      87, 208, 244, 245, 246, 247, 248, 172,  
+      249, 250, 251, 252, 253, 215, 254, 255};  
+   
+
+      /**
+       * Inverse mapping,from registers to 3ba 
+       * colors. Note that the indexes in the color file
+       * are indexes into the register order of the
+       * colors
+       */
+    protected static final int TbaToRegMap[] = {
+      0x00, 0x20, 0x22, 0x23, 0x25, 0x27, 0x40, 0x30,
+      0x31, 0x24, 0x26, 0x28, 0x42, 0x50, 0x60, 0x33,
+      0x35, 0x2A, 0x43, 0x51, 0x53, 0x61, 0x37, 0x39,
+      0x44, 0x4C, 0x56, 0x63, 0x65, 0x3A, 0x46, 0x47,
+      0x58, 0x59, 0x67, 0x69, 0x80, 0x90, 0x91, 0x92,
+      0x94, 0x29, 0x70, 0x0A, 0x21, 0x93, 0x2B, 0x2C,
+      0x72, 0x41, 0x32, 0x34, 0x36, 0x2D, 0x73, 0x52,
+      0x55, 0x62, 0x38, 0x3B, 0x45, 0x49, 0x57, 0x64,
+      0x66, 0x3C, 0x48, 0x4A, 0x5A, 0x5B, 0x68, 0x6A,
+      0x81, 0xB0, 0xA0, 0x95, 0x98, 0x9A, 0xC0, 0xB1,
+      0x96, 0x97, 0x99, 0x9C, 0xD0, 0x71, 0x14, 0xF0,
+      0x2E, 0x2F, 0x74, 0x75, 0x54, 0xEC, 0xE0, 0xE1,
+      0x76, 0x77, 0x4D, 0x5C, 0x3D, 0x3E, 0x78, 0x4B,
+      0x4E, 0x5D, 0x6B, 0x6C, 0x82, 0xB2, 0xB4, 0xA1,
+      0xE2, 0x9B, 0xC1, 0xB3, 0xB5, 0xA2, 0xE3, 0x9D,
+      0xC2, 0xC3, 0xED, 0xEE, 0x9E, 0x9F, 0xD1, 0xD2,
+      0xEF, 0x1E, 0xE8, 0xEB, 0x79, 0x7A, 0x7E, 0x4F,
+      0xE9, 0x3F, 0x7B, 0x7C, 0x7F, 0x5E, 0x6D, 0x6E,
+      0x83, 0xB6, 0xB7, 0xA3, 0xA5, 0xE4, 0x87, 0x89,
+      0xB8, 0xA4, 0xA6, 0xE5, 0x88, 0xC4, 0x8B, 0xBB,
+      0xCB, 0xE6, 0xD3, 0xD4, 0xC9, 0x8D, 0xE7, 0xCE,
+      0xD5, 0xD6, 0xC7, 0xC8, 0xF7, 0xCF, 0xD7, 0x7D,
+      0xD8, 0x5F, 0xEA, 0x6F, 0x84, 0x85, 0xB9, 0xA7,
+      0xA8, 0xAB, 0x86, 0x8A, 0xBA, 0xA9, 0xAA, 0xAC,
+      0xC5, 0x8E, 0x8C, 0xBC, 0xCC, 0xAD, 0xC6, 0x8F,
+      0xCA, 0xBD, 0xCD, 0xAE, 0xD9, 0xDA, 0xBE, 0xBF,
+      0xF1, 0xAF, 0xDB, 0xDC, 0xDD, 0xDE, 0xDF, 0xFD,
+      0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
+      0x09, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11,
+      0x12, 0x13, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A,
+      0x1B, 0x1C, 0x1D, 0x1F, 0xF2, 0xF3, 0xF4, 0xF5,
+      0xF6, 0xF8, 0xF9, 0xFA, 0xFB, 0xFC, 0xFE, 0xFF } ;
+
+    protected static final String HI_HDR = "WFCHBM@@";
+    protected static final String LO_HDR = "WFCLBM@@";
+    
+      /**
+       * Base array of colors. Constructed only once.
+       */
+    public static Color BasicColors[] = null; 
+
+      /**
+       * Current array of colors. Constructed once, but recomputed
+       * whenever getRemappedColors is called.
+       */
+    protected static Color RemappedColors[] = null;
+   
+     /**
+      * Arrays of color components.
+      */
+    protected int origColorMap[] = null;
+    protected int currentColorMap[] = null;
+    protected boolean bInitialized = false;
+
+      /**
+       * Constructor creates and initializes arrays.
+       * If passed color file is not null, reads it and
+       * initializes the origxxx arrays.
+       * @param clfFile  Color file. May be null, in which case
+       *                 client may call init directly, later.
+       */
+    public ColorFileProcessor(String clfFile)
+        {
+        if (BasicColors == null)
+            initializeBasicColors();
+        origColorMap = new int[256];
+        currentColorMap = new int[256];
+        if (clfFile != null)
+            init(clfFile);
+	else
+	    {
+            for (int i = 0; i < 256; i++)
+                currentColorMap[i] = i;
+	    }
+	}
+
+      /**
+       * Read and interpret Dragon color file. Use the contents
+       * to initialize both the orig and the current arrays.
+       * @return true if ok, false if error
+       */
+    public boolean init(String clfFile)
+        {
+        int count;
+        boolean bOk = true;
+        byte buffer[] = new byte[2048];
+        try 
+	    {
+            FileInputStream stream = new FileInputStream(clfFile);
+            count = stream.read(buffer);
+            stream.close();
+	    if (count < 0)  // error
+	        {
+                }
+            else
+	        {
+                if ((buffer[0] == 'W') && (buffer[1] == 'F'))
+                     parseNewClf(buffer,count);
+		else
+                     parseOldClf(buffer,count);
+                }
+	    }
+	catch (IOException ioe)
+	    {
+            Logger logger = 
+	        ApplicationManager.getErrorLogger();
+            if (logger != null)
+               logger.logError(
+                  "Error reading color file\n" + ioe.getMessage(), true);
+	    //System.out.println("Error reading color file\n" 
+            //                      + ioe.getMessage());
+
+	    ErrorDisplay errDisplay = 
+                ApplicationManager.getErrorDisplay();
+            if (errDisplay != null)
+                errDisplay.showError(TextKeys.ERROR,
+				   "%h1.7", clfFile);
+            bOk = false;
+            return bOk;
+	    }
+        bInitialized = true;
+        for (int i = 0; i < 256; i++)
+            currentColorMap[i] = origColorMap[i];
+        return bOk;
+	}
+
+      /**
+       * Factorization. Allocate and initialize the basicColors 
+       * array.
+       */
+    public static void initializeBasicColors()
+	{
+	if (BasicColors == null)
+	    {
+	    BasicColors = new Color[256];
+	    for (int iColor = 0; iColor < 256; iColor++)
+	        BasicColors[iColor] = new Color(BasicMap[iColor*3],
+						BasicMap[iColor*3 + 1],
+						BasicMap[iColor*3 + 2]);
+	    }
+       }
+
+      /**
+       * Factorization. Given an array of bytes, parse it as a
+       * new color file.
+       * @param buffer  Array of bytes read from file
+       * @param count   Number of bytes in use in the array.
+       */
+   protected void parseNewClf(byte buffer[], int count)
+        {
+        int tabIndex = 0;
+        String contents = new String(buffer);
+        StringTokenizer tokenizer = new StringTokenizer(contents," \n\r");
+        String junk = tokenizer.nextToken(); // skip the header
+        while ((tokenizer.hasMoreTokens()) && (tabIndex < 256))
+	    {
+	    String colorTok = tokenizer.nextToken();
+	    origColorMap[tabIndex++] = Integer.parseInt(colorTok,16);
+	    }
+	}
+
+      /**
+       * Factorization. Given an array of bytes, parse it as an
+       * old color file.
+       * @param buffer  Array of bytes read from file
+       * @param count   Number of bytes in use in the array.
+       */
+   protected void parseOldClf(byte buffer[], int count)
+        {
+        int tabIndex = 0;
+        int i = 0;
+	while ((count > 0) && (tabIndex < 256))
+       	    {
+	    if (buffer[i] <= 0x20)
+	    	i++;	/* ignore blanks & ctrl chars */
+	    else 
+		{
+	    	origColorMap[tabIndex++] = ((buffer[i]&0xF)<<4) 
+			    + (buffer[i+1]&0xF) + (buffer[i+3]&0);
+		i += 3;
+			/* Note byte3 of each triad will & must = '0' */
+		count -= 4;
+		}
+	    }
+	}
+
+      /** 
+       * Write current color table to color file outClfFile.
+       * in "new" format, with both high and low sections the
+       * same (low section currently ignored anyway)
+       * @param outClfFile  Filename for output
+       * @return true if Ok, else false
+       */
+    public boolean writeColorFile(String outClfFile)
+        {
+        boolean bOk = true;
+        StringBuffer outline = new StringBuffer(256*3+32*2+10); 
+	String data = null;
+        for (int li=0 ; li<256 ; li++)	
+	    {
+	    if ((li % 8) == 0)	// starting before 1st entry 
+	        {		// numbers per line 
+	        outline.append("\r\n");
+	        }
+            data = Integer.toString(currentColorMap[li],16).toUpperCase();
+            if (data.length() == 1)
+                data = "0" + data;
+	    outline.append(data+ " ");
+	    }
+	outline.append("\r\n");
+        // OK - the data is formatted. Now write it.
+	try
+	    {
+            FileWriter writer = new FileWriter(outClfFile);
+            writer.write(HI_HDR);
+	    writer.write(outline.toString());
+            writer.write(LO_HDR);
+	    writer.write(outline.toString());
+	    writer.close();
+	    }
+	catch (IOException ioe)
+	    {
+            Logger logger = 
+	        ApplicationManager.getErrorLogger();
+            if (logger != null)
+               logger.logError(
+                  "Error writing color file\n" + ioe.getMessage(), true);
+	    //System.out.println("Error writing color file\n" 
+            //                      + ioe.getMessage());
+	    ErrorDisplay errDisplay = 
+                ApplicationManager.getErrorDisplay();
+            if (errDisplay != null)
+                errDisplay.showError(TextKeys.ERROR,
+				   "%h8.8", outClfFile);
+            bOk = false;
+            return bOk;
+	    }
+        return bOk;
+        }
+
+
+      /**
+       * Copies original colors to current colors, effectively
+       * undoing all changes since the last init.
+       */
+    public void reset()
+        {
+        for (int i = 0; i < 256; i++)
+            currentColorMap[i] = origColorMap[i];
+	}
+
+      /**
+       * Sets the current color for a particular numeric value in
+       * the table.
+       * @param index  Which data value to set
+       * @param mapValue  Associated color map value
+       */
+    public void setCurrentColor(int index, int mapValue)
+        {
+        currentColorMap[index] = mapValue;
+        }
+
+      /**
+       * Sets the current color for a particular numeric value in
+       * the table. Assumes that the input index is the index
+       * in the 3ba Map, not the register map
+       * @param index  Which data value to set
+       * @param mapValue  Associated color map value
+       */
+    public void setCurrent3baColor(int index, int mapValue)
+        {
+        currentColorMap[index] = TbaToRegMap[mapValue];
+        }
+
+    public int getCurrentColor(int index)
+        {
+        return currentColorMap[index];
+        }
+
+      /**
+       * returns the appropriate index for the current color,
+       * relative to the 3ba map.
+       */
+    public int getCurrent3baColor(int index)
+        {
+        return RegToTbaMap[currentColorMap[index]];
+        }
+    
+    public int getOrigColor(int index)
+        {
+        return origColorMap[index];
+        }
+
+    public boolean isInitialized()
+        {
+        return bInitialized;
+        }
+
+      /**
+       * Returns an array of the BasicColors, remapped into
+       * the order specified by currentColorMap
+       * This array is static; it is recalculated each time
+       * this method is called, but not reallocated.
+       */
+    public Color[] getRemappedColors()
+        {
+	if (RemappedColors == null)
+	    {
+            RemappedColors = new Color[256];
+	    }
+        for (int i = 0; i < 256; i++)
+            RemappedColors[i] = BasicColors[RegToTbaMap[currentColorMap[i]]];
+        return RemappedColors;
+	}
+
+      /**
+       * Returns the index of testColor in BasicColors
+       */
+    public int getMasterIndex(Color testColor)
+        {
+        int found = -1;
+        int color = testColor.getRGB();
+	for (int i = 0; (i < BasicColors.length) && (found < 0); i++)
+	    {
+            if (BasicColors[i].getRGB() == color)
+                found = i;
+	    }
+	return found;
+	}
+
+      /**
+       * Returns the remapped index of testColor, that is, the
+       * appropriate register index.
+       */
+    public int getRemappedIndex(Color testColor)
+        {
+	int TbaIndex = getMasterIndex(testColor);
+	return TbaToRegMap[TbaIndex];
+	}
+	 
+    /**
+     * Test driver
+     */
+    public static void main(String args[])
+        {
+        if (args.length < 1)
+	     {
+             System.out.println("USAGE: java ColorFileProcessor <clfFile>");
+             System.exit(0);
+             }
+        Logger errorLogger = new Logger("DragErr.log");
+        ApplicationManager.setErrorLogger(errorLogger);
+        ColorFileProcessor cfp = new ColorFileProcessor(args[0]);
+        if (cfp.isInitialized())
+	     {
+             for (int i = 0; i < 256; i++)
+                   System.out.println("Index " + i + "  ColorMap " 
+                               + cfp.getOrigColor(i));
+	     }
+        cfp.setCurrentColor(0, 255);
+        cfp.setCurrentColor(255,111);
+        boolean bOk = cfp.writeColorFile("TESTING.CLF");
+	if (bOk)
+             System.out.println("Results are in TESTING.CLF");
+        }
+
+
+    protected static String cvsInfo = null;
+    protected static void setCvsInfo()
+        {
+        cvsInfo = "\n@(#)  $Id: ColorFileProcessor.java,v 1.7 2007/01/05 07:41:57 rudahl Exp $ \n";
+	}
+    }
+
+
+
+
+
+
+

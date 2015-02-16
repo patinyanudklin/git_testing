@@ -1,0 +1,65 @@
+<!-- file xml2pages.dtd - $Revision: 1.1 $$Date: 2003/03/28 12:45:56 $
+   copyright goldin-rudahl associates
+   $Id: xml2pages.dtd,v 1.1 2003/03/28 12:45:56 rudahl Exp $
+   $Log: xml2pages.dtd,v $
+   Revision 1.1  2003/03/28 12:45:56  rudahl
+   components of Xml2Pages using lowagie - itext package
+
+
+ -->
+
+<!-- document is the root element and consists of either a chapter (etc, t.b.d),
+     or a collection of pages. 'pageSize' is one of a set of conventional
+     name (letter, etc); pageStyle is portrait, landscape, screen, web, etc.
+  -->
+<!ELEMENT document (metaSpec? (pageSpec+|chapter)> 
+<!ATTLIST document pageSize CDATA #IMPLIED pageStyle CDATA #IMPLIED>
+
+<!ELEMENT metaSpec>
+<!ATTLIST metaSpec id CDATA #REQUIRED name CDATA #REQUIRED>
+
+<!ELEMENT pageSpec (title?, 
+		(heading | paragraph | list | table | image | legend | var)+)>
+
+<!ELEMENT placementSpec>
+<!ATTLIST placementSpec top CDATA #IMPLIED left CDATA #IMPLIED
+			yCenter CDATA #IMPLIED xCenter CDATA #IMPLIED
+			height CDATA #IMPLIED width CDATA #IMPLIED>
+
+<!ELEMENT title (placementSpec? #PCDATA)>
+<!ELEMENT heading (placementSpec? #PCDATA)>
+<!ATTLIST heading level CDATA #IMPLIED>
+
+<!ELEMENT paragraph (placementSpec? (preformattedText | fragment | equation | format)*)>
+<!ELEMENT preformattedText (#PCDATA)>
+<!ELEMENT fragment (#PCDATA)>
+<!ELEMENT equation (#PCDATA)>
+<!ELEMENT format (#PCDATA)>
+
+<!ELEMENT list (placementSpec? numberedList | unnumberedList)>
+<!ELEMENT numberedList (listTitle?, listItem+)>
+<!ATTLIST numberedList style CDATA #IMPLIED>
+<!ELEMENT unnumberedList (listTitle?, listItem+)>
+<!ATTLIST unnumberedList bullet CDATA #IMPLIED>
+<!ELEMENT listTitle (#PCDATA)>
+<!ELEMENT listItem ((fragment|equation|format)+)>
+
+<!ELEMENT table (placementSpec? tableTitle? tableHeader? tableRow+ tableFooter?)>
+<!ATTLIST table  style CDATA #IMPLIED>
+<!ELEMENT tableTitle (#PCDATA)>
+<!ELEMENT tableHeader (columnTitle+)>
+<!ELEMENT columnTitle (#PCDATA)>
+<!ATTLIST columnTitle columnNumber CDATA #IMPLIED>
+<!ELEMENT tableRow (columnValue+)>
+<!ELEMENT columnValue (#PCDATA)>
+<!ATTLIST columnValue columnNumber CDATA #IMPLIED>
+<!ELEMENT tableFooter (#PCDATA)>
+
+<!ELEMENT image (placementSpec?)>
+<!ATTLIST image (path CDATA #REQUIRED)>
+<!ELEMENT graphic (placementSpec?)>
+<!ATTLIST graphic (path CDATA #REQUIRED)>
+<!ELEMENT legend (placementSpec?)> <!-- not adequate - more like table -->
+<!ELEMENT var (?placementSpec?)>
+<!ATTLIST var (name CDATA #REQUIRED default CDATA #IMPLIED)>
+

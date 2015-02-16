@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calcResult calcType="BoxResult" identifier="TMCAL" encoding ="UTF-8">
+   <title>
+     <xlateText id="%h4600.11" tag="listItem" remind="CLASSIF" />
+   </title>
+   <resultHeader fieldCount="3">
+      <resultField fieldId="Col1"> 
+          <xlateText id="" tag="listItem" remind="Column One" />
+      </resultField>
+      <resultField fieldId="Col2"> 
+          <xlateText id="" tag="listItem" remind="Column Two" />
+      </resultField>
+      <resultField fieldId="Col3"> 
+          <xlateText id="" tag="listItem" remind="Column Three" />
+      </resultField>
+   </resultHeader>
+   <resultRow>
+      <noteLine>
+         <xlateText id="%h5700.0" tag="fragment" remind="repetitions"
+			substitute="3" />
+         <xlateText id="" tag="listItem" remind="dummytext" />
+      </noteLine>
+   </resultRow>
+   <resultRow>
+      <noteLine>
+         <xlateText id="%h5700.2" tag="fragment" remind="changed" />
+         <xlateText id="" tag="fragment" remind="23991" />
+      </noteLine>
+   </resultRow>
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="1" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="128777"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="12.5"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="2" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="12099"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="0.34"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="3" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="890"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="0.097"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="4" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="13098"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="34.02"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="5" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="12009"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="24.98"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="6" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="102311"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="43.98"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="7" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="777"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="0.04"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="8" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="128123"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="12.5"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="9" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="2310"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="8.5"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="10" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="9800"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="1.22"/>
+            </resultItem>
+        </resultRow> 
+        <resultRow>
+	    <resultItem dataType="string" >
+                <xlateText id="%e428" tag="listItem" remind="Class" 
+	          substitute="11" />
+ 	    </resultItem>
+            <resultItem dataType="integer" >
+	        <xlateText id="" tag="listItem" remind="9066"/>
+            </resultItem>
+            <resultItem dataType="float" >
+	        <xlateText id="" tag="listItem" remind="1.25"/>
+            </resultItem>
+        </resultRow> 
+ </calcResult>

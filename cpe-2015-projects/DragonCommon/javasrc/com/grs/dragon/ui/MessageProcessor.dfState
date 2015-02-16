@@ -1,0 +1,113 @@
+package id3j2atclnjtfa3clnk4shk;
+
+/**
+@version 2.0
+@__modelType diagram 
+*/
+class diagram {
+/**
+@shapeType Hyperlink
+@__modelType link
+@__ref <oiref:java#Class#MessageProcessor:oiref><oihard>
+@__reversed 
+*/
+class link {
+}/**
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node150:oiref><oihard>
+@__modelType reference 
+*/
+class reference151 {
+}/**
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node152:oiref><oihard>
+@__modelType reference 
+*/
+class reference153 {
+}/**
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node154:oiref><oihard>
+@__modelType reference 
+*/
+class reference155 {
+}}/**
+@__tags
+@shapeType StateDiagram 
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node154.link:oiref>=269,190,109,17,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node152.link:oiref>=477,190,100,17,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node150.link:oiref>=258,115,184,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node150:oiref>=109,85,116,40,1:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node:oiref>=40,41,12,12,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node.link:oiref>=110,48,24,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node154:oiref>=570,236,121,40,1:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node154.link:oiref>=610,236,167,125:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node152:oiref>=476,85,99,40,1:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node152.link:oiref>=525,125,650,236:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node.link:oiref>=46,53,167,85:oigroup>
+<oigroup:<oiref:design#Class#id3j2atclnjtfa3clnk4shk.node150.link:oiref>=225,105,476,105:oigroup>
+*/
+class __positions {
+}/**
+@shapeType StartState
+@__modelType node
+@name StartState1 
+*/
+class node {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node150:oiref><oihard>
+@event init 
+*/
+class link {
+}}/**
+@shapeType State
+@__modelType node
+@name No detector active 
+*/
+class node150 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node152:oiref><oihard>
+@event Create Detector
+@condition detector == null 
+*/
+class link {
+}}/**
+@shapeType State
+@__modelType node
+@name Detector Active 
+*/
+class node152 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node154:oiref><oihard>
+@actionOperation <oiref:java#Member#MessageProcessor#handleMessage#(#int#java.lang.String#)#:oiref>
+@action handleMessage 
+*/
+class link {
+}}/**
+@shapeType State
+@__modelType node
+@name MessageReceived 
+*/
+class node154 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3j2atclnjtfa3clnk4shk.node150:oiref><oihard>
+@event Set detector to null 
+*/
+class link {
+}}

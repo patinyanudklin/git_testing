@@ -1,0 +1,181 @@
+/****************************************************************
+ *	TOOLKIT.NOT - current status of TOOLKIT
+ *
+ */
+
+%%INTRODUCTION
+
+	This file - TOOLKIT.NOT - contains sections on outstanding 
+bugs and proposed improvements to TOOLKIT (called %%TODO), a 
+section on tests and verifications which should be performed on 
+each new release of TOOLKIT (called %%TESTING) and a "newest-first" 
+list of significant changes in TOOLKIT (called %%HISTORY). Nothing 
+is ever deleted from the HISTORY section. There is also a %%STATUS
+section indicating the "current" status of each toolkit
+function. To facilitate machine 
+retrieval, the '%' in column 0 indicates a flag word. Lines 
+starting with %nnn (e.g. %305) contain comments that perhaps 
+should be included or explained in the release notes for that 
+version.
+
+%%TODO
+
+%%TESTING
+
+%%HISTORY $Revision: 1.3 $
+	8/26/02 added jpeg support. See jpeg.not
+		revised Makefile to autoinvoke makefi32
+	4/9/02	henceforth:	1. imagfile.cpp will be split into 
+				   separate files/classes for all
+				   non-Dragon formats
+				2. In 32-bit, 
+					filename buffers will be
+					   PATH_MAX and NAME_MAX
+					all string buffers will be passed-in,
+					   or have size params
+					only previously SA version defined.
+					only one object file comes from one
+					   source file
+				3. In 16-bit, only Zortech version
+
+%%STATUS
+
+status codes:	none => not implemented
+		D => dummy function, missing most functionality
+		P => partly implemented or needs updating
+		U => untested
+		T => verified operation
+status date: date when code was assigned; thus subsequent major
+		changes may invalidate code or require retesting
+
+source file	function					status
+
+TOOLCMD.C
+    int dtk_ProcessCommandLine(argc,argv[],cmddescriptor[]); 	T  8/13/92
+    int dtk_CmdSetFlag(char * argv[],CmdDescriptor * cmd);	T  8/13/92
+    int dtk_CmdSet1int(char * argv[],CmdDescriptor * cmd);	T  8/13/92
+    int dtk_CmdSet1float(char * argv[],CmdDescriptor * cmd);	T  8/13/92
+    int dtk_CmdSet1string(char * argv[],CmdDescriptor * cmd);	T  8/13/92
+    int dtk_WildCard(int * argc,char *** argv);			T  8/13/92
+    void dtk_qhelp(int, char **, char * []);			T  8/13/92
+    void dtk_help(char * []);					T  8/13/92
+    void dtk_banner(char * []);					T  8/13/92
+    
+TOOLFILE.C
+    int dtk_FileError(void);					P  8/13/92
+	(FileError is non public)
+    int dtk_GetConfig(char * name,char result[]);		T  9/9/92
+    int dtk_fgets(name,offset,buf[],bufsize);			U  8/13/92
+    int dtk_fputs(char * name,char * string);			U  8/13/92
+    int dtk_read(name,offset,buf[],size);			U  8/13/92
+    int dtk_write(name,buf[],size); /* append only */		U  8/13/92
+    int dtk_FilenameBuild(name,	path, ext, result[]);		T  8/13/92
+    int dtk_FilenameOK(char * name);				U  8/13/92
+    int dtk_FilenamePathOK(char * name);			U  8/13/92
+    int dtk_FilenameParse(name,drive[],path[],node[],ext[]);	U  8/13/92
+    
+TOOLKIT.C
+    int dtk_MakeBak(char * filename);				U
+    int dtk_ShowMsg(uint msgnum,char * message,...);		T  9/9/92
+    int dtk_ShowMsgAt(line,col,msgnum,message,...);		T  9/9/92
+    int dtk_init(char *);					T  9/9/92
+    void dtk_PrinterEcho(int on);				T
+    void dtk_PrintExit(char * string,int level);		T  9/9/92
+    void dtk_ErrorMsgDisplay(void);				T  9/9/92
+    int dtk_RegisterCfg(char * name);
+	(RegisterCfg presently built into dtk_init()
+    unsigned long dtk_DragonVersion(void);
+    unsigned long dtk_ToolkitVersion(void);
+    int dtk_MaxPixels(void);
+    int dtk_MaxLines(void);
+    int dtk_MaxImages(void);
+    int dtk_MaxSigs(void);
+    int dtk_MaxClasses(void);
+    int dtk_MaxBands(void);
+    
+TOOLGRAF
+    int dtk_GrafInit(void);					T  8/30/92
+    int dtk_GrafGetMode(void);					T  8/30/92
+    int dtk_GrafRes(void);					U  8/13/92
+    int dtk_GrafIsText(void);					U  8/13/92
+    int dtk_GrafIsGray(void);					U  8/13/92
+    int dtk_GrafSet(int mode);					T  8/30/92
+    int dtk_TextSet(void);					U  9/9/92
+    int dtk_GrafScreenLines(void);				U  8/13/92
+    int dtk_GrafScreenPixels(void);				U  8/13/92
+    int dtk_GrafPuts(char * msg);				T  8/30/92
+    int dtk_GrafClipWind(uint x0, uint y0,uint x1, uint y1)	U  9/9/92
+    int dtk_GrafFillWind(color_index,x0,y0,x1,y1);		T  8/30/92
+    int dtk_GrafLine(color_index,x0,y0,x1,y1);			T  8/30/92
+    int dtk_GrafCircle(color_index, x,y,rad);			U  8/30/92
+    int dtk_GrafClearScreen(void);				U  8/13/92
+    int dtk_GrafSetColors(char* filename);			U  9/17/92
+    int dtk_GrafDisplayImage(img_index,iline,ipix,nlines,
+	npix, subsample);					U  9/17/92
+    
+TOOLERR.C
+    void dtk_ErrorMsgClear(void);				T  9/9/92
+    void dtk_ErrorMsgPush(char *);				T  9/9/92
+    int dtk_ErrorMsgCount(void);				T  9/9/92
+    char * dtk_ErrorMsg(int);					T  9/9/92
+    int dtk_Error(int errornum,char * typical_msg,...);		T  9/9/92
+    int dtk_Fatal(int errornum,char * typical_msg,...);		T  9/9/92
+    int dtk_Warning(int warningnum,char * typical_msg,...);	T  9/9/92
+    int dtk_GetMsg(char * pattern,char * dest);			P  9/9/92
+    int dtk_RegisterMsg(char * name);				P  9/9/92
+    int dtk_DragonErrorLevel();					U
+    int dtk_DragonIsRunning();					T  8/30/92
+    
+TOOLIHDR.C
+    void dtk_ImageHdrInit(IHEAD* hdr, int nl, int np);		T  ??
+    void dtk_ImageHdrSet(hdr, ftype, filename,bandn,comment,
+	source,norm);						T  ??
+    int dtk_ImageCalcStats(bflag,nl, np,stats, linefn);		T  ??
+    int dtk_ImageHdrSetStats(inhdr,stats);			T  ??
+    int dtk_ImageHdrRewrite(inhdr,outname,stats)		T  ??
+    int dtk_ImageHdrWrite(IHEAD* inhdr,outname);		T  ??
+
+TOOLIFIL.C
+  Public disk image file access Functions:
+    int dtk_ImageFileClose(const IFileHandle handle);		U
+    int dtk_ImageFileGetHdr(const filename, IHEAD* hdr)		U
+    int dtk_ImageFileGetLine(handle,linenum,buffer,ipix,npix);	U
+    int dtk_ImageFileLines(const IFileHandle handle);		U
+    int dtk_ImageFileName(IFileHandle handle, fname);		U
+    int dtk_ImageFilePixels(const IFileHandle handle);		U
+    int dtk_ImageFilePutLine(handle, linenum,buffer);		U
+    IFileHandle dtk_ImageFileReadOpen(char * filename);		U
+    IFileHandle dtk_ImageFileWriteOpen(filename, hdr);		U
+
+  Public memory image access Functions:
+    int dtk_ImageMemClear(img_index);				T  8/14/92
+    int dtk_ImageMemFill(img_index,val,nlines,npix);		T  8/14/92
+    int dtk_ImageMemGetHdr(img_index, IHEAD* hdr);		T  8/14/92
+    int dtk_ImageMemGetLine(img_index,linenum,buffer,ipix,npix) T  8/14/92
+    int dtk_ImageMemLines(img_index);				T  8/14/92
+    int dtk_ImageMemMaxLines(img_index);			T  8/14/92
+    int dtk_ImageMemMaxPixels(img_index);			T  8/14/92
+    int dtk_ImageMemPixels(img_index);				T  8/14/92
+    int dtk_ImageMemPutHdr(img_index, IHEAD* hdr);		T  8/14/92
+    int dtk_ImageMemPutLine(img_index, linenum,buffer, npix);	T  8/14/92
+    int dtk_ImageMemSetLines(img_index, nlines);		T  8/14/92
+    int dtk_ImageMemSetPixels(img_index, npix);			T  8/14/92
+    int dtk_ImageMemUpdateStats(img_index);			T  8/14/92
+    
+  Public disk-to-memory image access Functions:
+    int dtk_ImageFileLoad(char * filename, img_index);		T  8/14/92
+    int dtk_ImageFileSave(filename,img_index, hdr, iline, ipix,
+    	nlines, npix);						T  8/14/92
+
+    int dtk_MouseInit(void);
+    
+    int dtk_GetRemapTable(int img_index,ByteMap* table);
+    int dtk_RemapImage(int img_index,const ByteMap* table);
+    
+    int dtk_SignatureGet(int signum,struct statrec * sig);
+    int dtk_SignaturePut(int signum,struct statrec * sig);
+    int dtk_SignatureClear(void);
+    int dtk_SignatureCount(void);
+    int dtk_SignatureValid(int signum);
+    
+    

@@ -1,0 +1,50 @@
+
+#filename: README.DRAGON
+#$Id: README.DRAGON,v 1.2 2014/02/14 03:06:36 rudahl Exp $
+#$Log: README.DRAGON,v $
+#Revision 1.2  2014/02/14 03:06:36  rudahl
+#adapt for mingw
+#
+#Revision 1.1  2005/07/13 06:19:19  rudahl
+#from cathay
+#
+#Revision 1.2  2005/07/11 03:30:01  rudahl
+#added special steps for jpeg
+#
+#To build the jpeg libraries for use with Dragon:
+#(Note that this only needs to be done once, or if it is
+#desired to update the version.)
+#
+#1. Checkout jpeg-6b.tar.gz (or newer version) from CVS, and unpack
+#it into this directory
+   tar -xvzf jpeg*z
+#2. 
+   [ -d lib ] || mkdir lib
+   [ -d lib/$PLATFORM ] || mkdir lib/$PLATFORM
+   [ -d lib/$PLATFORM/bin ] || mkdir lib/$PLATFORM/bin
+   [ -d lib/$PLATFORM/lib ] || mkdir lib/$PLATFORM/lib
+   [ -d lib/$PLATFORM/include ] || mkdir lib/$PLATFORM/include
+   [ -d lib/man ] || mkdir lib/man
+   [ -d lib/man/man1 ] || mkdir lib/man/man1
+   [ -d lib/doc ] || mkdir lib/doc
+
+#3. 
+#   change into the jpeg-6b directory and run
+   cd jpeg-* 
+   ./configure --prefix=`pwd`/../lib --exec-prefix=`pwd`/../lib/$PLATFORM --includedir=`pwd`/../$PLATFORM/include
+
+#4. run
+     # (in mingw, the apps will probably fail to build)
+     make || make install
+     cp *.a ../lib/$PLATFORM/lib
+     cp -p *.h ../lib/$PLATFORM/include
+     cp -p README ../lib/README.jpeg
+     cp -p *.doc ../lib/doc
+
+# This will put the include files in vendors/jpeg/lib/include
+#              the libraries in vendors/jpeg/lib/{linux|mingw}/lib
+#              the executables in vendors/jpeg/lib/{linux|mingw}/bin
+#
+@echo "The include files are initially put into platform-specific locations"
+@echo "If there are no differences, merge them into lib/include"
+@echo "Check the libraries (-kb) and include files into cvs"

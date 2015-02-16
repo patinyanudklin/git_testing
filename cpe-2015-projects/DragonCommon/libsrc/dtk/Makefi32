@@ -1,0 +1,358 @@
+# NT MAKE file for DTK TOOLKIT LIBRARIES
+# @(#) $RCSfile: Makefi32,v $$Revision: 1.10 $$Date: 2004/12/11 10:11:02 $
+##	Purpose:		Make file for DTK libraries
+# USAGE1	=Usage: make -rf Makefi32
+##	Author:			Kurt Rudahl
+##	Environment:		NT
+#
+#	the fns in these libraries are NOT used by DRAGON itself
+#	except in uitlity programs or (DRAGON6.0 and later) in a 
+#	32-bit DLL.
+#
+#	7/26/00 extracted from Makefile
+# 5.4	12/7/2004 ktr	fixed recipies using LIBDIR by adding LIBDIRNQ
+#			(temp) disabled stitch.exe - link errors
+#
+# $Id: Makefi32,v 1.10 2004/12/11 10:11:02 rudahl Exp $
+# $Log: Makefi32,v $
+# Revision 1.10  2004/12/11 10:11:02  rudahl
+# cleaner cleanup
+#
+# Revision 1.9  2004/12/11 08:11:16  rudahl
+# fine tuning
+#
+#
+.IMPORT: TMP COMP
+.INCLUDE : "$(ETC)"/makefile.std
+
+# format of HERE: thispath/thisfile -- for ENTER, EXIT targets
+HERE	=dtk/Makefi32
+
+LOGFILE	=$(TMP)\log-dtk.jnk
+
+SHELL:=$(COMSPEC)
+.IF $(COMSPEC) == $(NULL)
+SHELL:=$(ComSpec)
+.END
+#DIRSEPSTR := \:
+SHELLMETAS := *?"<>|
+SHELLFLAGS := /c
+
+.IF "$(COMMONSRC)" == ""
+COMMONSRC	=..\..\common
+.END
+.IF "$(DRAGONSRC)" == ""
+DRAGONSRC	=..
+.END
+.IF "$(DRAGLIB)" == ""
+DRAGLIB		=..\..\lib
+.END
+toolinc		=$(COMMONSRC)\inc
+grafinc		=$(DRAGONSRC)\graf\inc
+stdinc		=$(COMMONSRC)\inc
+
+AR := ar
+ARFLAGS := -ruv
+
+#
+# NOTE - this assumes the env. var. CL= -nologo -W4 -Zd -Z7 -Od -I(compiler dirs)
+#
+LIBDIR		="$(DRAGLIB)"\msc32
+LIBDIRNQ	=$(DRAGLIB)\msc32
+O_		=m_
+OBJDIRS		=$(O_)t_w32 \
+		$(O_)tu_w32
+
+# compile only; 2-byte-align; 386-code; cdecl; DLL optimization; 
+# all warnings; basic debug info
+# (stdcall needed by VDD; override cdecl by GRS_EXP_CALL)
+#CFLAGS		=-nologo -c -Zp2 -G3 -Gz -W3 -Zi -Od -DQSTATIC= -D_DLL -I$(stdinc)
+DLL_FLAGS	=-D_DLL
+CFLAGS		=-nologo -c -Zp2 -G3 -Gd -W3 -Od -DQSTATIC= -D__32BIT__ -I..\ipc -I$(stdinc) -I.\jpeg-6b
+#DLL_FLAGS	=-entry:_DllMainCRTStartup@12 -nodefaultlib -DLL 
+DLL_LINK_FLAGS	=-nodefaultlib -DLL 
+MEMFLAG		=-DMEM_X
+CPP		=-Tp 
+LFLAGS  	=/MAP /NOD /PDB:NONE
+LINK    	=$(COMPDIR)\bin\link
+L_FLAGS      	=$(LFLAGS)
+C_BASE_LIBS	=oldnames.lib 
+C_LIBS		=$(C_BASE_LIBS) msvcrt.lib kernel32.lib  
+
+MODEL	=w32
+
+ccf		=cl $(CFLAGS) $(DLL_FLAGS)
+
+DEST		=-Fo
+
+PATHS		=$(LIBDIR) $(OBJDIRS)
+
+misc=	$(stdinc)\dtypes.h	$(stdinc)\dlimits.h \
+	$(stdinc)\stats.h 	$(stdinc)\drelease.h
+
+tmisc=$(toolinc)\toolkit.h 	$(toolinc)\toolerr.h	$(stdinc)\dtk.h \
+	$(stdinc)\basemem.h 
+
+# .SUFFIXES: .lib .c .obj .cpp .asm
+
+# the .t for all dtk___,
+# the .tu are for dutil_
+
+$(O_)t_$(MODEL)/%.obj : %.c   $(misc)
+	$(ccf) $(MEMFLAG) -DSA $(DEST)$(O_)t_$(MODEL)\$*.obj $*.c
+
+$(O_)t_$(MODEL)/%.obj : %.cpp   $(misc)
+	$(ccf) $(MEMFLAG) -DSA $(DEST)$(O_)t_$(MODEL)\$*.obj $*.cpp
+
+#
+# the util modules 
+#
+$(O_)tu_$(MODEL)/%.obj : %.c   $(misc)
+	$(ccf) $(MEMFLAG) -DDR $(DEST)$(O_)tu_$(MODEL)\$*.obj $*.c
+
+$(O_)tu_$(MODEL)/%.obj : %.cpp   $(misc)
+	$(ccf) $(MEMFLAG) -DDR $(DEST)$(O_)tu_$(MODEL)\$*.obj $*.cpp
+
+# _COM is used by both DR and SA (.tt); #2 & 3 only by SA #4,5 only by DR
+# _COM includes ALL of the TOOLS1 from WFUTL
+TOOLSRC_COM	=toolcmd6 toolfile toolihdr
+TOOL_COM	=toolcmd6 toolfile toolihdr
+# _DIF are sources which are compiled differently for _DIFSA and _DIFDR
+TOOLSRC_DIF	=toolkit toolerr toolifil
+TOOL_DIFSA	=toolkit toolerr toolifil # 10/99 .cpp compile probs 
+TOOL_DIFDR	=toolkit toolerr toolifil toolifib toolific toolifid 
+#
+TOOLSRC_SA	=tool_sa ob imagfile # file_sa
+TOOL_SA		=tool_sa ob imagfile \
+		imagread imagwrit imagdcor imagdwri imagecor imagtcor 
+# file_sa
+#TOOLSRC_DR	=toolgraf toolmaus # toolifil
+#TOOL_DR		=toolgraf toolgra2 toolmaus
+
+DUTIL		=tiff-wrt jpeg-wrt pcx-wrt erdimag tiffimag rosefuns \
+		tiff tifnames readimag
+
+ALL : ENTER $(PATHS) $(COMP-OK) QT QU EXIT # stitch.exe
+
+ENTER :
+	@echo Entering $(HERE) model=$(MODEL)
+
+EXIT :
+	@echo Exiting $(HERE) model=$(MODEL)
+
+install : ENTER dtk32.dll
+	cp dtk32.dll $(DRAGON_BUILD_DIR)
+	@echo Exiting $(HERE) model=$(MODEL)
+
+# this one builds the DLL as well as the libraries
+QT : $(PATHS) 	$(LIBDIR)\dtk-saw32.lib dtk32.dll #$(LIBDIR)\dtk-drw32.lib
+	@echo QT completed for $(COMP) model=$(MODEL)
+#	@echo QT completed for $(COMP) model=$(MODEL) > CON
+
+#	make -r -f makedll
+
+QU : $(PATHS) $(LIBDIR)\dutil-w32.lib
+	@echo QU completed for $(COMP) model=$(MODEL) 
+#	@echo QU completed for $(COMP) model=$(MODEL) > CON
+
+# this builds a DLL, but there's nothing in it
+# evidently dgraph needs dtk6, the 16-bit version?
+dtk32.dll : $(LIBDIR)\dtk-saw32.lib 
+	-@rm $(TMP)\liblst.jnk
+	echo $& > $(TMP)\liblst.jnk
+	echo $(C_LIBS) >> $(TMP)\liblst.jnk
+	$(LINK) $(L_FLAGS) $(DLL_LINK_FLAGS) /OUT:dtk32.dll  @$(TMP)\liblst.jnk
+
+
+DRLIBS	=$(LIBDIRNQ)\dtksa32.lib $(LIBDIRNQ)\dtk-saw32.lib $(LIBDIRNQ)\zwfl32.lib $(LIBDIRNQ)\comp32.lib $(LIBDIRNQ)\ipc.lib
+
+stitch.obj : stitch.c
+	cl $(CFLAGS) stitch.c
+
+stitch.exe : stitch.obj  $(LIBDIR)/dtk-saw32.lib
+	-@rm $(TMP)\liblst.jnk
+	echo $& > $(TMP)\liblst.jnk
+	echo $(DRLIBS) >> $(TMP)\liblst.jnk
+	echo $(C_LIBS) >> $(TMP)\liblst.jnk
+	$(LINK) $(L_FLAGS) @$(TMP)\liblst.jnk
+
+$(TMP)\c :
+	mkdir $(TMP)\c
+	-@rm $(TMP)\err-dtk.jnk
+
+$(LIBDIR) :
+	-mkdir $(LIBDIRNQ)
+
+XX	=jnk
+
+$(O_)t_w32 $(O_)tu_w32 :
+	-mkdir $(OBJDIRS)
+
+XY	=jnk
+
+$(LIBDIR)\dtk-saw32.lib .PRECIOUS : $(TOOLSRC_COM:^"$(O_)t_w32/":+".obj") \
+		$(TOOLSRC_DIF:^"$(O_)t_w32/":+".obj") \
+		$(TOOLSRC_SA:^"$(O_)t_w32/":+".obj") 
+	@echo Starting dtk-saw32.lib > CON
+	@echo Starting dtk-saw32.lib 
+	$(AR) $(ARFLAGS) $(LIBDIRNQ)\dtk-saw32.lib $(O_)t_w32/*
+	touch $(LIBDIRNQ)\dtk-saw32.lib
+
+XZ	=jnk
+
+$(LIBDIR)\dutil-w32.lib .PRECIOUS : $(DUTIL:^"$(O_)tu_w32/":+".obj")
+#.IF $(MODEL) == $(NULL)
+	@echo Starting dutil-w32.lib > CON
+	@echo Starting dutil-w32.lib 
+	cp <+ $(DUTIL:^"$(O_)tu_w32/":+".obj") +> $(TMP)\dutil32.jnk
+	-xargs -n 20 -s 128 $(AR) $(ARFLAGS) $(LIBDIRNQ)\dutil-w32.lib < $(TMP)\dutil32.jnk 
+#	-xargs -n 20 -s 128 $(AR) $(ARFLAGS) $(LIBDIRNQ)\dutil-w32.lib < $(TMP)\qq.tmp 
+#	-xargs -n 20 -s 128 $(AR) $(ARFLAGS) $(LIBDIRNQ)\dutil-w32.lib < $(TMP)\qa.tmp 
+	touch $(LIBDIRNQ)\dutil-w32.lib
+	@echo Ending dutil-w32.lib
+#.ELSE
+#	@echo SKIPPING DUTIL-W32.LIB model=$(MODEL) 
+#.END
+
+$(LIBDIR)\dutil-w.lib .PRECIOUS : $(DUTIL:^"$(O_)tu_w32/":+".obj")
+.IF $(MODEL) == $(NULL)
+	cp <+ $(DUTIL:^"$(O_)tu_lw/":+".obj") +> $(TMP)\dutillw.jnk
+	-xargs -n 20 -s 128 $(AR) $(ARFLAGS) $(LIBDIRNQ)\dutil-w.lib < $(TMP)\dutillw.jnk 
+#	-xargs -n 20 -s 128 rm < $(TMP)\dutillw.jnk
+.END
+	@echo Done with dutil-w model=$(MODEL) 
+
+ZTEST :  toolitst.exe
+
+toolitst.exe  :  toolifil.c
+	$(cczs) -dDRTEST -dTEST $(DEST)toolitst.obj toolifil.c
+	blink toolitst,toolitst,toolitst,$(LIBDIRNQ)\dtk-drs.lib+$(LIBDIRNQ)\zwfls.lib+$(LIBDIRNQ)\comps.lib 
+
+.IF $(MODEL) != $(NULL)
+
+#
+#   the small model DTK tools first
+#
+# this is top level; compile it first for library maintenance convenience
+
+$(O_)t_$(MODEL)/toolkit.obj : toolkit.c $(stdinc)\dhead.h $(misc) $(tmisc)
+
+$(O_)td_$(MODEL)/toolkit.obj : toolkit.c $(stdinc)\dhead.h $(misc) $(tmisc)
+
+# command-line fns - same for both versions
+
+$(O_)t_$(MODEL)/toolcmd.obj $(O_)t_$(MODEL)/toolcmd2.obj : toolcmd.c $(misc) $(tmisc)
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\toolcmd.obj toolcmd.c
+	$(ccf) -DTOOLCMD2 $(DEST)$(O_)t_$(MODEL)\toolcmd2.obj toolcmd.c
+
+$(O_)t_$(MODEL)/toolerr.obj : toolerr.c $(misc) $(tmisc) $(stdinc)\tstack.h
+
+# file & filename wrappers - same for both versions
+$(O_)t_$(MODEL)/toolfile.obj : toolfile.c $(misc) $(tmisc)
+
+$(O_)td_$(MODEL)/toolerr.obj : toolerr.c $(misc) $(tmisc) $(stdinc)\tstack.h
+
+
+# graphics fns - DR version only
+$(O_)td_$(MODEL)/toolgraf.obj : toolgraf.c $(stdinc)\dhead.h $(misc) $(tmisc)
+
+$(O_)td_$(MODEL)/toolgra2.obj : toolgraf.c $(stdinc)\dhead.h $(misc) $(tmisc)
+	$(ccf) -DTOOLGR_2 $(DEST)$(O_)td_$(MODEL)\toolgra2.obj toolgraf.c
+
+#	$(ccmf) -dTOOLGR_2 $(DEST)$(O_)td_m\toolgra2.obj toolgraf.c
+#	$(cclf) -dTOOLGR_2 $(DEST)$(O_)td_l\toolgra2.obj toolgraf.c
+
+#x$(O_)td_$(MODEL)/toolgra2.obj : toolgraf.c $(stdinc)\dhead.h $(misc) $(tmisc)
+##	@echo skipping toolgra2
+
+$(O_)t_$(MODEL)/toolifil.obj: toolifil.c $(stdinc)\dhead.h \
+		$(stdinc)\imagfile.h \
+		$(misc) $(tmisc)
+	$(ccf) -DSA -DGRPA $(DEST)$(O_)t_$(MODEL)\toolifil.obj $(CPP)toolifil.c
+
+#	$(ccf) -DSA -DGRPB $(DEST)$(O_)t_$(MODEL)\toolifib.obj $(CPP)toolifil.c
+#	$(ccf) -DSA -DGRPC $(DEST)$(O_)t_$(MODEL)\toolific.obj $(CPP)toolifil.c
+#	$(ccf) -DSA -DGRPD $(DEST)$(O_)t_$(MODEL)\toolifid.obj $(CPP)toolifil.c
+
+#$(O_)td_$(MODEL)/toolifil.obj: toolifil.c $(stdinc)\dhead.h $(misc) $(tmisc)
+#	$(ccf) -DDR -DGRPA $(DEST)$(O_)td_$(MODEL)\toolifil.obj $(CPP)toolifil.c
+#	$(ccf) -DDR -DGRPB $(DEST)$(O_)td_$(MODEL)\toolifib.obj $(CPP)toolifil.c
+#	$(ccf) -DDR -DGRPC $(DEST)$(O_)td_$(MODEL)\toolific.obj $(CPP)toolifil.c
+#	$(ccf) -DDR -DGRPD $(DEST)$(O_)td_$(MODEL)\toolifid.obj $(CPP)toolifil.c
+
+$(O_)t_$(MODEL)/grsmouse.obj : grsmouse.c $(misc)
+	$(ccf) -dSA $(DEST)$(O_)t_$(MODEL)\$(*:b).obj $(*:b).c
+
+# image file header wrappers - same for both versions
+$(O_)t_$(MODEL)/toolihdr.obj : toolihdr.c $(stdinc)\dhead.h $(misc) $(tmisc)
+
+# data for files.c used without fgate only
+$(O_)t_$(MODEL)/tool_sa.obj : tool_sa.c $(misc) $(tmisc)
+
+$(O_)t_$(MODEL)/ob.obj : ob.cpp $(stdinc)\ob.h $(stdinc)\dhead.h \
+		$(stdinc)\files.h $(stdinc)\filename.h $(toolinc)\toolerr.h
+
+$(O_)t_$(MODEL)/imagfile.obj : imagfile.cpp $(stdinc)\imagfile.h $(stdinc)\ob.h \
+		$(stdinc)\hdrstats.h $(stdinc)\dhead.h $(stdinc)\foreign.h \
+		$(stdinc)\files.h $(stdinc)\filename.h $(stdinc)\iff.h \
+		$(stdinc)\tiff.hpp $(toolinc)\toolerr.h
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\imagfile.obj -DBASECORE imagfile.cpp
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\imagread.obj -DBASEREAD imagfile.cpp
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\imagwrit.obj -DBASEWRITE imagfile.cpp
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\imagdcor.obj -DDRAGCORE imagfile.cpp
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\imagdwri.obj -DDRAGWRITE imagfile.cpp
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\imagecor.obj -DERDASCORE imagfile.cpp
+	$(ccf) $(DEST)$(O_)t_$(MODEL)\imagtcor.obj -DTIFFCORE imagfile.cpp
+
+$(O_)tu_$(MODEL)/erdimag.obj : erdimag.cpp $(stdinc)\imagfile.h $(stdinc)\ob.h \
+		 $(stdinc)\foreign.h $(stdinc)\hdrstats.h $(misc) $(stdinc)\tiff.hpp
+
+$(O_)tu_$(MODEL)/tiffimag.obj : tiffimag.cpp $(stdinc)\imagfile.h $(stdinc)\ob.h\
+		$(stdinc)\tiff.hpp $(stdinc)\foreign.h $(stdinc)\hdrstats.h\
+		$(misc)
+
+$(O_)tu_$(MODEL)/rosefuns.obj : rosefuns.c $(stdinc)\rosefuns.h
+
+#$(O_)tu_$(MODEL)/roserdm.obj : rosefuns.c $(stdinc)\rosefuns.h
+#	$(ccf) -dROSEFUN_READ $(DEST)$(O_)tu_$(MODEL)\roserdm.obj rosefuns.c
+
+$(O_)tu_$(MODEL)/tiff.obj : tiff.cpp $(stdinc)\tiff.hpp
+
+$(O_)tu_$(MODEL)/tifnames.obj : tifnames.c
+
+# despite the name, next file is for TIFF only
+$(O_)tu_$(MODEL)/readimag.obj : readimag.cpp $(stdinc)\tiff.hpp
+
+#$(O_)td_$(MODEL)/mauscall.obj : mauscall.c $(misc) $(tmisc) $(stdinc)\mgate.h \
+#		$(stdinc)\tstack.h
+.END
+
+clean : ENTER
+	@echo @echo off > $(TMP)\\cleandtk.bat
+	@echo for %%f in (*.lib *.dll *.err *.jnk *.tmp) do if exist %%f erase %%f >> $(TMP)\\cleandtk.bat
+	@echo for %%d in (t_w32) do if exist $(O_)%%d\\*.obj erase $(O_)%%d\\*.obj >> $(TMP)\\cleandtk.bat
+	@echo for %%d in (t_w32) do if exist $(O_)%%d\\*.obj erase $(O_)%%d\\*.obj >> $(TMP)\\cleandtk.bat
+#	@echo for %%d in (td_w32) do if exist $(O_)%%d\\*.obj erase $(O_)%%d\\*.obj >> $(TMP)\\cleandtk.bat
+	@echo for %%d in (tu_w32) do if exist $(O_)%%d\\*.obj erase $(O_)%%d\\*.obj >> $(TMP)\\cleandtk.bat
+	@echo for %%l in (dtk- dutil-) do if exist $(LIBDIRNQ)\\%%l*.lib erase $(LIBDIRNQ)\\%%l*.lib >> $(TMP)\\cleandtk.bat
+	$(SHELL) $(SHELLFLAGS) $(TMP)\cleandtk.bat 2> x.jnk
+	-@if exist stitch.exe rm stitch.exe 2> x.jnk
+#	make -r -f makedll clean
+	@echo Exiting $(HERE) model=$(MODEL)
+
+sweepup :
+	$(SHELL) $(SHELLFLAGS) cleanme
+
+? :
+	@echo $(USAGE1)
+	@echo $(USAGE2)
+	@echo Available targets are:
+	@echo .  all		builds libraries
+	@echo .  QT QU
+	@echo .  TOOLS		builds test pgms (not impl)
+	@echo .  source		make sure that we have latest source versions
+	@echo .  .  .         	    (network must be loaded)
+	@echo .  .  .               (not yet implemented)
+	@echo .  clean		deletes all libraries, .OBJs, .EXEs, etc
+	@echo .  sweepup	delete all unneeded (non-target) intermediate files
+	@echo .  backup		update .ZIPs

@@ -1,0 +1,28 @@
+// Application Message files should include 
+// the contents of the standard message file, 
+// TOOLKIT.DAT. This provides default messages
+// for all Toolkit-derived error numbers. 
+// We have omitted this from the sample in order
+// to make a specific point about default error
+// handling in the absence of TOOLKIT.DAT.
+//
+// Messages for use with STITCH.C sample program
+// Errors
+%e101 Overlap window (%1) is too large; maximum is %2 pixels
+%e102 Overlap window (%1) is odd number; must be even
+%e103 Cannot create output image file %1
+%e104 Insufficient memory for data buffer
+%e105 Error reading line %1 from %2 image file
+%e106 Error writing line %1 to output image file
+%e107 No filename specified for %1 image
+%e108 Invalid filename (%1) specified for %2 image
+%e109 Cannot open %2 image file %1
+// leave out 110 for demonstration purposes
+%e111 Invalid %1 image subset: %2 > %3 
+
+// Informational messages
+%e150 %1 image file is %2
+%e151 Acaba de escribir la l¡nea n£mero %1
+%e152 Using entire image area
+%e153 Requested overlap window: %1 pixels
+%e154 Output image will be %1 lines by %2 pixels per line

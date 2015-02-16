@@ -1,0 +1,985 @@
+package id1gabsctm1kqqlctm1mqbd;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SigModCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ServerQueryProcessor:oiref><oihard>
+@__modelType reference 
+*/
+class reference1 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ProgressBar:oiref><oihard>
+@__modelType reference 
+*/
+class reference3 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ScriptPauseCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference4 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.DragonUI:oiref><oihard>
+@__modelType reference 
+*/
+class reference6 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ExitCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference7 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.NullCommandForwarder:oiref><oihard>
+@__modelType reference 
+*/
+class reference8 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.CommandForwarder:oiref><oihard>
+@__modelType reference 
+*/
+class reference9 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.FontInitializer:oiref><oihard>
+@__modelType reference 
+*/
+class reference10 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.NoPanelCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference11 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SpecialCommand:oiref><oihard>
+@__modelType reference 
+*/
+class reference12 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.RegressionCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference14 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.CalcResultParser:oiref><oihard>
+@__modelType reference 
+*/
+class reference15 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.UserStretchCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference16 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.UiMessageDisplay:oiref><oihard>
+@__modelType reference 
+*/
+class reference17 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SigFileValidator:oiref><oihard>
+@__modelType reference 
+*/
+class reference20 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.AboutCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference21 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ResizeListener:oiref><oihard>
+@__modelType reference 
+*/
+class reference22 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SigFileCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference23 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ImageEnableCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference24 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.HeaFileTypeCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference27 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.PathInitializer:oiref><oihard>
+@__modelType reference 
+*/
+class reference28 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ExecCmdCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference29 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SigFileProcessor:oiref><oihard>
+@__modelType reference 
+*/
+class reference30 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.TableDisplay:oiref><oihard>
+@__modelType reference 
+*/
+class reference31 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ScriptControlPanel:oiref><oihard>
+@__modelType reference 
+*/
+class reference32 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.DismissCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference33 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.HelpDisplayListener:oiref><oihard>
+@__modelType reference 
+*/
+class reference35 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.LanguageCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference36 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.FilterValCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference37 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SetPathsCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference41 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.DisplayTypeCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference42 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.PerformanceReporter:oiref><oihard>
+@__modelType reference 
+*/
+class reference44 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.UiMessageDetector:oiref><oihard>
+@__modelType reference 
+*/
+class reference45 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.UiErrorDisplay:oiref><oihard>
+@__modelType reference 
+*/
+class reference46 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ColorFileCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference47 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SetScriptStateCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference48 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ImgHeaderCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference49 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SigFileInitializer:oiref><oihard>
+@__modelType reference 
+*/
+class reference51 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SetOnePathCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference52 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ScriptRestartCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference57 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.HeaderCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference58 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.AboutDialog:oiref><oihard>
+@__modelType reference 
+*/
+class reference61 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.FileValidator:oiref><oihard>
+@__modelType reference 
+*/
+class reference64 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.StatusManager:oiref><oihard>
+@__modelType reference 
+*/
+class reference65 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.DImageHeader:oiref><oihard>
+@__modelType reference 
+*/
+class reference66 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ExecScriptCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference67 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.LoggingCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference69 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.HelpEditor:oiref><oihard>
+@__modelType reference 
+*/
+class reference70 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ProgressDetector:oiref><oihard>
+@__modelType reference 
+*/
+class reference73 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.RecodeCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference74 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.UiReplyMonitor:oiref><oihard>
+@__modelType reference 
+*/
+class reference75 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ScriptCancelCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference76 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.CommandLine:oiref><oihard>
+@__modelType reference 
+*/
+class reference77 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.FileDetector:oiref><oihard>
+@__modelType reference 
+*/
+class reference78 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.QueryDialogCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference79 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.WindowMonitor:oiref><oihard>
+@__modelType reference 
+*/
+class reference80 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.EchoCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference83 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.GCPCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference85 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.SigBoundsValidator:oiref><oihard>
+@__modelType reference 
+*/
+class reference86 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.ScalingCallback:oiref><oihard>
+@__modelType reference 
+*/
+class reference88 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.DragonApp:oiref><oihard>
+@__modelType reference 
+*/
+class reference89 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.MessagesExhaustedDetector:oiref><oihard>
+@__modelType reference 
+*/
+class reference90 {
+}/**
+@__ref <oiref:java#Class#com.grs.dragon.ui.UiIncomingCommandProcessor:oiref><oihard>
+@__modelType reference 
+*/
+class reference2 {
+}}/**
+@__tags
+@shapeType ClassDiagram 
+*/
+class __tags {
+}/**
+@__options option.detail = Analysis 
+*/
+class __options {
+}/**
+@__positions <oigroup:<oiref:java#Extends#com.grs.dragon.ui.ProgressDetector#com.grs.dragon.ui.FileDetector:oiref>=1250,392,1085,354:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CHECK:oiref>=385,2430,385,4228,723,4228,723,642,549,642:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PARAGRAPH:oiref>=377,2430,377,4308,731,4308,731,562,549,562:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ScriptControlPanel#mainApp:oiref>=5238,486,8562,635,6034,1673:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FIELDCOUNT:oiref>=14627,2397,14627,2847,14681,2847,14681,1957,14649,1957:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFileChooser#textSource:oiref>=13233,8541,10824,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PLACEMENTOPTS:oiref>=14577,2397,14577,3655,14731,3655,14731,1149,14649,1149:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#GCP:oiref>=14995,5573,14995,5743,15165,5743,15165,5413,15075,5413:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CommandLine#forwarder:oiref>=7449,6333,1193,8702:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonPanel#dragonUI:oiref>=979,1383,339,1383:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.FileDetector:oiref>=979,132,111,222,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SetScriptStateCallback:oiref>=1698,2038,144,101,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.PathInitializer#com.grs.dragon.ui.Initializer:oiref>=2119,1750,449,133:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.FileValidator:oiref>=769,1232,104,158,1:oigroup>
+<oigroup:<oiref:java#Implements#ImageEnableCallback#Callback:oiref>=3675,8302,3074,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ATTACHID:oiref>=14471,2397,14471,4355,14837,4355,14837,449,14649,449:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.CommandForwarder#completionMonitor:oiref>=730,121,1609,121:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#SIMPLETABLE:oiref>=14609,2397,14609,3207,14699,3207,14699,1597,14649,1597:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ApplicationManager#textSource:oiref>=10635,3630,10743,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#MessageDetector#mainApp:oiref>=5144,3191,3361,367:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#fontChooser:oiref>=339,2167,769,2167:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#MENUBAR:oiref>=14488,2397,14488,4185,14820,4185,14820,619,14649,619:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FLOAT:oiref>=437,2430,437,3868,671,3868,671,1002,549,1002:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PANELSPEC:oiref>=363,2430,363,4448,745,4448,745,422,549,422:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#IDENTIFIER:oiref>=14623,2397,14623,2927,14685,2927,14685,1877,14649,1877:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TYPE:oiref>=14484,2397,14484,4225,14824,4225,14824,579,14649,579:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#SpecialCommand#callback:oiref>=4936,6887,3270,6887:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ColorFileCallback#com.grs.dragon.ui.Callback:oiref>=869,582,399,253:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.HeaderCallback:oiref>=979,682,133,142,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ITEMCATEGORY:oiref>=545,2430,545,2520,563,2520,563,2350,549,2350:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.RegressionCallback#com.grs.dragon.ui.Callback:oiref>=2319,1122,490,253:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.IncomingCommandProcessor#com.grs.dragon.ui.FileDetector:oiref>=692,1712,1029,354:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.NoPanelCallback#com.grs.dragon.ui.Callback:oiref>=2129,87,449,152:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#IDENTIFIER:oiref>=523,2430,523,2960,585,2960,585,1910,549,1910:oigroup>
+<oigroup:<oiref:java#Implements#CommandForwarder#CompletionListener:oiref>=1081,8702,1081,1610:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#commandLine:oiref>=6169,3879,7515,6016:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DROPDOWN:oiref>=14489,2397,14489,4175,14819,4175,14819,629,14649,629:oigroup>
+<oigroup:<oiref:java#Implements#LanguageCallback#Callback:oiref>=10241,7020,3270,6897:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TITLE:oiref>=364,2430,364,4438,744,4438,744,432,549,432:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CALCTYPE:oiref>=14607,2397,14607,3247,14701,3247,14701,1557,14649,1557:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#RESULTHEADER:oiref>=525,2430,525,2920,583,2920,583,1950,549,1950:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ResizeListener#windowMonitored:oiref>=6564,2517,6174,2517:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFileList#textSource:oiref>=14042,3320,10853,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CONTROLLABEL:oiref>=14481,2397,14481,4255,14827,4255,14827,549,14649,549:oigroup>
+<oigroup:<oiref:java#Implements#ColorFileCallback#Callback:oiref>=1609,8402,2814,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#INITIALIZER:oiref>=14573,2397,14573,3675,14735,3675,14735,1129,14649,1129:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonPanel#dragonUI:oiref>=11920,8480,6169,3879:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.HelpEditor:oiref>=1399,2,161,558,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#QueryDialogCallback#parent:oiref>=7479,7800,8778,9833,10535,9833,11840,9590:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.DisplayTypeCallback:oiref>=2429,1422,129,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ReplyMonitor#completionListener:oiref>=809,849,1140,1509:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FRAME:oiref>=14500,2397,14500,4065,14808,4065,14808,739,14649,739:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#XLATETEXT:oiref>=14453,2397,14453,4535,14855,4535,14855,269,14649,269:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.DCheckMenuItem#com.grs.dragon.ui.DragonMenuItem:oiref>=1339,1602,1045,665:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#RESULTGROUP:oiref>=14639,2397,14639,2607,14669,2607,14669,2197,14649,2197:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#OVERWRITE:oiref>=463,2430,463,3738,645,3738,645,1132,549,1132:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.SetScriptStateCallback#com.grs.dragon.ui.Callback:oiref>=1709,1402,385,253:oigroup>
+<oigroup:<oiref:java#Implements#UiErrorDisplay#ErrorDisplay:oiref>=6953,3458,9002,805:oigroup>
+<oigroup:<oiref:java#Extends#ReplyMonitor#FileDetector:oiref>=829,849,3704,2981:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DISPLAYOPTS:oiref>=14587,2397,14587,3605,14721,3605,14721,1199,14649,1199:oigroup>
+<oigroup:<oiref:java#Extends#NullCommandForwarder#CommandForwarder:oiref>=870,8811,1006,8811:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#fontChooser:oiref>=6172,3879,10882,5214:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.FileValidator#com.grs.dragon.ui.Validator:oiref>=835,1232,1059,119:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.SigFileValidator#com.grs.dragon.ui.FileValidator:oiref>=1031,1352,873,1352:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DirTreeModel#parentWindow:oiref>=13488,8823,13345,8823:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TEXTBOX:oiref>=398,2430,398,4098,710,4098,710,772,549,772:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#helpDisplayListener:oiref>=336,1276,1209,1276:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#HELP:oiref>=355,2430,355,4528,753,4528,753,342,549,342:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.AboutCallback#com.grs.dragon.ui.Callback:oiref>=1255,892,406,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CALLBACK:oiref>=14571,2397,14571,3685,14737,3685,14737,1119,14649,1119:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#memoryHeader:oiref>=336,2288,559,2288:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ATTRIBUTE:oiref>=14515,2397,14515,3965,14793,3965,14793,839,14649,839:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DEFAULTSTR:oiref>=419,2430,419,3958,689,3958,689,912,549,912:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.SigFileInitializer#com.grs.dragon.ui.Initializer:oiref>=2037,116,549,116:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DCheckMenuItem#parentMenu:oiref>=1289,1602,822,208:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#incomingCommandProcessor:oiref>=336,472,369,472:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TOOLTIP:oiref>=14457,2397,14457,4495,14851,4495,14851,309,14649,309:oigroup>
+<oigroup:<oiref:java#Implements#ScriptCancelCallback#Callback:oiref>=2360,8402,2909,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#MENUSPEC:oiref>=358,2430,358,4498,750,4498,750,372,549,372:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonField#initializer:oiref>=13027,5214,14187,6268:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#tableDisplayList:oiref>=6173,3879,11225,5199:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ERROR:oiref>=467,2430,467,3718,641,3718,641,1152,549,1152:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#EXECUTE:oiref>=14486,2397,14486,4205,14822,4205,14822,599,14649,599:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#progressDetector:oiref>=336,734,1189,526:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.MessagesExhaustedDetector#com.grs.dragon.ui.UiMessageDetector:oiref>=1042,1031,1251,736:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#keyDisplay:oiref>=336,754,1399,528:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ProgressDetector#progressBar:oiref>=1283,550,1141,1559:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XmlToUiBuilder#currentPanel:oiref>=12649,8521,12040,8521:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XmlToUiBuilder#currentPanel:oiref>=1609,1019,1179,1019:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VAR:oiref>=368,2430,368,4398,740,4398,740,472,549,472:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#IMAGE:oiref>=14915,5573,14915,6063,15245,6063,15245,5093,15075,5093:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ImageEnableCallback:oiref>=2029,1392,134,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TEXTTABLE:oiref>=14611,2397,14611,3167,14697,3167,14697,1637,14649,1637:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SigFileProcessor:oiref>=1031,2068,142,510,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#commandLine:oiref>=336,1547,419,1547:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DEFAULTCATEGORY:oiref>=14507,2397,14507,4005,14801,4005,14801,799,14649,799:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#SEPARATOR:oiref>=360,2430,360,4478,748,4478,748,392,549,392:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CalcResultParser#textSource:oiref>=12102,807,10862,807:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.CalcResultParser#currentDataType:oiref>=1609,2222,549,292:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#emptyPanel:oiref>=6169,3879,11880,8480:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#APPEND:oiref>=14565,2397,14565,3715,14743,3715,14743,1089,14649,1089:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#HEIGHT:oiref>=479,2430,479,3658,629,3658,629,1212,549,1212:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PARAGRAPH:oiref>=14477,2397,14477,4295,14831,4295,14831,509,14649,509:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.CommandLine#com.grs.dragon.ui.DTextField:oiref>=969,1491,1189,1491:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DISPLAY:oiref>=529,2430,529,2840,579,2840,579,2030,549,2030:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.UiMessageDisplay#dragonUI:oiref>=469,1962,336,1962:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#LoggingCallback#logFileChooser:oiref>=4509,8497,6938,9863,12713,9863,13145,8963:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonDirTree#textSource:oiref>=13649,7859,10843,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#QUERY:oiref>=461,2430,461,3748,647,3748,647,1122,549,1122:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TAG:oiref>=14476,2397,14476,4305,14832,4305,14832,499,14649,499:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ReplyMonitor#specialCmd:oiref>=819,849,5002,6744:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FLAG:oiref>=431,2430,431,3898,677,3898,677,972,549,972:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DButtonField#com.grs.dragon.ui.DragonField:oiref>=109,2302,599,1696:oigroup>
+<oigroup:<oiref:java#Implements#IntegerValidator#Validator:oiref>=12418,8929,12418,8658:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SetPathsCallback:oiref>=2429,1042,113,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#scriptCtrl:oiref>=6014,1673,8537,645,5188,486:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.AboutCallback:oiref>=1189,892,104,126,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ExitCallback:oiref>=859,1402,104,190,1:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DFontField#com.grs.dragon.ui.DragonField:oiref>=1609,1762,759,1616:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonField#validator:oiref>=12984,5214,12505,8541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonField#parentPanel:oiref>=12964,5214,11960,8480:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DMenuItem#callback:oiref>=8343,8569,3231,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DATATYPE:oiref>=429,2430,429,3908,679,3908,679,962,549,962:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ExitCallback#com.grs.dragon.ui.Callback:oiref>=1709,1532,371,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#HELP:oiref>=14455,2397,14455,4515,14853,4515,14853,289,14649,289:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#SUBMENU:oiref>=387,2430,387,4208,721,4208,721,662,549,662:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.SpecialCommand#callback:oiref>=769,242,549,242:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DATARANGE:oiref>=14557,2397,14557,3755,14751,3755,14751,1049,14649,1049:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.LanguageCallback#com.grs.dragon.ui.Callback:oiref>=1919,1342,427,253:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ProgressDetector:oiref>=1189,392,123,158,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ProgressDetector#mainApp:oiref>=1255,550,869,692:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#SpecialCommand#postArgCarrier:oiref>=5069,7094,7701,9813,11256,9813,11585,8699:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.DImageHeader:oiref>=559,2092,153,1262,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.DismissCallback#com.grs.dragon.ui.Callback:oiref>=2319,1492,455,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PANELTITLE:oiref>=379,2430,379,4288,729,4288,729,582,549,582:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFileList#fileType:oiref>=14192,3655,15008,5031:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#SIMPLETABLE:oiref>=509,2430,509,3240,599,3240,599,1630,549,1630:oigroup>
+<oigroup:<oiref:java#Implements#RecodeCallback#Callback:oiref>=2993,8378,2993,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#dummyField:oiref>=339,1342,1399,1342:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DFileField#browseBtn:oiref>=1255,1842,1255,144:oigroup>
+<oigroup:<oiref:java#Implements#UserStretchCallback#Callback:oiref>=2121,8402,2881,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CONTROLSPEC:oiref>=14461,2397,14461,4455,14847,4455,14847,349,14649,349:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VALIDATOR:oiref>=425,2430,425,3928,683,3928,683,942,549,942:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TTY:oiref>=499,2430,499,3440,609,3440,609,1430,549,1430:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PANEL:oiref>=366,2430,366,4418,742,4418,742,452,549,452:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFileList#parent:oiref>=14092,3655,13294,8541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VECTOR:oiref>=453,2430,453,3788,655,3788,655,1082,549,1082:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.LoggingCallback#com.grs.dragon.ui.Callback:oiref>=2239,129,549,172:oigroup>
+<oigroup:<oiref:java#Implements#DragonUI#DragonApp:oiref>=5994,1673,8512,655,3441,367:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ImgHeaderCallback:oiref>=1949,1160,123,133,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.StatusManager:oiref>=1819,2,166,830,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DEFAULTSTR:oiref>=14519,2397,14519,3945,14789,3945,14789,859,14649,859:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VERTICAL:oiref>=14591,2397,14591,3567,14717,3567,14717,1237,14649,1237:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TITLE:oiref>=14464,2397,14464,4425,14844,4425,14844,379,14649,379:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#INTEGER:oiref>=433,2430,433,3888,675,3888,675,982,549,982:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DATAMAXCHARS:oiref>=14527,2397,14527,3905,14781,3905,14781,899,14649,899:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DEFAULT:oiref>=14456,2397,14456,4505,14852,4505,14852,299,14649,299:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.HeaFileTypeCallback#com.grs.dragon.ui.HeaderCallback:oiref>=1289,1012,1045,824:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FILE:oiref>=404,2430,404,4038,704,4038,704,832,549,832:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#BORDER:oiref>=14593,2397,14593,3527,14715,3527,14715,1277,14649,1277:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FIXEDTEXT:oiref>=14495,2397,14495,4115,14813,4115,14813,689,14649,689:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#MATRIX:oiref>=455,2430,455,3778,653,3778,653,1092,549,1092:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FLAG:oiref>=14531,2397,14531,3885,14777,3885,14777,919,14649,919:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.SpecialCommand#postArgCarrier:oiref>=835,572,1499,1322:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.IntegerValidator#com.grs.dragon.ui.Validator:oiref>=1289,752,1099,119:oigroup>
+<oigroup:<oiref:java#Implements#DCheckMenuItem#DragonMenuItem:oiref>=9172,8537,8388,981:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#INITIALIZER:oiref>=473,2430,473,3688,635,3688,635,1182,549,1182:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#HORIZONTAL:oiref>=489,2430,489,3608,619,3608,619,1262,549,1262:oigroup>
+<oigroup:<oiref:java#Implements#GCPCallback#Callback:oiref>=1872,8558,2867,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#RESULTGROUP:oiref>=539,2430,539,2640,569,2640,569,2230,549,2230:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DISPLAYOPTS:oiref>=487,2430,487,3618,621,3618,621,1252,549,1252:oigroup>
+<oigroup:<oiref:java#Extends#SigFileValidator#FileValidator:oiref>=12732,10129,12732,10075:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileField#browseBtn:oiref>=14485,6255,14485,6084:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CalcResultParser#currentDataType:oiref>=12302,890,14449,890:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ServerQueryProcessor#mainApp:oiref>=8924,4706,6170,3879:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FONT:oiref>=14545,2397,14545,3815,14763,3815,14763,989,14649,989:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.UiIncomingCommandProcessor:oiref>=369,462,193,174,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.RecodeCallback#com.grs.dragon.ui.Callback:oiref>=2339,442,541,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.CommandLine#mainApp:oiref>=419,1388,336,1388:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.WindowMonitor#exitCallback:oiref>=826,1220,893,1402:oigroup>
+<oigroup:<oiref:java#Extends#DButtonField#DragonField:oiref>=14209,4709,13134,4709:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#commandForwarder:oiref>=336,492,559,410:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SigFileValidator:oiref>=1031,1318,98,69,0:oigroup>
+<oigroup:<oiref:java#Extends#DFontField#DragonField:oiref>=14458,5344,13093,5214:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#INDEX:oiref>=413,2430,413,3988,695,3988,695,882,549,882:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.DisplayTypeCallback#com.grs.dragon.ui.Callback:oiref>=2529,1422,476,253:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ResizeListener:oiref>=410,938,121,142,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#AboutDialog#textSource:oiref>=12285,8541,10788,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CONTROL:oiref>=365,2430,365,4428,743,4428,743,442,549,442:oigroup>
+<oigroup:<oiref:java#Implements#ScriptPauseCallback#Callback:oiref>=3959,8507,3088,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#LISTITEM:oiref>=14478,2397,14478,4285,14830,4285,14830,519,14649,519:oigroup>
+<oigroup:<oiref:java#Extends#XMLTag#EnumBase:oiref>=14649,244,14880,176:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#READFILE:oiref>=439,2430,439,3858,669,3858,669,1012,549,1012:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#HelpEditor#txtSource:oiref>=9902,568,10795,688:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.DragonApp:oiref>=769,692,145,325,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.HeaFileTypeCallback:oiref>=1189,1012,129,85,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DCheckMenuItem#callback:oiref>=9105,8537,3249,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PANELSPEC:oiref>=14463,2397,14463,4435,14845,4435,14845,369,14649,369:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileChooserModel#dirTree:oiref>=13487,3615,13716,7859:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PREFMNEMONIC:oiref>=14575,2397,14575,3665,14733,3665,14733,1139,14649,1139:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#COLUMNS:oiref>=501,2430,501,3400,607,3400,607,1470,549,1470:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CHECK:oiref>=14485,2397,14485,4215,14823,4215,14823,589,14649,589:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.UiErrorDisplay:oiref>=888,2009,97,270,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#VECTOR:oiref>=14985,5573,14985,5783,15175,5783,15175,5373,15075,5373:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ScriptCancelCallback#com.grs.dragon.ui.Callback:oiref>=2339,642,525,253:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.XMLTag#com.grs.dragon.ui.EnumBase:oiref>=549,282,1819,2052:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#SpecialCommand#argCarrier:oiref>=5002,7094,7690,9823,11267,9823,11585,8739:oigroup>
+<oigroup:<oiref:java#Implements#SigFileCallback#Callback:oiref>=3959,8312,3116,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PANELTITLE:oiref>=14479,2397,14479,4275,14829,4275,14829,529,14649,529:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#inFileChooser:oiref>=6169,3879,13211,8541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FONT:oiref>=445,2430,445,3828,663,3828,663,1042,549,1042:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VIRTUALHEIGHT:oiref>=483,2430,483,3638,625,3638,625,1232,549,1232:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#MENUBUTTON:oiref>=359,2430,359,4488,749,4488,749,382,549,382:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FILE:oiref>=14504,2397,14504,4025,14804,4025,14804,779,14649,779:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TABGROUP:oiref>=402,2430,402,4058,706,4058,706,812,549,812:oigroup>
+<oigroup:<oiref:java#Implements#GenErrorDisplay#ErrorDisplay:oiref>=10254,1359,9061,805:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#HelpEditor#currentItem:oiref>=9803,568,8367,678,8367,688:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.AboutCallback#aboutDialog:oiref>=1241,1018,1739,1061:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ProgressDetector#currentProgressFile:oiref>=2713,1844,2713,3667:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VERSIONSELECTOR:oiref>=405,2430,405,4028,703,4028,703,842,549,842:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#SIGNATURETABLE:oiref>=14615,2397,14615,3087,14693,3087,14693,1717,14649,1717:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SigFileCallback:oiref>=2029,1272,104,126,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonField#parentPanel:oiref>=759,1656,979,1656:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#LABEL:oiref>=354,2430,354,4538,754,4538,754,332,549,332:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FLOAT:oiref>=14537,2397,14537,3855,14771,3855,14771,949,14649,949:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#SIGNATURE:oiref>=14945,5573,14945,5943,15215,5943,15215,5213,15075,5213:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#SpecialCommand#mainApp:oiref>=5069,6744,6119,3879:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.HelpEditor#parentUI:oiref>=1399,496,336,744:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#memoryHeader:oiref>=6174,1884,7253,1884:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileChooserModel#chooser:oiref>=13407,3615,13255,8541:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.PathInitializer:oiref>=2037,1750,105,130,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#StatusManager#mainApp:oiref>=6480,3049,6174,3049:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#WRITEFILEOPTION:oiref>=459,2430,459,3758,649,3758,649,1112,549,1112:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ACCELERATOR:oiref>=14470,2397,14470,4365,14838,4365,14838,439,14649,439:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#BENABLED:oiref>=14472,2397,14472,4345,14836,4345,14836,459,14649,459:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ServerQueryProcessor#textSource:oiref>=9004,4706,10702,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DEFAULTINDEX:oiref>=421,2430,421,3948,687,3948,687,922,549,922:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.CommandForwarder:oiref>=559,62,171,382,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DMenuItem#callback:oiref>=1655,1155,420,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DirTreeNode#DIRFILTER:oiref>=14762,5127,14875,5127:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ExecCmdCallback#mainApp:oiref>=7015,5594,6169,3879:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFileChooser#dirTree:oiref>=13337,8541,13683,8225:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VARCOMBO:oiref>=392,2430,392,4158,716,4158,716,712,549,712:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#OVERWRITE:oiref>=14563,2397,14563,3725,14745,3725,14745,1079,14649,1079:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#HelpEditor#currentField:oiref>=9885,568,13000,4000:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#WIDEMULTILINETABLE:oiref>=14613,2397,14613,3127,14695,3127,14695,1677,14649,1677:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ProgressDetector#progressBar:oiref>=2733,1686,2370,1016:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ResizeListener#windowMonitored:oiref>=410,1009,336,1009:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SigModCallback:oiref>=2239,1322,104,101,1:oigroup>
+<oigroup:<oiref:java#Implements#DMenuItem#DragonMenuItem:oiref>=8358,8569,8358,981:oigroup>
+<oigroup:<oiref:java#Implements#SetPathsCallback#Callback:oiref>=2600,8402,2937,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CommandForwarder#completionMonitor:oiref>=1056,8702,762,849:oigroup>
+<oigroup:<oiref:java#Extends#DFixedText#DragonField:oiref>=11718,8541,12954,5214:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#HORIZONTAL:oiref>=14589,2397,14589,3595,14719,3595,14719,1209,14649,1209:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.WindowMonitor:oiref>=769,1062,114,158,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#errorDisplay:oiref>=6114,1673,8961,805:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.IncomingCommandProcessor#mainApp:oiref>=625,1712,835,1049:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#HEADER:oiref>=417,2430,417,3968,691,3968,691,902,549,902:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XmlToUiBuilder#currentControl:oiref>=12782,8448,12994,5214:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.ServerQueryProcessor#com.grs.dragon.ui.FileDetector:oiref>=1465,572,1079,354:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.ImgHeaderCallback#com.grs.dragon.ui.HeaderCallback:oiref>=2010,1160,1078,824:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VIRTUALWIDTH:oiref>=14585,2397,14585,3615,14723,3615,14723,1189,14649,1189:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DTextField#com.grs.dragon.ui.DragonField:oiref>=1189,1342,759,1529:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.HelpDisplayListener:oiref>=1209,1160,126,174,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XmlToUiBuilder#currentMenu:oiref>=1609,185,969,185:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CONTROLSPEC:oiref>=361,2430,361,4468,747,4468,747,402,549,402:oigroup>
+<oigroup:<oiref:java#Extends#ServerQueryProcessor#FileDetector:oiref>=8884,4706,3757,3203:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VIRTUALHEIGHT:oiref>=14583,2397,14583,3625,14725,3625,14725,1179,14649,1179:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ACCELERATOR:oiref>=370,2430,370,4378,738,4378,738,492,549,492:oigroup>
+<oigroup:<oiref:java#Implements#RegressionCallback#Callback:oiref>=2600,8558,2951,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#pathChooser:oiref>=6169,3879,13167,8541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#messageDetector:oiref>=5974,3358,5288,3358:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CHOICES:oiref>=14462,2397,14462,4445,14846,4445,14846,359,14649,359:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.GCPCallback#com.grs.dragon.ui.Callback:oiref>=2339,1592,441,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#UI:oiref>=14452,2397,14452,4545,14856,4545,14856,259,14649,259:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CommandForwarder#nakMonitor:oiref>=1031,8702,715,849:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.CommandForwarder#nakMonitor:oiref>=730,91,1609,91:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DMenuItem#parentMenu:oiref>=1743,1155,875,208:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#SEPARATOR:oiref>=14460,2397,14460,4465,14848,4465,14848,339,14649,339:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonField#initializer:oiref>=659,482,399,133:oigroup>
+<oigroup:<oiref:java#Implements#ScalingCallback#Callback:oiref>=3417,8527,3048,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#cfgProcessor:oiref>=339,2067,1819,2272:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ScriptRestartCallback#com.grs.dragon.ui.Callback:oiref>=2129,1022,497,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FRAGMENT:oiref>=380,2430,380,4278,728,4278,728,592,549,592:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#MENUBAR:oiref>=388,2430,388,4198,720,4198,720,672,549,672:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#MessageDisplay#masterWindow:oiref>=9262,200,6054,1673:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.UiIncomingCommandProcessor#mainApp:oiref>=469,636,819,692:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ENCODING:oiref>=521,2430,521,3000,587,3000,587,1870,549,1870:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ExecScriptCallback:oiref>=1999,2048,123,158,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#tableDisplayList:oiref>=228,2348,228,2492:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFontChooser#textSource:oiref>=10949,5214,10756,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XmlToUiBuilder#currentControl:oiref>=1609,712,759,712:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ERROR:oiref>=14567,2397,14567,3705,14741,3705,14741,1099,14649,1099:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#EDITBOX:oiref>=14497,2397,14497,4095,14811,4095,14811,709,14649,709:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#POPUP:oiref>=403,2430,403,4048,705,4048,705,822,549,822:oigroup>
+<oigroup:<oiref:java#Extends#DTextField#DragonField:oiref>=13004,8541,13004,5214:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DOUBLE:oiref>=14535,2397,14535,3865,14773,3865,14773,939,14649,939:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DComboField#com.grs.dragon.ui.DragonField:oiref>=2129,2232,719,1696:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ITEMCATEGORY:oiref>=14645,2397,14645,2487,14663,2487,14663,2317,14649,2317:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#UI:oiref>=352,2430,352,4558,756,4558,756,312,549,312:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TRUE:oiref>=14473,2397,14473,4335,14835,4335,14835,469,14649,469:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.HelpDisplayListener#parentUI:oiref>=1209,1218,336,1218:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#MENUBUTTON:oiref>=14459,2397,14459,4475,14849,4475,14849,329,14649,329:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#WindowMonitor#exitCallback:oiref>=6506,9933,1408,8894:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TOPLEVEL:oiref>=399,2430,399,4088,709,4088,709,782,549,782:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ApplicationManager#errorLogger:oiref>=10602,4188,9359,6128:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#RESULTHEADER:oiref>=14625,2397,14625,2887,14683,2887,14683,1917,14649,1917:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileChooserModel#filterFileType:oiref>=13527,3615,14941,5031:oigroup>
+<oigroup:<oiref:java#Implements#ExecScriptCallback#Callback:oiref>=4829,8353,3158,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#UTM:oiref>=449,2430,449,3808,659,3808,659,1062,549,1062:oigroup>
+<oigroup:<oiref:java#Extends#ProgressDetector#FileDetector:oiref>=2780,1844,3742,2981:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#LAYOUTSTYLE:oiref>=14597,2397,14597,3447,14711,3447,14711,1357,14649,1357:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ScalingCallback:oiref>=1959,2260,104,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#COMMAND:oiref>=14469,2397,14469,4375,14839,4375,14839,429,14649,429:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#QUERY:oiref>=14561,2397,14561,3735,14747,3735,14747,1069,14649,1069:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DCheckMenuItem#callback:oiref>=1239,1602,357,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#MENUBUTTONSPEC:oiref>=351,2430,351,4568,757,4568,757,302,549,302:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#RADIOPANEL:oiref>=396,2430,396,4118,712,4118,712,752,549,752:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ROWCOUNT:oiref>=519,2430,519,3040,589,3040,589,1830,549,1830:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FIELD:oiref>=390,2430,390,4178,718,4178,718,692,549,692:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#HEADERTABLE:oiref>=14617,2397,14617,3047,14691,3047,14691,1757,14649,1757:oigroup>
+<oigroup:<oiref:java#Extends#SigBoundsValidator#IntegerValidator:oiref>=12332,9231,12332,9055:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ProgressBar#mainApp:oiref>=2370,762,3322,367:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PATH:oiref>=443,2430,443,3838,665,3838,665,1032,549,1032:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DMenuItem#parentMenu:oiref>=8415,8798,9024,8953:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#COLOR:oiref>=447,2430,447,3818,661,3818,661,1052,549,1052:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonMenu#parentMenu:oiref>=929,208,929,231,1019,231,1019,195,969,195:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#POINT:oiref>=451,2430,451,3798,657,3798,657,1072,549,1072:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FIXEDCOMBO:oiref>=391,2430,391,4168,717,4168,717,702,549,702:oigroup>
+<oigroup:<oiref:java#Extends#MessagesExhaustedDetector#MessageDetector:oiref>=5174,3781,5174,3525:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#helpDisplayListener:oiref>=6174,3865,6803,3865:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ExecCmdCallback:oiref>=1399,1172,115,126,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#statusManager:oiref>=336,868,1819,799:oigroup>
+<oigroup:<oiref:java#Extends#DCheckField#DragonField:oiref>=13923,4385,13134,4385:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PLACEMENT:oiref>=503,2430,503,3360,605,3360,605,1510,549,1510:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.LoggingCallback:oiref>=2239,2,152,174,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#NOTELINE:oiref>=543,2430,543,2560,565,2560,565,2310,549,2310:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SetOnePathCallback:oiref>=2029,232,129,101,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.GCPCallback:oiref>=2239,1592,104,101,1:oigroup>
+<oigroup:<oiref:java#Extends#MessageDetector#FileDetector:oiref>=5088,3201,3867,3193:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonPanel#invokingField:oiref>=12000,8480,12974,5214:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.FilterValCallback#com.grs.dragon.ui.Callback:oiref>=2339,842,511,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ScriptControlPanel#forwarder:oiref>=658,1579,658,444:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonField#callback:oiref>=13067,4000,10458,668,8367,668,3035,6649:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TRUE:oiref>=373,2430,373,4348,735,4348,735,522,549,522:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FIELDID:oiref>=14631,2397,14631,2767,14677,2767,14677,2037,14649,2037:oigroup>
+<oigroup:<oiref:java#Implements#FilterValCallback#Callback:oiref>=2360,8558,2923,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#QueryDialogCallback#mainApp:oiref>=7495,7674,6168,3879:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.QueryDialogCallback#mainApp:oiref>=1189,278,336,556:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VALIDATOR:oiref>=14525,2397,14525,3915,14783,3915,14783,889,14649,889:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#BORDER:oiref>=493,2430,493,3560,615,3560,615,1310,549,1310:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#errorLogger:oiref>=6169,3879,9289,6128:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ExitCallback#forwarder:oiref>=1308,8807,1206,8807:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TOOLTIP:oiref>=357,2430,357,4508,751,4508,751,362,549,362:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#incomingCommandProcessor:oiref>=5984,1673,4546,1640:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#RESULTITEM:oiref>=537,2430,537,2680,571,2680,571,2190,549,2190:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonDirTree#treeModel:oiref>=13733,8225,13588,8648:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PSPECSTR:oiref>=423,2430,423,3938,685,3938,685,932,549,932:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#EXECUTE:oiref>=386,2430,386,4218,722,4218,722,652,549,652:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ServerQueryProcessor:oiref>=1399,572,144,590,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#BREQUIRED:oiref>=469,2430,469,3708,639,3708,639,1162,549,1162:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.AboutDialog:oiref>=1678,1061,123,266,0:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#UiErrorDisplay#masterWindow:oiref>=6887,3577,6174,3577:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.UiErrorDisplay#masterWindow:oiref>=888,2144,336,2144:oigroup>
+<oigroup:<oiref:java#Implements#NoPanelCallback#Callback:oiref>=1628,8558,2840,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#IncomingCommandProcessor#mainApp:oiref>=4513,1434,3401,367:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#MENUSPEC:oiref>=14458,2397,14458,4485,14850,4485,14850,319,14649,319:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#RESULTROW:oiref>=535,2430,535,2720,573,2720,573,2150,549,2150:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.UiMessageDetector:oiref>=1189,562,124,174,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#keyDisplay:oiref>=6154,1673,9857,568:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#BIGHELP:oiref>=14595,2397,14595,3487,14713,3487,14713,1317,14649,1317:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.QueryDialogCallback:oiref>=1189,162,130,142,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#RESULTFIELD:oiref>=14641,2397,14641,2567,14667,2567,14667,2237,14649,2237:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#REMIND:oiref>=14483,2397,14483,4235,14825,4235,14825,569,14649,569:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DRadioBox#com.grs.dragon.ui.DragonField:oiref>=2029,720,759,722:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TABPANEL:oiref>=401,2430,401,4068,707,4068,707,802,549,802:oigroup>
+<oigroup:<oiref:java#Implements#PathInitializer#Initializer:oiref>=14275,7812,14275,6369:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#STRING:oiref>=14509,2397,14509,3995,14799,3995,14799,809,14649,809:oigroup>
+<oigroup:<oiref:java#Implements#ScriptRestartCallback#Callback:oiref>=3022,8549,3022,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#APPEND:oiref>=465,2430,465,3728,643,3728,643,1142,549,1142:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.DismissCallback:oiref>=2219,1492,107,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#outFileChooser:oiref>=6169,3879,13189,8541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VAR:oiref>=14468,2397,14468,4385,14840,4385,14840,419,14649,419:oigroup>
+<oigroup:Composite#supplierCardinality#MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#tableDisplayList:oiref>=198,2472,26,16,0:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PANEL:oiref>=14466,2397,14466,4405,14842,4405,14842,399,14649,399:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.UiReplyMonitor#specialCmd:oiref>=1709,151,869,222:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CONTROLDEFAULT:oiref>=382,2430,382,4258,726,4258,726,612,549,612:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.RecodeCallback:oiref>=2239,442,104,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#messageDisplay:oiref>=6074,1673,9312,200:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.SetOnePathCallback#com.grs.dragon.ui.Callback:oiref>=2029,249,549,222:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.DoubleValidator#com.grs.dragon.ui.Validator:oiref>=2129,742,1139,119:oigroup>
+<oigroup:<oiref:java#Implements#QueryDialogCallback#Callback:oiref>=7445,7674,3259,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#WIDTH:oiref>=481,2430,481,3648,627,3648,627,1222,549,1222:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.UiMessageDetector#mainApp:oiref>=1189,726,914,726:oigroup>
+<oigroup:<oiref:java#Extends#DRadioBox#DragonField:oiref>=14105,5520,13064,5214:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XmlToUiBuilder#currentMenu:oiref>=12755,9406,12755,9832,9153,9129:oigroup>
+<oigroup:<oiref:java#Implements#FileValidator#Validator:oiref>=12727,9933,12727,9863,12555,9122,12555,8658:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ScriptPauseCallback:oiref>=2239,742,131,101,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.UserStretchCallback#com.grs.dragon.ui.Callback:oiref>=2339,542,533,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PATH:oiref>=14543,2397,14543,3825,14765,3825,14765,979,14649,979:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XmlToUiBuilder#textSource:oiref>=12715,8448,10806,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ATTACHID:oiref>=371,2430,371,4368,737,4368,737,502,549,502:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#currentSigProcessor:oiref>=336,2328,1031,2328:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonField#callback:oiref>=609,482,364,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#scriptCtrl:oiref>=336,1865,642,1865:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ScriptControlPanel:oiref>=642,1579,169,430,1:oigroup>
+<oigroup:<oiref:java#Implements#ExitCallback#Callback:oiref>=1408,8720,2827,6959:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.EchoCallback:oiref>=2239,1222,104,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DATATYPE:oiref>=14529,2397,14529,3895,14779,3895,14779,909,14649,909:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.NullCommandForwarder#com.grs.dragon.ui.CommandForwarder:oiref>=521,109,559,109:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CommandForwarder#dragonUI:oiref>=1172,8702,6070,3879:oigroup>
+<oigroup:<oiref:java#Extends#DFileField#DTextField:oiref>=14438,6733,13039,8541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#RADIOPANEL:oiref>=14496,2397,14496,4105,14812,4105,14812,699,14649,699:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DROPDOWN:oiref>=389,2430,389,4188,719,4188,719,682,549,682:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FIXEDCOMBO:oiref>=14491,2397,14491,4155,14817,4155,14817,649,14649,649:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CALCTYPE:oiref>=507,2430,507,3280,601,3280,601,1590,549,1590:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#INDEX:oiref>=14513,2397,14513,3975,14795,3975,14795,829,14649,829:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DFontField#browseBtn:oiref>=1709,1722,1322,144:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CONTROLLABEL:oiref>=381,2430,381,4268,727,4268,727,602,549,602:oigroup>
+<oigroup:<oiref:java#Implements#EchoCallback#Callback:oiref>=2849,8558,2979,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FALSE:oiref>=374,2430,374,4338,734,4338,734,532,549,532:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.LanguageCallback#dummyField:oiref>=1819,1519,759,1519:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#LanguageCallback#dummyField:oiref>=10341,6980,12944,5214:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.SpecialCommand#argCarrier:oiref>=902,572,1549,1322:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.UiReplyMonitor:oiref>=1609,2,125,149,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DEFAULT:oiref>=356,2430,356,4518,752,4518,752,352,549,352:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#RESULTITEM:oiref>=14637,2397,14637,2647,14671,2647,14671,2157,14649,2157:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.RegressionCallback:oiref>=2219,1122,126,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TTY:oiref>=14599,2397,14599,3407,14709,3407,14709,1397,14649,1397:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#COLOR:oiref>=14925,5573,14925,6023,15235,6023,15235,5133,15075,5133:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#LAYOUTSTYLE:oiref>=497,2430,497,3480,611,3480,611,1390,549,1390:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#WindowMonitor#dummyField:oiref>=6573,9933,11585,8720:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CHECKBUTTON:oiref>=14494,2397,14494,4125,14814,4125,14814,679,14649,679:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CALLBACK:oiref>=471,2430,471,3698,637,3698,637,1172,549,1172:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.SetPathsCallback#com.grs.dragon.ui.Callback:oiref>=2529,1042,504,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TEXTBOX:oiref>=14498,2397,14498,4085,14810,4085,14810,719,14649,719:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CHOICES:oiref>=362,2430,362,4458,746,4458,746,412,549,412:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#HEADERTABLE:oiref>=517,2430,517,3080,591,3080,591,1790,549,1790:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#BREQUIRED:oiref>=14569,2397,14569,3695,14739,3695,14739,1109,14649,1109:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#POINT:oiref>=14551,2397,14551,3785,14757,3785,14757,1019,14649,1019:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.NullCommandForwarder:oiref>=370,39,151,117,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ExecScriptCallback#com.grs.dragon.ui.Callback:oiref>=2319,1752,413,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#WRITEFILE:oiref>=441,2430,441,3848,667,3848,667,1022,549,1022:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ScalingCallback#com.grs.dragon.ui.Callback:oiref>=2339,2032,378,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#LABEL:oiref>=14454,2397,14454,4525,14854,4525,14854,279,14649,279:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ExecCmdCallback#mainApp:oiref>=1399,1188,336,1188:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.HeaderCallback#com.grs.dragon.ui.Callback:oiref>=1079,682,434,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.HelpEditor#currentField:oiref>=1399,501,759,501:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#UiErrorDisplay#textSource:oiref>=7020,3458,10666,926:oigroup>
+<oigroup:<oiref:java#Implements#DoubleValidator#Validator:oiref>=12506,9933,12506,8658:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#PATH:oiref>=14905,5573,14905,6103,15255,6103,15255,5053,15075,5053:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.SigBoundsValidator#com.grs.dragon.ui.IntegerValidator:oiref>=2339,1912,1289,878:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFontField#browseBtn:oiref>=14478,5790,14478,5942:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ExecScriptCallback#scriptFileChooser:oiref>=4829,8495,6949,9853,12702,9853,13145,8923:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#messageDetector:oiref>=336,764,1189,702:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CommandLine#mainApp:oiref>=7582,6016,6169,3879:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonPanel#parentPanel:oiref>=12000,9630,12000,9680,12090,9680,12090,9590,12040,9590:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#TABLE:oiref>=14955,5573,14955,5903,15205,5903,15205,5253,15075,5253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CHECKBUTTON:oiref>=394,2430,394,4138,714,4138,714,732,549,732:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.MessagesExhaustedDetector#mainUI:oiref>=952,1110,336,1110:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#LOG:oiref>=15035,5573,15035,5623,15125,5623,15125,5533,15075,5533:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#HEIGHT:oiref>=14579,2397,14579,3645,14729,3645,14729,1159,14649,1159:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#emptyPanel:oiref>=339,1430,979,1430:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#TableDisplay#textSource:oiref>=11292,5199,10770,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#HelpDisplayListener#parentUI:oiref>=6803,3852,6174,3852:oigroup>
+<oigroup:<oiref:java#Implements#DismissCallback#Callback:oiref>=3355,8364,3035,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DISPLAY:oiref>=14629,2397,14629,2807,14679,2807,14679,1997,14649,1997:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DOUBLE:oiref>=435,2430,435,3878,673,3878,673,992,549,992:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#RESULTFIELD:oiref>=541,2430,541,2600,567,2600,567,2270,549,2270:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#ALL:oiref>=14895,5573,14895,6115,15265,6115,15265,5041,15075,5041:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.PerformanceReporter:oiref>=232,2922,153,142,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#READFILE:oiref>=14539,2397,14539,3845,14769,3845,14769,959,14649,959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DEFAULTCATEGORY:oiref>=407,2430,407,4018,701,4018,701,852,549,852:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ApplicationManager#errorDisplay:oiref>=10568,3630,9044,805:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#messageDisplay:oiref>=336,2004,469,2004:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VERSIONSELECTOR:oiref>=14505,2397,14505,4015,14803,4015,14803,789,14649,789:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FRAME:oiref>=400,2430,400,4078,708,4078,708,792,549,792:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#XLATESTRING:oiref>=14511,2397,14511,3985,14797,3985,14797,819,14649,819:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonField#limits:oiref>=13050,5214,14132,6010:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#reporter:oiref>=316,2348,316,2922:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.CommandLine#forwarder:oiref>=577,1229,577,444:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ITEMINDEX:oiref>=547,2430,547,2480,561,2480,561,2390,549,2390:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ColorFileCallback:oiref>=769,582,110,101,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.LanguageCallback:oiref>=1819,1342,128,382,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#COMMAND:oiref>=369,2430,369,4388,739,4388,739,482,549,482:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#CALCRESULT:oiref>=505,2430,505,3320,603,3320,603,1550,549,1550:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#COEFF:oiref>=15005,5573,15005,5703,15155,5703,15155,5453,15075,5453:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ProgressDetector#mainApp:oiref>=2819,1686,3340,367:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DISPLAYKEY:oiref>=533,2430,533,2760,575,2760,575,2110,549,2110:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ServerQueryProcessor#queryDialogCallback:oiref>=1532,572,1289,304:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileField#fileType:oiref>=14528,6255,14885,5573:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#POLYGON:oiref>=14935,5573,14935,5983,15225,5983,15225,5173,15075,5173:oigroup>
+<oigroup:<oiref:java#Implements#HeaderCallback#Callback:oiref>=4203,8797,3102,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TABGROUP:oiref>=14502,2397,14502,4045,14806,4045,14806,759,14649,759:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#currentApplication:oiref>=6168,3879,6168,3929,6190,3929,6190,3839,6174,3839:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#currentApplication:oiref>=297,2348,297,2397,385,2397,385,2309,336,2309:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#textSource:oiref>=6094,1673,8884,678,9106,678,10662,728:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DFixedText#com.grs.dragon.ui.DragonField:oiref>=1399,1332,759,1332:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ID:oiref>=14467,2397,14467,4395,14841,4395,14841,409,14649,409:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#dummyField:oiref>=6169,3879,11651,8541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#SUBSTITUTE:oiref>=14475,2397,14475,4315,14833,4315,14833,489,14649,489:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#XLATETEXT:oiref>=353,2430,353,4548,755,4548,755,322,549,322:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ServerQueryProcessor#queryDialogCallback:oiref>=8927,5296,7545,7674:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#HelpEditor#parentUI:oiref>=9830,568,6134,1673:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#SUBMENU:oiref>=14487,2397,14487,4195,14821,4195,14821,609,14649,609:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DCheckMenuItem#parentMenu:oiref>=9096,8766,9096,8953:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SpecialCommand:oiref>=769,222,131,350,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SigFileInitializer:oiref>=2037,100,116,130,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#POPUP:oiref>=14503,2397,14503,4035,14805,4035,14805,769,14649,769:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DEFAULTINDEX:oiref>=14521,2397,14521,3935,14787,3935,14787,869,14649,869:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#progressDetector:oiref>=5974,2031,2847,1813:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#SUBSTITUTE:oiref>=375,2430,375,4328,733,4328,733,542,549,542:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VARCOMBO:oiref>=14492,2397,14492,4145,14816,4145,14816,659,14649,659:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PLACEMENT:oiref>=14603,2397,14603,3327,14705,3327,14705,1477,14649,1477:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#BIGHELP:oiref>=495,2430,495,3520,613,3520,613,1350,549,1350:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ID:oiref>=367,2430,367,4408,741,4408,741,462,549,462:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ScriptControlPanel#mainApp:oiref>=642,1722,336,1722:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.CalcResultParser:oiref>=1688,2250,192,1134,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VERTICAL:oiref>=491,2430,491,3598,617,3598,617,1272,549,1272:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CommandLine#cmdLogger:oiref>=7649,6232,9220,6232:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.SpecialCommand#mainApp:oiref>=769,546,336,546:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ImageEnableCallback#com.grs.dragon.ui.Callback:oiref>=2129,1392,448,253:oigroup>
+<oigroup:<oiref:java#Extends#IncomingCommandProcessor#FileDetector:oiref>=4479,1640,3804,2981:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#REMIND:oiref>=383,2430,383,4248,725,4248,725,622,549,622:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PUSHBUTTON:oiref>=393,2430,393,4148,715,4148,715,722,549,722:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DATAMAXCHARS:oiref>=427,2430,427,3918,681,3918,681,952,549,952:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#commandForwarder:oiref>=6022,3879,1151,8702:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#STRING:oiref>=409,2430,409,4008,699,4008,699,862,549,862:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.FilterValCallback:oiref>=2239,842,107,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FIELD:oiref>=14490,2397,14490,4165,14818,4165,14818,639,14649,639:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#INTEGER:oiref>=14533,2397,14533,3875,14775,3875,14775,929,14649,929:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonPanel#invokingField:oiref>=979,1676,759,1676:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#COLOR:oiref>=14547,2397,14547,3805,14761,3805,14761,999,14649,999:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#SpecialCommand#postCallback:oiref>=4936,6815,3270,6815:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.SpecialCommand#postCallback:oiref>=769,232,549,232:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TEXTTABLE:oiref>=511,2430,511,3200,597,3200,597,1670,549,1670:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#WRITEFILE:oiref>=14541,2397,14541,3835,14767,3835,14767,969,14649,969:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#RESULTROW:oiref>=14635,2397,14635,2687,14673,2687,14673,2117,14649,2117:oigroup>
+<oigroup:<oiref:java#Implements#LoggingCallback#Callback:oiref>=4509,8364,3144,6959:oigroup>
+<oigroup:<oiref:java#Implements#SigModCallback#Callback:oiref>=1848,8402,2853,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#serverQueryProcessor:oiref>=6171,3879,8964,4706:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#cfgProcessor:oiref>=6174,2789,6887,2789:oigroup>
+<oigroup:<oiref:java#Implements#DisplayTypeCallback#Callback:oiref>=2829,8339,2965,6959:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ScriptCancelCallback:oiref>=2239,642,134,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#currentSigProcessor:oiref>=6174,2096,6564,2096:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#WIDEMULTILINETABLE:oiref>=513,2430,513,3160,595,3160,595,1710,549,1710:oigroup>
+<oigroup:<oiref:java#Implements#FontInitializer#Initializer:oiref>=14172,7812,14172,6369:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#SCRIPT:oiref>=14965,5573,14965,5863,15195,5863,15195,5293,15075,5293:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.DragonUI#com.grs.dragon.ui.DragonApp:oiref>=336,724,769,724:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.UiMessageDisplay:oiref>=469,1920,118,126,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#MessagesExhaustedDetector#mainUI:oiref>=5260,3830,5974,3830:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FRAGMENT:oiref>=14480,2397,14480,4265,14828,4265,14828,539,14649,539:oigroup>
+<oigroup:<oiref:java#Extends#ImgHeaderCallback#HeaderCallback:oiref>=4419,9026,4301,9026:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ENCODING:oiref>=14621,2397,14621,2967,14687,2967,14687,1837,14649,1837:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.FontInitializer#com.grs.dragon.ui.Initializer:oiref>=2119,1490,499,133:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.QueryDialogCallback#com.grs.dragon.ui.Callback:oiref>=1189,207,549,207:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#MessageDisplay#textSource:oiref>=9362,200,9362,534,10728,688:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DCheckField#com.grs.dragon.ui.DragonField:oiref>=1499,2012,679,1696:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#EDITBOX:oiref>=397,2430,397,4108,711,4108,711,762,549,762:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TAG:oiref>=376,2430,376,4318,732,4318,732,552,549,552:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FIELDCOUNT:oiref>=527,2430,527,2880,581,2880,581,1990,549,1990:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ReplyMonitor#mainApp:oiref>=869,665,3305,367:oigroup>
+<oigroup:<oiref:java#Implements#ExecCmdCallback#Callback:oiref>=7015,5704,3152,6649:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#reporter:oiref>=5989,1673,5989,1152:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#AboutCallback#aboutDialog:oiref>=4266,8494,6716,9843,12088,9843,12185,8755:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.DragonUI:oiref>=139,62,197,2286,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#CommandForwarder#cmdIpcFile:oiref>=1106,8702,2728,4833:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ServerQueryProcessor#mainApp:oiref>=1399,848,336,848:oigroup>
+<oigroup:<oiref:java#Implements#SetScriptStateCallback#Callback:oiref>=2131,8568,2895,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonPanel#parentPanel:oiref>=1139,2052,1139,2102,1229,2102,1229,2012,1179,2012:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CALCRESULT:oiref>=14605,2397,14605,3287,14703,3287,14703,1517,14649,1517:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#LISTITEM:oiref>=378,2430,378,4298,730,4298,730,572,549,572:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.NoPanelCallback:oiref>=2029,2,108,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonUI#serverQueryProcessor:oiref>=336,803,1399,803:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#DISPLAYKEY:oiref>=14633,2397,14633,2727,14675,2727,14675,2077,14649,2077:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ScriptPauseCallback#com.grs.dragon.ui.Callback:oiref>=2339,742,518,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.QueryDialogCallback#parent:oiref>=1255,288,1079,902:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ITEMINDEX:oiref>=14647,2397,14647,2447,14661,2447,14661,2357,14649,2357:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CONTROL:oiref>=14465,2397,14465,4415,14843,4415,14843,389,14649,389:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#MENUBUTTONSPEC:oiref>=14451,2397,14451,4555,14857,4555,14857,249,14649,249:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonUI#statusManager:oiref>=6174,3315,6480,3315:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TOPLEVEL:oiref>=14499,2397,14499,4075,14809,4075,14809,729,14649,729:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PREFMNEMONIC:oiref>=475,2430,475,3678,633,3678,633,1192,549,1192:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#DATARANGE:oiref>=457,2430,457,3768,651,3768,651,1102,549,1102:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileChooserModel#fileList:oiref>=13567,3424,14042,3424:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.SigModCallback#com.grs.dragon.ui.Callback:oiref>=2339,1322,469,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonMenu#parentMenu:oiref>=9113,9159,9113,9209,9203,9209,9203,9119,9153,9119:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.FontInitializer:oiref>=1688,1851,103,130,1:oigroup>
+<oigroup:<oiref:java#Implements#SetOnePathCallback#Callback:oiref>=3680,8538,3061,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#COLUMNS:oiref>=14601,2397,14601,3367,14707,3367,14707,1437,14649,1437:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#WRITEFILEOPTION:oiref>=14559,2397,14559,3745,14749,3745,14749,1059,14649,1059:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#WIDTH:oiref>=14581,2397,14581,3635,14727,3635,14727,1169,14649,1169:oigroup>
+<oigroup:<oiref:java#Extends#HeaFileTypeCallback#HeaderCallback:oiref>=4419,9235,4301,9235:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#UTM:oiref>=14549,2397,14549,3795,14759,3795,14759,1009,14649,1009:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#ROWCOUNT:oiref>=14619,2397,14619,3007,14689,3007,14689,1797,14649,1797:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#SCRIPT2:oiref>=14975,5573,14975,5823,15185,5823,15185,5333,15075,5333:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#ScriptControlPanel#forwarder:oiref>=5138,486,3471,5157,1131,8702:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonDirTree#parent:oiref>=13633,8225,13330,8541:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.UserStretchCallback:oiref>=2239,542,130,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DFileType#CLI:oiref>=15015,5573,15015,5663,15145,5663,15145,5493,15075,5493:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonField#validator:oiref>=709,482,1019,119:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.MessagesExhaustedDetector:oiref>=952,1031,180,158,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.ExecCmdCallback#com.grs.dragon.ui.Callback:oiref>=1499,1172,392,253:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.EchoCallback#com.grs.dragon.ui.Callback:oiref>=2339,1222,483,253:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ProgressBar#mainApp:oiref>=1101,1559,841,1017:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#NOTELINE:oiref>=14643,2397,14643,2527,14665,2527,14665,2277,14649,2277:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ProgressBar:oiref>=1061,1559,121,254,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FIELDID:oiref>=531,2430,531,2800,577,2800,577,2070,549,2070:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#XLATESTRING:oiref>=411,2430,411,3998,697,3998,697,872,549,872:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.DragonField#limits:oiref>=639,1696,1289,2332:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#TYPE:oiref>=384,2430,384,4238,724,4238,724,632,549,632:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#GenErrorDisplay#textSource:oiref>=10321,1359,10671,926:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#PLACEMENTOPTS:oiref>=477,2430,477,3668,631,3668,631,1202,549,1202:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.dragon.ui.DFileField#com.grs.dragon.ui.DTextField:oiref>=1289,1842,1289,1590:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFileChooser#fileList:oiref>=13312,8541,14142,3655:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#DragonFileChooser#chooserModel:oiref>=13277,8541,13447,3615:oigroup>
+<oigroup:<oiref:java#Implements#SigFileInitializer#Initializer:oiref>=13977,7812,14129,6369:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.SigBoundsValidator:oiref>=1959,2448,124,126,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.ScriptRestartCallback:oiref>=2029,1022,137,101,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.CommandForwarder#dragonUI:oiref>=559,376,336,482:oigroup>
+<oigroup:<oiref:java#Implements#AboutCallback#Callback:oiref>=4266,8384,3130,6959:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#SIGNATURETABLE:oiref>=515,2430,515,3120,593,3120,593,1750,549,1750:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#BENABLED:oiref>=372,2430,372,4358,736,4358,736,512,549,512:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PUSHBUTTON:oiref>=14493,2397,14493,4135,14815,4135,14815,669,14649,669:oigroup>
+<oigroup:<oiref:java#Extends#DComboField#DragonField:oiref>=13978,5020,13134,5020:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.HelpEditor#currentItem:oiref>=1399,531,1179,511:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.DMenuItem#com.grs.dragon.ui.DragonMenuItem:oiref>=1699,1155,1112,665:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#PSPECSTR:oiref>=14523,2397,14523,3925,14785,3925,14785,879,14649,879:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#FIXEDTEXT:oiref>=395,2430,395,4128,713,4128,713,742,549,742:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#ATTRIBUTE:oiref>=415,2430,415,3978,693,3978,693,892,549,892:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#VECTOR:oiref>=14553,2397,14553,3775,14755,3775,14755,1029,14649,1029:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.StatusManager#mainApp:oiref>=1819,766,336,858:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.WindowMonitor#dummyField:oiref>=902,1220,1449,1322:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.CommandLine:oiref>=419,1229,177,478,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#HEADER:oiref>=14517,2397,14517,3955,14791,3955,14791,849,14649,849:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#TABPANEL:oiref>=14501,2397,14501,4055,14807,4055,14807,749,14649,749:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#CONTROLDEFAULT:oiref>=14482,2397,14482,4245,14826,4245,14826,559,14649,559:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.XMLTag#VIRTUALWIDTH:oiref>=485,2430,485,3628,623,3628,623,1242,549,1242:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#MATRIX:oiref>=14555,2397,14555,3765,14753,3765,14753,1039,14649,1039:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#XMLTag#FALSE:oiref>=14474,2397,14474,4325,14834,4325,14834,479,14649,479:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.dragon.ui.ExitCallback#forwarder:oiref>=928,1402,674,444:oigroup>
+<oigroup:<oiref:java#Class#com.grs.dragon.ui.TableDisplay:oiref>=168,2492,121,350,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.dragon.ui.SigFileCallback#com.grs.dragon.ui.Callback:oiref>=2129,1272,462,253:oigroup>
+<oigroup:<oiref:java#Extends#CommandLine#DTextField:oiref>=7574,6478,12875,8873:oigroup>
+*/
+class __positions {
+}

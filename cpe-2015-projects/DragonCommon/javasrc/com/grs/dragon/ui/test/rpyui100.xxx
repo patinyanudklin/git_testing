@@ -1,0 +1,18 @@
+( 1234567 30 S- )
+MFile=E:\Pix\indo1.img
+MLines=400
+MPixels=512
+MFileType=I
+Mask=E:\Pix\indomask.img
+RFile=E:\Pix\tm-cal-4.img
+RLines=512
+RPixels=800
+RFileType=I
+GFile=E:\Pix\tm-cal-2.img
+GLines=511
+GPixels=801
+GFileType=I
+BFile=E:\Pix\tm-cal-1.img
+BLines=513
+BPixels= 799
+BFileType=C

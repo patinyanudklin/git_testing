@@ -1,0 +1,218 @@
+# make file for DRAGON Toolkit - eventually S, M, L models
+# ktr 5/12/92
+# this creates three libraries for each memory model:
+#	dtksas.lib	small model for stand-alone
+#	dtkdrs.lib	small model for DRAGON system (i.e. FGATE etc)
+#	dtksam.lib	mid. model for stand-alone
+#	dtkdrm.lib	mid. model for DRAGON system (i.e. FGATE etc)
+#	dtksal.lib	large model for stand-alone
+#	dtkdrl.lib	large model for DRAGON system (i.e. FGATE etc)
+
+inc=$(devinc)
+here=\dragon\wfutl
+tool=..\toolkit
+so=sobj
+mo=mobj
+wo=wobj
+misc=$(inc)\tstack.h	$(inc)\dtypes.h		$(inc)\dlimits.h \
+	$(tool)\toolkit.h	dtk \
+	$(tool)\toolerr.h	$(inc)\dtk.h
+cc=ztc -dR305 -co -J -g -a -mti -c -i$(inc);$(tool)
+ccm=ztc -dR305 -co -J -g -a -mmi -c -i$(inc);$(tool)
+ccw=ztc -dR305 -co -W -J -g -a -mti -c -i$(inc);$(tool)
+
+# format of HERE: thispath/thisfile -- for ENTER, EXIT targets
+HERE	=dtk/makedtk
+
+$(devinc)\hdrstats.h : 	$(rcs)\hdrstats.h
+   cd $(devinc)
+   make/S arg=hdrstats.h \etc\checkout > nul
+   cd $(here)
+
+$(devinc)\img_acc.h : 	$(rcs)\img_acc.h
+   cd $(devinc)
+   make/S arg=img_acc.h \etc\checkout > nul
+   cd $(here)
+
+$(devinc)\wfiles.h : 	$(rcs)\wfiles.h
+   cd $(devinc)
+   make/S arg=wfiles.h \etc\checkout > nul
+   cd $(here)
+
+$(devinc)\vidtext.h : 	$(rcs)\vidtext.h
+   cd $(devinc)
+   make/S arg=vidtext.h \etc\checkout > nul
+   cd $(here)
+
+$(tool)\toolkit.h : 	$(rcs)\toolkit.h
+   cd $(tool)
+   make/S arg=toolkit.h \etc\checkout > nul
+   cd $(here)
+
+$(so)\filecall.obj : 	$(rcs)\filecall.c
+   make/S arg=$*.c \etc\checkout > nul
+
+$(so)\files.obj : 	$(rcs)\files.c
+   make/S arg=$*.c \etc\checkout > nul
+
+$(so)\img_acc.obj : 	$(rcs)\img_acc.c
+   make/S arg=$*.c \etc\checkout > nul
+
+$(so)\mauscall.obj : 	$(rcs)\mauscall.c
+   make/S arg=$*.c \etc\checkout > nul
+
+$(so)\toolcmd.obj : 	$(rcs)\toolcmd.c
+   make/S arg=toolcmd.c \etc\checkout > nul
+
+$(so)\toolerr.obj : 	$(rcs)\toolerr.c
+   make/S arg=toolerr.c \etc\checkout > nul
+
+$(so)\toolfile.obj : 	$(rcs)\toolfile.c
+   make/S arg=toolfile.c \etc\checkout > nul
+
+$(so)\toolgraf.obj : 	$(rcs)\toolgraf.c
+   make/S arg=toolgraf.c \etc\checkout > nul
+
+$(so)\toolifil.obj : 	$(rcs)\toolifil.c
+   make/S arg=toolifil.c \etc\checkout > nul
+
+$(so)\toolihdr.obj : 	$(rcs)\toolihdr.c
+   make/S arg=toolihdr.c \etc\checkout > nul
+
+$(so)\toolkits.obj : 	$(rcs)\toolkit.c
+   make/S arg=toolkit.c \etc\checkout > nul
+
+$(so)\toolmaus.obj : 	$(rcs)\toolmaus.c
+   make/S arg=toolmaus.c \etc\checkout > nul
+
+#$(so)\toolsig.obj : 	$(rcs)\toolsig.c
+#   make/S arg=toolsig.c \etc\checkout > nul
+
+$(so)\tool_sa.obj : 	$(rcs)\$*.c
+   make/S arg=tool_sa.c \etc\checkout > nul
+
+# this is top level; compile it first for library maintenance convenience
+$(so)\toolkits.obj : toolkit.c $(misc)
+   $(cc) -dSA -o$(so)\toolkits toolkit
+   zorlibx $(tool)\dtksas -+$(so)\toolkits;
+   $(cc) -dDR -o$(so)\toolkitd toolkit
+   zorlibx $(tool)\dtkdrs -+$(so)\toolkitd;
+   $(ccm) -dSA -o$(mo)\toolkits toolkit
+   zorlibx $(tool)\dtksam -+$(mo)\toolkits;
+   $(ccm) -dDR -o$(mo)\toolkitd toolkit
+   zorlibx $(tool)\dtkdrm -+$(mo)\toolkitd;
+
+# next, the support modules
+$(so)\filecall.obj : filecall.c $(misc) $(inc)\dragfile.h
+   $(cc) -o$(so)\$* $*
+   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+   $(ccm) -o$(mo)\$* $*
+   zorlibx $(tool)\dtkdrm -+$(mo)\$*;
+
+$(so)\files.obj :	files.c  $(inc)\files.h	\
+			$(inc)\basemem.h
+   $(cc) -o$(so)\$*.obj $*
+   zorlibx $(tool)\dtksas -+$(so)\$*;
+   $(ccm) -o$(mo)\$*.obj $*
+   zorlibx $(tool)\dtksam -+$(mo)\$*;
+
+# because of basemem this needs to be different from ZWFL library, for 3.05
+$(so)\img_acc.obj :	img_acc.c  $(inc)\img_acc.h	\
+			$(inc)\basemem.h
+   $(cc) -o$(so)\$*.obj $*
+   zorlibx $(tool)\dtksas -+$(so)\$*;
+   $(ccm) -o$(mo)\$*.obj $*
+   zorlibx $(tool)\dtksam -+$(mo)\$*;
+
+# command-line fns - same for both versions
+$(so)\toolcmd.obj : toolcmd.c $(misc)
+   $(cc) -o$(so)\$* $*
+   zorlibx $(tool)\dtksas -+$(so)\$*;
+   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+   $(ccm) -o$(mo)\$* $*
+   zorlibx $(tool)\dtksam -+$(mo)\$*;
+   zorlibx $(tool)\dtkdrm -+$(mo)\$*;
+
+# error stack manip. fns - same for both versions
+$(so)\toolerr.obj : toolerr.c $(misc)
+   $(cc) -dSA -o$(so)\$* $*
+   zorlibx $(tool)\dtksas -+$(so)\$*;
+   $(cc) -dDR -o$(so)\toolerrd $*
+   zorlibx $(tool)\dtkdrs -+$(so)\toolerrd;
+   $(ccm) -dSA -o$(mo)\$* $*
+   zorlibx $(tool)\dtksam -+$(mo)\$*;
+   $(ccm) -dDR -o$(mo)\toolerrd $*
+   zorlibx $(tool)\dtkdrm -+$(mo)\toolerrd;
+
+# graphics fns - DR version only
+$(so)\toolgraf.obj : toolgraf.c $(misc)
+   $(cc) -o$(so)\$* $*
+   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+   $(ccm) -o$(mo)\$* $*
+   zorlibx $(tool)\dtkdrm -+$(mo)\$*;
+
+# file & filename wrappers - same for both versions
+$(so)\toolfile.obj : toolfile.c $(misc)
+   $(cc) -o$(so)\$* $*
+   zorlibx $(tool)\dtksas -+$(so)\$*;
+   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+   $(ccm) -o$(mo)\$* $*
+   zorlibx $(tool)\dtksam -+$(mo)\$*;
+   zorlibx $(tool)\dtkdrm -+$(mo)\$*;
+
+# image file and image memory access
+$(so)\toolifil.obj : toolifil.c $(misc)
+   $(cc) -cpp -dSA -o$(so)\toolifil toolifil
+   zorlibx $(tool)\dtksas -+$(so)\toolifil;
+   $(cc) -cpp -dDR -o$(so)\toolifid toolifil
+   zorlibx $(tool)\dtkdrs -+$(so)\toolifid;
+
+# image file header wrappers - same for both versions
+$(so)\toolihdr.obj : toolihdr.c $(misc)
+   $(cc) -o$(so)\$* $*
+   zorlibx $(tool)\dtksas -+$(so)\$*;
+   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+
+# mouse fns - DR version only
+$(so)\toolmaus.obj : toolmaus.c $(misc)
+   $(cc) -o$(so)\$* $*
+   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+
+# signature fns - DR version only
+#$(so)\toolsig.obj : toolsig.c $(misc)
+#   $(cc) -o$(so)\$* $*
+#   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+
+# data for files.c used without fgate only
+$(so)\tool_sa.obj : tool_sa.c $(misc)
+   $(cc) -dSA -o$(so)\$* $*
+   zorlibx $(tool)\dtksas -+$(so)\$*;
+   $(ccm) -dSA -o$(mo)\$* $*
+   zorlibx $(tool)\dtksam -+$(mo)\$*;
+
+#   $(ccw) -dZORTECH -o$(wo)\$* $*
+#   zorlibx $(tool)\dtkw -+$(wo)\$*;
+
+$(so)\mauscall.obj : mauscall.c $(misc) $(inc)\mgate.h
+   $(cc) -o$(so)\$* $*
+   zorlibx $(tool)\dtkdrs -+$(so)\$*;
+#   $(ccw) -o$(wo)\$* $*
+#   zorlibx $(tool)\dtkw -+$(wo)\$*;
+
+tooltest.exe : toolkit.c $(misc) $(tool)\dtkdrs.lib
+   $(cc) -dTEST -otooltest toolkit
+   blink tooltest,,,$(tool)\dtkdrs+$(tool)\zwfls
+   blink tooltest,tooltsto,,$(tool)\dtksas+$(tool)\zwfls
+
+testerr.exe : toolerr.c $(misc) $(tool)\dtkdrs.lib
+   $(cc) -dTEST -dDRTEST -otesterr toolerr
+   blink testerr,,,$(tool)\dtkdrs+$(tool)\zwfls/m
+   $(cc) -dTEST -dSATEST -otestero toolerr
+   blink testero,testero,,$(tool)\dtksas+$(tool)\zwfls/m
+
+testifil.exe : toolifil.c $(misc) $(tool)\dtkdrs.lib
+   $(cc) -dDRTEST -dTEST -otestifil toolifil
+   blink testifil,,,$(tool)\dtkdrs+$(tool)\zwfls/m
+   $(cc) -dSATEST -dTEST -otestifol toolifil
+   blink testifol,testifol,,$(tool)\dtksas+$(tool)\zwfls/m
+

@@ -1,0 +1,525 @@
+package id4k01wd057grold057x2g0;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:java#Class#com.grs.gui.DCheckMenuItem:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonFileChooser:oiref><oihard>
+@__modelType reference 
+*/
+class reference1 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DirTreeNode:oiref><oihard>
+@__modelType reference 
+*/
+class reference2 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DFileField:oiref><oihard>
+@__modelType reference 
+*/
+class reference3 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DirTreeModel:oiref><oihard>
+@__modelType reference 
+*/
+class reference4 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.Callback:oiref><oihard>
+@__modelType reference 
+*/
+class reference5 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DComboField:oiref><oihard>
+@__modelType reference 
+*/
+class reference6 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonFileList:oiref><oihard>
+@__modelType reference 
+*/
+class reference7 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DRadioBox:oiref><oihard>
+@__modelType reference 
+*/
+class reference8 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DFontField:oiref><oihard>
+@__modelType reference 
+*/
+class reference9 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DFileChooserModel:oiref><oihard>
+@__modelType reference 
+*/
+class reference10 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonField:oiref><oihard>
+@__modelType reference 
+*/
+class reference11 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DriveTester:oiref><oihard>
+@__modelType reference 
+*/
+class reference12 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonDirTree:oiref><oihard>
+@__modelType reference 
+*/
+class reference13 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.Tracer:oiref><oihard>
+@__modelType reference 
+*/
+class reference14 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.I18NTextSource:oiref><oihard>
+@__modelType reference 
+*/
+class reference15 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.Logger:oiref><oihard>
+@__modelType reference 
+*/
+class reference16 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.EnumBase:oiref><oihard>
+@__modelType reference 
+*/
+class reference17 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.BrowseButton:oiref><oihard>
+@__modelType reference 
+*/
+class reference18 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DTextField:oiref><oihard>
+@__modelType reference 
+*/
+class reference19 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.MessageDisplay:oiref><oihard>
+@__modelType reference 
+*/
+class reference20 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.Initializer:oiref><oihard>
+@__modelType reference 
+*/
+class reference21 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonFontChooser:oiref><oihard>
+@__modelType reference 
+*/
+class reference22 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DFileType:oiref><oihard>
+@__modelType reference 
+*/
+class reference23 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.MemoryFilter:oiref><oihard>
+@__modelType reference 
+*/
+class reference24 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DMenuItem:oiref><oihard>
+@__modelType reference 
+*/
+class reference25 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.XmlToUiBuilder:oiref><oihard>
+@__modelType reference 
+*/
+class reference26 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.TextKeys:oiref><oihard>
+@__modelType reference 
+*/
+class reference27 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DButtonField:oiref><oihard>
+@__modelType reference 
+*/
+class reference28 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.ApplicationManager:oiref><oihard>
+@__modelType reference 
+*/
+class reference29 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DFixedText:oiref><oihard>
+@__modelType reference 
+*/
+class reference30 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.XMLTag:oiref><oihard>
+@__modelType reference 
+*/
+class reference31 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.GenErrorDisplay:oiref><oihard>
+@__modelType reference 
+*/
+class reference32 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.Splash:oiref><oihard>
+@__modelType reference 
+*/
+class reference33 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.FixedLengthDocument:oiref><oihard>
+@__modelType reference 
+*/
+class reference34 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.ErrorDisplay:oiref><oihard>
+@__modelType reference 
+*/
+class reference35 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.GenHelpDisplayListener:oiref><oihard>
+@__modelType reference 
+*/
+class reference36 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DoubleValidator:oiref><oihard>
+@__modelType reference 
+*/
+class reference37 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonMenuItem:oiref><oihard>
+@__modelType reference 
+*/
+class reference38 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DCheckField:oiref><oihard>
+@__modelType reference 
+*/
+class reference39 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.ValueLimits:oiref><oihard>
+@__modelType reference 
+*/
+class reference40 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonMenu:oiref><oihard>
+@__modelType reference 
+*/
+class reference41 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.IntegerValidator:oiref><oihard>
+@__modelType reference 
+*/
+class reference42 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DragonPanel:oiref><oihard>
+@__modelType reference 
+*/
+class reference43 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.Validator:oiref><oihard>
+@__modelType reference 
+*/
+class reference44 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.NativeHost:oiref><oihard>
+@__modelType reference 
+*/
+class reference45 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.StubNativeHost:oiref><oihard>
+@__modelType reference 
+*/
+class reference46 {
+}/**
+@__ref <oiref:java#Class#com.grs.gui.DebugNativeHost:oiref><oihard>
+@__modelType reference 
+*/
+class reference47 {
+}}/**
+@__tags
+@shapeType ClassDiagram 
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:<oiref:java#Class#com.grs.gui.DTextField:oiref>=171,1461,200,572,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonMenu#parentMenu:oiref>=2330,3793,2330,3843,2420,3843,2420,3753,2370,3753:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#XLATESTRING:oiref>=-371,2677,-371,4813,-79,4813,-79,551,-230,551:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#COMMAND:oiref>=-410,2677,-410,5203,-40,5203,-40,161,-230,161:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.ValueLimits:oiref>=720,821,200,141,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CHECK:oiref>=-394,2677,-394,5043,-56,5043,-56,321,-230,321:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileChooserModel#chooser:oiref>=1313,3481,1200,3481:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FRAME:oiref>=-379,2677,-379,4893,-71,4893,-71,471,-230,471:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FIELD:oiref>=-389,2677,-389,4993,-61,4993,-61,371,-230,371:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.Tracer:oiref>=1501,1100,200,236,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileField#browseBtn:oiref>=301,2442,560,1838:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VAR:oiref>=-411,2677,-411,5213,-39,5213,-39,151,-230,151:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TRUE:oiref>=-406,2677,-406,5163,-44,5163,-44,201,-230,201:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DFontField:oiref>=771,1541,200,537,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#BORDER:oiref>=-300,2677,-300,4087,-150,4087,-150,1277,-230,1277:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonFileList:oiref>=1682,3833,200,559,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DOUBLE:oiref>=-359,2677,-359,4693,-91,4693,-91,671,-230,671:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#COLOR:oiref>=226,4101,226,4751,526,4751,526,3461,371,3461:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DComboField#com.grs.gui.DragonField:oiref>=1839,1018,1319,1018:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CHECKBUTTON:oiref>=-385,2677,-385,4953,-65,4953,-65,411,-230,411:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#NOTELINE:oiref>=-250,2677,-250,3087,-200,3087,-200,2277,-230,2277:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#HEIGHT:oiref>=-314,2677,-314,4367,-136,4367,-136,997,-230,997:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TABGROUP:oiref>=-377,2677,-377,4873,-73,4873,-73,491,-230,491:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DEFAULTINDEX:oiref>=-366,2677,-366,4763,-84,4763,-84,601,-230,601:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#SIGNATURETABLE:oiref>=-278,2677,-278,3647,-172,3647,-172,1717,-230,1717:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#textSource:oiref>=971,3109,1641,3201:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#errorLogger:oiref>=971,2751,1070,2751:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CONTROLDEFAULT:oiref>=-397,2677,-397,5073,-53,5073,-53,291,-230,291:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonMenu:oiref>=2170,3560,200,233,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VARCOMBO:oiref>=-387,2677,-387,4973,-63,4973,-63,391,-230,391:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XmlToUiBuilder#currentPanel:oiref>=1771,2199,2201,2199:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DirTreeNode#DIRFILTER:oiref>=284,5011,284,4101:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonField#limits:oiref>=1119,891,920,891:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TTY:oiref>=-294,2677,-294,3967,-156,3967,-156,1397,-230,1397:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TEXTTABLE:oiref>=-282,2677,-282,3727,-168,3727,-168,1637,-230,1637:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DRadioBox:oiref>=159,892,200,480,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonDirTree#parent:oiref>=2143,3985,1200,3985:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PLACEMENT:oiref>=-290,2677,-290,3887,-160,3887,-160,1477,-230,1477:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#UI:oiref>=-427,2677,-427,5373,-23,5373,-23,-9,-230,-9:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FILE:oiref>=-375,2677,-375,4853,-75,4853,-75,511,-230,511:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CHOICES:oiref>=-417,2677,-417,5273,-33,5273,-33,91,-230,91:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.Splash:oiref>=1830,51,200,145,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.MessageDisplay:oiref>=1181,3052,200,236,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TYPE:oiref>=-395,2677,-395,5053,-55,5053,-55,311,-230,311:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#POPUP:oiref>=-376,2677,-376,4863,-74,4863,-74,501,-230,501:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DATARANGE:oiref>=-338,2677,-338,4583,-112,4583,-112,781,-230,781:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.GenErrorDisplay:oiref>=1140,2352,200,217,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileField#memoryFilter:oiref>=304,3074,521,3142:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#IDENTIFIER:oiref>=-270,2677,-270,3487,-180,3487,-180,1877,-230,1877:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#HELP:oiref>=-424,2677,-424,5343,-26,5343,-26,21,-230,21:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#MENUBUTTON:oiref>=-420,2677,-420,5303,-30,5303,-30,61,-230,61:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.NativeHost:oiref>=2771,971,200,235,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#COLOR:oiref>=-348,2677,-348,4633,-102,4633,-102,731,-230,731:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DFileField#com.grs.gui.DTextField:oiref>=271,2442,271,2033:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.Validator:oiref>=621,262,200,129,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DCheckMenuItem:oiref>=2491,3072,200,259,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFontChooser#textSource:oiref>=859,4141,1721,3432:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CONTROLLABEL:oiref>=-398,2677,-398,5083,-52,5083,-52,281,-230,281:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TEXT:oiref>=-232,2677,-232,2727,-218,2727,-218,2637,-230,2637:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.Logger:oiref>=1070,2652,200,198,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PLACEMENTOPTS:oiref>=-316,2677,-316,4407,-134,4407,-134,957,-230,957:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ACCELERATOR:oiref>=-409,2677,-409,5193,-41,5193,-41,171,-230,171:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#GCP:oiref>=289,4101,289,4471,463,4471,463,3741,371,3741:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#BSQ:oiref>=361,4101,361,4151,391,4151,391,4061,371,4061:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DEFAULTCATEGORY:oiref>=-373,2677,-373,4833,-77,4833,-77,531,-230,531:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.gui.IntegerValidator#com.grs.gui.Validator:oiref>=651,192,651,262:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#INDEX:oiref>=-370,2677,-370,4803,-80,4803,-80,561,-230,561:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFileList#fileType:oiref>=1682,4081,371,4081:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#VECTOR:oiref>=280,4101,280,4511,472,4511,472,3701,371,3701:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#RESULTGROUP:oiref>=-254,2677,-254,3167,-196,3167,-196,2197,-230,2197:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#RADIOPANEL:oiref>=-383,2677,-383,4933,-67,4933,-67,431,-230,431:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#MENUBUTTONSPEC:oiref>=-428,2677,-428,5383,-22,5383,-22,-19,-230,-19:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#STRING:oiref>=-372,2677,-372,4823,-78,4823,-78,541,-230,541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#MENUBAR:oiref>=-391,2677,-391,5013,-59,5013,-59,351,-230,351:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DFileType:oiref>=171,3371,200,730,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#BIGHELP:oiref>=-298,2677,-298,4047,-152,4047,-152,1317,-230,1317:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DComboField:oiref>=1839,721,200,594,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#INTEGER:oiref>=-360,2677,-360,4703,-90,4703,-90,661,-230,661:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonPanel:oiref>=2201,1632,200,1525,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.Callback:oiref>=2522,1562,200,110,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#SEPARATOR:oiref>=-419,2677,-419,5293,-31,5293,-31,71,-230,71:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#ALL:oiref>=199,4101,199,4831,553,4831,553,3381,371,3381:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ITEMINDEX:oiref>=-246,2677,-246,3007,-204,3007,-204,2357,-230,2357:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#WRITEFILEOPTION:oiref>=-336,2677,-336,4573,-114,4573,-114,791,-230,791:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#POINT:oiref>=-344,2677,-344,4613,-106,4613,-106,751,-230,751:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DoubleValidator:oiref>=769,62,200,122,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CALLBACK:oiref>=-322,2677,-322,4503,-128,4503,-128,861,-230,861:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.gui.GenErrorDisplay#com.grs.gui.ErrorDisplay:oiref>=1240,2352,1240,2231:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.ErrorDisplay:oiref>=1140,2102,200,129,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#RESULTHEADER:oiref>=-268,2677,-268,3447,-182,3447,-182,1917,-230,1917:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DFileChooserModel:oiref>=1313,3332,200,442,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonField#parentPanel:oiref>=1279,1421,2334,1632:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.GenErrorDisplay#textSource:oiref>=1240,2569,1707,3161:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#WRITEFILE:oiref>=-354,2677,-354,4663,-96,4663,-96,701,-230,701:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CONTROL:oiref>=-414,2677,-414,5243,-36,5243,-36,121,-230,121:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DMenuItem:oiref>=2790,3111,196,290,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TITLE:oiref>=-415,2677,-415,5253,-35,5253,-35,111,-230,111:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DCheckField#com.grs.gui.DragonField:oiref>=1521,257,1319,257:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VALIDATOR:oiref>=-364,2677,-364,4743,-86,4743,-86,621,-230,621:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ENCODING:oiref>=-272,2677,-272,3527,-178,3527,-178,1837,-230,1837:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#RESULTITEM:oiref>=-256,2677,-256,3207,-194,3207,-194,2157,-230,2157:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DRadioBox#com.grs.gui.DragonField:oiref>=359,1052,1119,1052:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PSPECSTR:oiref>=-365,2677,-365,4753,-85,4753,-85,611,-230,611:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FLAG:oiref>=-361,2677,-361,4713,-89,4713,-89,651,-230,651:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonFontChooser:oiref>=720,4141,200,1031,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#BIL:oiref>=352,4101,352,4191,400,4191,400,4021,371,4021:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TOCSECTION:oiref>=-240,2677,-240,2887,-210,2887,-210,2477,-230,2477:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonField#callback:oiref>=1299,1421,2622,1562:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.I18NTextSource:oiref>=1641,3161,200,271,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DISPLAY:oiref>=-264,2677,-264,3367,-186,3367,-186,1997,-230,1997:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#HEADERTABLE:oiref>=-276,2677,-276,3607,-174,3607,-174,1757,-230,1757:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#SUBSTITUTE:oiref>=-404,2677,-404,5143,-46,5143,-46,221,-230,221:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ROWCOUNT:oiref>=-274,2677,-274,3567,-176,3567,-176,1797,-230,1797:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ITEMCATEGORY:oiref>=-248,2677,-248,3047,-202,3047,-202,2317,-230,2317:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#fontChooser:oiref>=799,3147,799,4141:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TAG:oiref>=-403,2677,-403,5133,-47,5133,-47,231,-230,231:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#messageDisplay:oiref>=971,3099,1181,3099:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PANEL:oiref>=-413,2677,-413,5233,-37,5233,-37,131,-230,131:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DButtonField:oiref>=421,560,200,373,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#XLATETEXT:oiref>=-426,2677,-426,5363,-24,5363,-24,1,-230,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#pathChooser:oiref>=842,3147,1050,3461:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DROPDOWN:oiref>=-390,2677,-390,5003,-60,5003,-60,361,-230,361:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#MATRIX:oiref>=-340,2677,-340,4593,-110,4593,-110,771,-230,771:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.FixedLengthDocument:oiref>=1841,461,200,164,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DEFAULTSTR:oiref>=-367,2677,-367,4773,-83,4773,-83,591,-230,591:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.MessageDisplay#textSource:oiref>=1381,3244,1641,3244:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#JPEG:oiref>=343,4101,343,4231,409,4231,409,3981,371,3981:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileChooserModel#fileList:oiref>=1488,3774,1748,3833:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFileList#textSource:oiref>=1801,3833,1801,3432:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#SCRIPT2:oiref>=271,4101,271,4551,481,4551,481,3661,371,3661:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PANELTITLE:oiref>=-400,2677,-400,5103,-50,5103,-50,261,-230,261:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFileChooser#textSource:oiref>=1200,3541,1641,3392:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#WIDTH:oiref>=-312,2677,-312,4327,-138,4327,-138,1037,-230,1037:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VIRTUALWIDTH:oiref>=-308,2677,-308,4247,-142,4247,-142,1117,-230,1117:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#outFileChooser:oiref>=885,3147,1100,3461:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#SIGNATURE:oiref>=244,4101,244,4671,508,4671,508,3541,371,3541:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FLOAT:oiref>=-358,2677,-358,4683,-92,4683,-92,681,-230,681:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.BrowseButton:oiref>=460,1681,200,157,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#WIDEMULTILINETABLE:oiref>=-280,2677,-280,3687,-170,3687,-170,1677,-230,1677:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VIRTUALHEIGHT:oiref>=-310,2677,-310,4287,-140,4287,-140,1077,-230,1077:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ATTACHID:oiref>=-408,2677,-408,5183,-42,5183,-42,181,-230,181:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#TIFF:oiref>=334,4101,334,4271,418,4271,418,3941,371,3941:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TOPLEVEL:oiref>=-380,2677,-380,4903,-70,4903,-70,461,-230,461:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#HORIZONTAL:oiref>=-304,2677,-304,4167,-146,4167,-146,1197,-230,1197:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#CLI:oiref>=307,4101,307,4391,445,4391,445,3821,371,3821:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#RESULTFIELD:oiref>=-252,2677,-252,3127,-198,3127,-198,2237,-230,2237:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DebugNativeHost:oiref>=2750,572,200,216,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonPanel#invokingField:oiref>=2267,1632,1259,1421:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DButtonField#com.grs.gui.DragonField:oiref>=621,653,1119,653:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#LAYOUTSTYLE:oiref>=-296,2677,-296,4007,-154,4007,-154,1357,-230,1357:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#SCRIPT:oiref>=262,4101,262,4591,490,4591,490,3621,371,3621:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.gui.DoubleValidator#com.grs.gui.Validator:oiref>=795,184,795,262:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#UTM:oiref>=-346,2677,-346,4623,-104,4623,-104,741,-230,741:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DFileField:oiref>=171,2442,200,632,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DirTreeModel#parentWindow:oiref>=1165,4771,1165,4036:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#PATH:oiref>=208,4101,208,4821,544,4821,544,3391,371,3391:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PATH:oiref>=-352,2677,-352,4653,-98,4653,-98,711,-230,711:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#BENABLED:oiref>=-407,2677,-407,5173,-43,5173,-43,191,-230,191:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DFontField#com.grs.gui.DragonField:oiref>=871,1541,1204,1421:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#QUERY:oiref>=-334,2677,-334,4563,-116,4563,-116,801,-230,801:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DMenuItem#parentMenu:oiref>=2838,3401,2320,3560:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.EnumBase:oiref>=151,290,200,236,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#MENUSPEC:oiref>=-421,2677,-421,5313,-29,5313,-29,51,-230,51:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#POLYGON:oiref>=235,4101,235,4711,517,4711,517,3501,371,3501:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#HEADER:oiref>=-368,2677,-368,4783,-82,4783,-82,581,-230,581:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFileChooser#chooserModel:oiref>=1200,3501,1313,3501:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#URL:oiref>=-236,2677,-236,2807,-214,2807,-214,2557,-230,2557:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#BREQUIRED:oiref>=-326,2677,-326,4523,-124,4523,-124,841,-230,841:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TEXTBOX:oiref>=-381,2677,-381,4913,-69,4913,-69,451,-230,451:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#RESULTROW:oiref>=-258,2677,-258,3247,-192,3247,-192,2117,-230,2117:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonDirTree#treeModel:oiref>=2243,4396,1240,4771:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileChooserModel#filterFileType:oiref>=1313,3571,371,3571:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VERSIONSELECTOR:oiref>=-374,2677,-374,4843,-76,4843,-76,521,-230,521:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#OVERWRITE:oiref>=-332,2677,-332,4553,-118,4553,-118,811,-230,811:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#LABEL:oiref>=-425,2677,-425,5353,-25,5353,-25,11,-230,11:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FALSE:oiref>=-405,2677,-405,5153,-45,5153,-45,211,-230,211:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonPanel#parentPanel:oiref>=2361,3157,2361,3207,2451,3207,2451,3117,2401,3117:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#IMAGE:oiref>=217,4101,217,4791,535,4791,535,3421,371,3421:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DATAMAXCHARS:oiref>=-363,2677,-363,4733,-87,4733,-87,631,-230,631:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.gui.DebugNativeHost#com.grs.gui.NativeHost:oiref>=2860,788,2860,971:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#INITIALIZER:oiref>=-320,2677,-320,4487,-130,4487,-130,877,-230,877:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DTextField#com.grs.gui.DragonField:oiref>=271,1461,1161,1421:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ID:oiref>=-412,2677,-412,5223,-38,5223,-38,141,-230,141:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DriveTester:oiref>=1830,280,200,103,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#BOVERWRITE:oiref>=-324,2677,-324,4513,-126,4513,-126,851,-230,851:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.XmlToUiBuilder:oiref>=1571,1602,200,1164,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TABPANEL:oiref>=-378,2677,-378,4883,-72,4883,-72,481,-230,481:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DFixedText:oiref>=1529,500,200,309,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DISPLAYKEY:oiref>=-260,2677,-260,3287,-190,3287,-190,2077,-230,2077:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.XMLTag#com.grs.gui.EnumBase:oiref>=-230,406,151,406:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FIXEDTEXT:oiref>=-384,2677,-384,4943,-66,4943,-66,421,-230,421:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFileChooser#dirTree:oiref>=1200,3997,2143,3997:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DATE:oiref>=-242,2677,-242,2927,-208,2927,-208,2437,-230,2437:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#REMIND:oiref>=-396,2677,-396,5063,-54,5063,-54,301,-230,301:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#COEFF:oiref>=298,4101,298,4431,454,4431,454,3781,371,3781:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.Initializer:oiref>=730,482,200,110,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFileList#parent:oiref>=1682,4023,1200,4023:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.TextKeys:oiref>=2440,62,200,1313,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileField#fileType:oiref>=271,3074,271,3371:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.ApplicationManager:oiref>=771,2132,200,1015,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PREFMNEMONIC:oiref>=-318,2677,-318,4447,-132,4447,-132,917,-230,917:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#inFileChooser:oiref>=928,3147,1150,3461:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DEFAULT:oiref>=-423,2677,-423,5333,-27,5333,-27,31,-230,31:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FIELDCOUNT:oiref>=-266,2677,-266,3407,-184,3407,-184,1957,-230,1957:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#TABLE:oiref>=253,4101,253,4631,499,4631,499,3581,371,3581:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.XMLTag:oiref>=-430,-29,200,2706,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ERROR:oiref>=-328,2677,-328,4533,-122,4533,-122,831,-230,831:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.gui.DCheckMenuItem#com.grs.gui.DragonMenuItem:oiref>=2601,3331,2786,3612:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CONTROLSPEC:oiref>=-418,2677,-418,5283,-32,5283,-32,81,-230,81:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TOC:oiref>=-244,2677,-244,2967,-206,2967,-206,2397,-230,2397:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XmlToUiBuilder#textSource:oiref>=1739,2766,1739,3161:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.gui.DFixedText#com.grs.gui.DragonField:oiref>=1529,654,1319,654:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#HTML:oiref>=325,4101,325,4311,427,4311,427,3901,371,3901:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PREFIX:oiref>=-234,2677,-234,2767,-216,2767,-216,2597,-230,2597:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VERTICAL:oiref>=-302,2677,-302,4127,-148,4127,-148,1237,-230,1237:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.ApplicationManager#errorDisplay:oiref>=971,2181,1140,2181:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.IntegerValidator:oiref>=481,51,200,141,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DirTreeModel:oiref>=1130,4771,200,442,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CALCRESULT:oiref>=-288,2677,-288,3847,-162,3847,-162,1517,-230,1517:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileChooserModel#dirTree:oiref>=1400,3774,2209,3973:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonMenuItem:oiref>=2720,3612,200,338,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#ATTRIBUTE:oiref>=-369,2677,-369,4793,-81,4793,-81,571,-230,571:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#LISTITEM:oiref>=-401,2677,-401,5113,-49,5113,-49,251,-230,251:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#READFILE:oiref>=-356,2677,-356,4673,-94,4673,-94,691,-230,691:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonDirTree#textSource:oiref>=2276,3973,1821,3432:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PUSHBUTTON:oiref>=-386,2677,-386,4963,-64,4963,-64,401,-230,401:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XmlToUiBuilder#currentMenu:oiref>=1755,2766,2220,3560:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFileType#LOG:oiref>=316,4101,316,4351,436,4351,436,3861,371,3861:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DCheckMenuItem#callback:oiref>=2578,3072,2578,1672:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#VECTOR:oiref>=-342,2677,-342,4603,-108,4603,-108,761,-230,761:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#APPEND:oiref>=-330,2677,-330,4543,-120,4543,-120,821,-230,821:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#SUBMENU:oiref>=-392,2677,-392,5023,-58,5023,-58,341,-230,341:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.GenHelpDisplayListener:oiref>=2069,1152,200,160,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FRAGMENT:oiref>=-399,2677,-399,5093,-51,5093,-51,271,-230,271:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DCheckMenuItem#parentMenu:oiref>=2546,3331,2270,3560:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FONT:oiref>=-350,2677,-350,4643,-100,4643,-100,721,-230,721:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DCheckField:oiref>=1521,42,200,430,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.MemoryFilter:oiref>=421,3142,200,110,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PARAGRAPH:oiref>=-402,2677,-402,5123,-48,5123,-48,241,-230,241:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#EXECUTE:oiref>=-393,2677,-393,5033,-57,5033,-57,331,-230,331:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DISPLAYOPTS:oiref>=-306,2677,-306,4207,-144,4207,-144,1157,-230,1157:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#TOOLTIP:oiref>=-422,2677,-422,5323,-28,5323,-28,41,-230,41:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FIELDID:oiref>=-262,2677,-262,3327,-188,3327,-188,2037,-230,2037:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#PANELSPEC:oiref>=-416,2677,-416,5263,-34,5263,-34,101,-230,101:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.StubNativeHost:oiref>=2750,1261,200,216,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DirTreeNode:oiref>=182,5011,200,347,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.gui.DMenuItem#com.grs.gui.DragonMenuItem:oiref>=2887,3401,2887,3612:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DMenuItem#callback:oiref>=2888,3111,2650,1672:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.gui.StubNativeHost#com.grs.gui.NativeHost:oiref>=2860,1261,2860,1206:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#EDITBOX:oiref>=-382,2677,-382,4923,-68,4923,-68,441,-230,441:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#SIMPLETABLE:oiref>=-284,2677,-284,3767,-166,3767,-166,1597,-230,1597:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#CALCTYPE:oiref>=-286,2677,-286,3807,-164,3807,-164,1557,-230,1557:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#FIXEDCOMBO:oiref>=-388,2677,-388,4983,-62,4983,-62,381,-230,381:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#LEVEL:oiref>=-238,2677,-238,2847,-212,2847,-212,2517,-230,2517:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#COLUMNS:oiref>=-292,2677,-292,3927,-158,3927,-158,1437,-230,1437:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XmlToUiBuilder#currentControl:oiref>=1671,1602,1231,1421:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonFileChooser:oiref>=1000,3461,200,575,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.XMLTag#DATATYPE:oiref>=-362,2677,-362,4723,-88,4723,-88,641,-230,641:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonField#initializer:oiref>=1119,504,930,504:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DFontField#browseBtn:oiref>=771,1759,660,1759:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonFileChooser#fileList:oiref>=1200,4010,1682,4010:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.gui.DragonField#validator:oiref>=1119,283,821,283:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonField:oiref>=1119,10,200,1411,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.gui.DragonDirTree:oiref>=2143,3973,200,423,1:oigroup>
+*/
+class __positions {
+}

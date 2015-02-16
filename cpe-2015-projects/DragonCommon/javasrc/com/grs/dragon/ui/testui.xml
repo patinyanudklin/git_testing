@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<UI>
+<controlSpec id="F1" type="field" width="20" dataType="readFile" 
+             pSpecStr="-F1">
+  <label>
+    <xlateText id="f1label" string="Name for First file"/>
+  </label>
+  <help>
+    <xlateText id="f1help" string="Enter the full filename for the first image file, or click on the '?' button to browse." />
+  </help>
+</controlSpec>
+ 
+<controlSpec id="F2" type="field" width="20" dataType="readFile" 
+             pSpecStr="-F2">
+  <label>
+    <xlateText id="f2label" string="Name for Second file"/>
+  </label>
+  <help>
+    <xlateText id="f2help" string="Enter the full filename for the second image file, or click on the '?' button to browse." />
+  </help>
+</controlSpec>
+
+<controlSpec id="F3" type="field" width="5" dataType="integer" pSpecStr="-X"
+             validator="IntegerValidator" dataRange="0-9999">
+   <label>
+    <xlateText id="f3label" string="X"/>
+   </label>
+   <help>
+    <xlateText id="f3help" string="Enter the X coordinate value." />
+   </help>
+   <default>
+    <xlateText id="f3def" string="0" />
+   </default>
+</controlSpec>
+ 
+<controlSpec id="F4" type="field" width="5" pSpecStr="-Y"
+             bRequired="true">
+   <label>
+    <xlateText id="f4label" string="Y"/>
+   </label>
+   <help>
+    <xlateText id="f4help" string="Enter the Y coordinate value." />
+   </help>
+   <default>
+    <xlateText id="f4def" string="0" />
+   </default>
+</controlSpec>
+ 
+<controlSpec id="F5" type="field" width="5" pSpecStr="-Z"
+             bRequired="true">
+   <label>
+    <xlateText id="f5label" string="Z"/>
+   </label>
+   <help>
+    <xlateText id="f5help" string="Enter the Z coordinate value." />
+   </help>
+   <default>
+    <xlateText id="f5def" string="0" />
+   </default>
+</controlSpec>
+ 
+<controlSpec id="F6" type="checkButton" pSpecStr="-LOG"
+             placementOpts="centered">
+   <label>
+    <xlateText id="f6label" string="Log all operations to file?"/>
+   </label>
+   <help>
+    <xlateText id="f6help" string="Check this box to enable logging." />
+   </help>
+   <default>
+    <xlateText id="f6def" string="N" />
+   </default>
+   <choices>
+    <xlateText id="f6def" string="N" />
+    <xlateText id="f6choice2" string="Y" />
+   </choices>
+</controlSpec>
+ 
+<controlSpec id="F10" type="radioPanel" pSpecStr="-TC"
+	     dataType="flag" dataRange="RGBLY"
+             placementOpts="nextline">
+   <label>
+    <xlateText id="f10label" string="Text Color"/>
+   </label>
+   <help>
+    <xlateText id="f10help" string="Select a color for annotation text." />
+   </help>
+   <default>
+    <xlateText id="f10def" string="Black" />
+   </default>
+   <choices>
+    <xlateText id="f10-1" string="Red" />
+    <xlateText id="f10-2" string="Green" />
+    <xlateText id="f10-3" string="Blue" />
+    <xlateText id="f10-4" string="Black" />
+    <xlateText id="f10-5" string="Yellow" />
+   </choices>
+</controlSpec>
+
+<controlSpec id="F11" type="fixedCombo" pSpecStr="-PET"
+             dataType="flag" dataRange="CGRHWM">
+   <label>
+    <xlateText id="f11label" string="Favorite Animal to have as a Pet"/>
+   </label>
+   <help>
+    <xlateText id="f11help" string="Select your favorite animal." />
+   </help>
+   <default>
+    <xlateText id="f11def" string="Cat" />
+   </default>
+   <choices>
+    <xlateText id="f11-1" string="Cat" />
+    <xlateText id="f11-2" string="Gorilla" />
+    <xlateText id="f11-3" string="Rabbit" />
+    <xlateText id="f11-4" string="Horse" />
+    <xlateText id="f11-5" string="Whale" />
+    <xlateText id="f11-7" string="Mouse" />
+   </choices>
+</controlSpec>
+ 
+<controlSpec id="B1" type="pushButton" callback="ExecCmdCallback">
+   <label>
+    <xlateText id="b1label" string="Show Cmd"/>
+   </label>
+</controlSpec>
+              
+<controlSpec id="B2" type="pushButton" callback="ExitCallback">
+   <label>
+    <xlateText id="b2label" string="Exit"/>
+   </label>
+</controlSpec>
+              
+<panelSpec id="SUB1" type="frame" displayOpts="border">
+   <control id="F3"/>
+   <control id="F4"/>
+   <control id="F5"/>
+</panelSpec>
+
+<panelSpec id="BTN1" type="frame" layoutStyle="horizontal" 
+           placementOpts="bottom">
+   <control id="B1"/>
+   <control id="B2"/>
+</panelSpec>
+
+<panelSpec id="1BAPanel" type="topLevel" command="D 1BA">
+   <control id="F1"/>
+   <control id="F2"/>
+   <panel id="SUB1"/>
+   <control id="F6"/>
+   <control id="F10"/>
+   <control id="F11"/>   
+   <panel id="BTN1"/>
+</panelSpec>
+
+<!-- Menu defns -->
+
+
+<menuButtonSpec id="MB4X1" type="execute" command="D ANN ADD">
+   <label>
+      <xlateText id="MB4X1-1" string="Add text"/>
+   </label>
+   <help>
+      <xlateText id="MB4X1-2" 
+       string="Add one line of annotation text to the currently displayed image"/>
+   </help>
+   <toolTip>
+      <xlateText id="MB4X1-3" 
+       string="Add one line of text"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuButtonSpec id="MB4X2" type="execute" command="D ANN REP">
+   <label>
+      <xlateText id="MB4X2-1" string="Replace text"/>
+   </label>
+   <help>
+      <xlateText id="MB4X2-2" 
+       string="Replaces the last-added text with new text, in the same font and position as the old text"/>
+   </help>
+   <toolTip>
+      <xlateText id="MB4X2-3" 
+       string="Replace last-added text"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuButtonSpec id="MB4X3" type="execute" command="D ANN LEG">
+   <label>
+      <xlateText id="MB4X3-1" string="Legend"/>
+   </label>
+   <help>
+      <xlateText id="MB4X3-2" 
+       string="Shows a legend if the last-displayed image was a classified image"/>
+   </help>
+   <toolTip>
+      <xlateText id="MB4X3-3" 
+       string="Display classified image legend"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuSpec id="MS4" type="dropdown">
+  <menuButton id="MB4X1"/>
+  <menuButton id="MB4X2"/>
+  <separator/>
+  <menuButton id="MB4X3"/>
+</menuSpec>
+
+<menuButtonSpec id="MB1" type="execute" command="D 1BA">
+   <label>
+      <xlateText id="MB1-1" string="Single Band Image"/>
+   </label>
+   <help>
+      <xlateText id="MB1-2" 
+       string="Displays a single image (e.g. a classified image) in color or pseudocolor"/>
+   </help>
+   <toolTip>
+      <xlateText id="MB1-3" 
+       string="Display single band in color"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuButtonSpec id="MB2" type="execute" command="D GRA">
+   <label>
+      <xlateText id="MB2-1" string="Gray Image"/>
+   </label>
+   <help>
+      <xlateText id="MB2-2" 
+       string="Displays a single image in shades of gray"/>
+   </help>
+   <toolTip>
+      <xlateText id="MB2-3" 
+       string="Display single band in gray"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuButtonSpec id="MB3" type="execute" command="D 3BA">
+   <label>
+      <xlateText id="MB3-1" string="Composite"/>
+   </label>
+   <help>
+      <xlateText id="MB3-2" 
+       string="Displays a composite of three bands in Red, Green and Blue"/>
+   </help>
+   <toolTip>
+      <xlateText id="MB3-3" 
+       string="Display three-band color composite"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuButtonSpec id="MB4" type="submenu" attachID="MS4">
+   <label>
+      <xlateText id="MB4-1" string="Annotate"/>
+   </label>
+   <help>
+      <xlateText id="MB4-2" 
+       string="Annotate images by adding labels and grids."/>
+   </help>
+   <toolTip>
+      <xlateText id="MB4-3" 
+       string="Place text directly on images"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuSpec id="DISPLAY" type="dropdown">
+   <menuButton id="MB1"/>
+   <menuButton id="MB2"/>
+   <menuButton id="MB3"/>
+   <menuButton id="MB4"/>
+</menuSpec>
+
+<menuButtonSpec id="FI2" type="execute" command="F NEW">
+   <label>
+      <xlateText id="FI2-1" string="New project"/>
+   </label>
+   <help>
+      <xlateText id="FI2-2" 
+       string="Create a new DRAGON project, specifying preferences, images and other files"/>
+   </help>
+   <toolTip>
+      <xlateText id="FI2-3" 
+       string="Create a new DRAGON project"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuButtonSpec id="FI3" type="execute" command="F OPE">
+   <label>
+      <xlateText id="FI3-1" string="Open project"/>
+   </label>
+   <help>
+      <xlateText id="FI3-2" 
+       string="Switch to using an existing project. This will determine what files and images are available."/>
+   </help>
+   <toolTip>
+      <xlateText id="FI3-3" 
+       string="Use an existing project"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuButtonSpec id="FI4" type="execute" command="F X">
+   <label>
+      <xlateText id="FI4-1" string="Exit"/>
+   </label>
+   <help>
+      <xlateText id="FI4-2" 
+       string="Exit from the DRAGON system."/>
+   </help>
+   <toolTip>
+      <xlateText id="FI4-3" 
+       string="Exit from DRAGON"/>
+   </toolTip>
+</menuButtonSpec>
+
+<menuSpec id="FILE" type="dropdown">
+   <menuButton id="FI2"/>
+   <menuButton id="FI3"/>
+   <menuButton id="FI4"/>
+</menuSpec>
+
+<menuButtonSpec id="TOP1" type="submenu" attachID="FILE">
+   <label>
+      <xlateText id="TOP1-1" string="File"/>
+   </label>
+</menuButtonSpec>
+
+<menuButtonSpec id="TOP2" type="submenu" attachID="DISPLAY">
+   <label>
+      <xlateText id="TOP2-1" string="File"/>
+   </label>
+</menuButtonSpec>
+
+<menuSpec id="MAIN" type="menubar">
+   <menuButton id="TOP1"/>
+   <menuButton id="TOP2"/>
+</menuSpec>
+
+</UI>

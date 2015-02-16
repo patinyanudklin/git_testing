@@ -1,0 +1,215 @@
+( 000992880934 006754 10 )
+<calcResult calcType="ClassStats" identifier="C/UNS/CLU" >
+<title>
+<xlateText id="%h4600.10" tag="listItem" remind="Clustering Statistics"/>
+</title>
+<resultHeader fieldCount="4" >
+<resultField fieldId="Class">
+<xlateText id="%h4600.2" tag="listItem" remind="Class/Cluster"/>
+</resultField>
+<resultField fieldId="PixCount">
+<xlateText id="%h4600.3" tag="listItem" remind="# Pixels"/>
+</resultField>
+<resultField fieldId="Area">
+<xlateText id="%h4600.4" tag="listItem" remind="Area (%)"/>
+</resultField>
+<resultField fieldId="Area">
+<xlateText id="%h4600.5" tag="listItem" remind="Composition"/>
+</resultField>
+</resultHeader>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 1  Class1       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     757"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.28"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="1"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 2  Class2       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="  106856"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="40.76"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="2"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 3  Class3       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     595"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.22"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="3"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 4  Class4       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     313"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.11"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="4"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 5  Class5       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="   97797"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="37.31"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="5"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 6  Class6       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="   43091"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="16.44"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="6"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 7  Class7       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="    3197"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="1.21"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="7"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 8  Class8       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     649"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.24"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="8"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=" 9  Class9       "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     526"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.20"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="9"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="10  Class10      "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     322"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.12"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="10"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="11  Class11      "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="    4216"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="1.60"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="11"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="12  Class12      "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     238"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.09"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="12"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="13  Class13      "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="       3"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.00"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="13"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="14  Class14      "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="    2474"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.94"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="14"/>
+</resultItem>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="15  Class15      "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="     859"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="0.32"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="15"/>
+</resultItem>
+</calcResult>

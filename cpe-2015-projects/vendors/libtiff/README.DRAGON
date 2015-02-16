@@ -1,0 +1,25 @@
+#To build the libtiff libraries for use with Dragon:
+
+#1. Checkout tiff-3.7.2.tgz from CVS, and unpack it into this directory
+
+#2. 
+   mkdir lib
+   mkdir lib/linux
+   mkdir lib/mingw
+
+#3. 
+#   change into the tiff-3.7.2 directory and run
+      cd tiff-3.7.2
+      ./configure --prefix=`pwd`/../lib --exec-prefix=`pwd`/../lib/$PLATFORM \
+	--disable-zlib --disable-jpeg --disable-pixarlog
+
+#4. run
+#     make
+#     make install
+#     you can then delete the tiff-3.7.2 directory
+
+#This will put the include files in vendors/libtiff/lib/include 
+#              the libraries in vendors/libtiff/lib/{linux|mingw}/lib 
+#              the executables in vendors/libtiff/lib/{linux|mingw}/bin
+
+#after building them, check the libraries into cvs

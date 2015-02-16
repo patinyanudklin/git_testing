@@ -1,0 +1,194 @@
+<!-- tagmapGRS.xml
+     tagmap relating all tags used by Xml2Pages to itext tags 
+     kurt rudahl 3/27/2003
+     $Id: tagmapGRS.xml,v 1.3 2003/06/04 01:53:12 rudahl Exp $
+     $Log: tagmapGRS.xml,v $
+     Revision 1.3  2003/06/04 01:53:12  rudahl
+     extended documentation
+
+     Revision 1.2  2003/05/04 21:21:20  rudahl
+     polished/added paragraph line margins attrib-inheritance
+
+     Revision 1.1  2003/03/28 12:45:56  rudahl
+     components of Xml2Pages using lowagie - itext package
+
+ -->
+
+<!-- This file defines the XML elements which may be used in an Xml2Pages document
+     (i.e. the 'alias=xx' fields). Although most of these are one-to-one
+     aliases of the corresponding itext elements, only those specified in this
+     file may be used.
+
+     Generally, itext documentation is in terms of java method calls, and provides
+     only suggestive hints about the xml element attribute syntax. 
+     This file tries to remedy these gaps in the itext documentation, as follows:
+       'simple' elements, which map directly onto some itext element, are annotated
+           with attributes which the itext code supports including comments about
+	   which ones have been found to work.
+       'enhanced' elements, which essentially are simple elements with added (by ktr)
+           side effects, are similarly annotated
+       'custom' elements, which are elements with some predefined attribute values,
+           are considered to be selt-documenting.
+     Useful reference files from the lowagie build tree: 
+        com/lowagie/text/'element'.java ('element' = e.g. cell, paragraph) define
+		the attributes which can be applied to the specified simple element.
+	com/grs/util/SAXgrsParser.java defines all the enhancement
+        itext.dtd (in the reference section) defines the itext schema but can be misleading
+        com/lowagie/text/ElementTags.java defines the attribute name spellings
+        com/lowagie/text/markup/MarkupParser.java defines the syntax for some of the
+		stranger attribute values
+
+	common attribute sets (extracted and augmented from itext.dtd):
+		color.attributes (seems to be working, at least for fonts; 
+				  the 'nnn's seems to be 0 to 255 (higher = darker)).
+			red="nnn"
+			green="nnn"
+			blue="nnn"
+
+		font attributes
+			font="Times" | ... (not sure what possibilities are)
+			size="14"          (in points)
+			style="italic"|"bold"|...
+			color.attributes   (specify color; this form has precedence)
+			color="x7F7F7F"    (alternative way to spec. 0 to FF in RGB sequence)
+	
+		indentation.attributes		(untested)
+			indentationleft="40"	(points)
+			indentationright="40"	(points)
+
+		section.attributes		(untested)
+			depth
+			numberdepth
+			indent
+
+		rectangle.attributes
+			bgred, bgblue, bggreen	(background color like color.attributes)
+			backgroundcolor="x7F7F7F"
+			width
+			left, right, top, bottom
+			borderwidth		(doesn't seem to work for cells)
+			bordercolor		(  "      ")
+			grayfill		(don't know syntax)
+	-->
+
+<tagmap>
+	<tag name="itext" alias="document" />
+	<!-- document, the root element, has optional args pageSize, pageStyle 
+	  -    'pageSize' = { letter, ... }
+	  -    'pageStyle' not used
+	  -->
+
+	<tag name="newpage" alias="pageSpec" />
+	<!-- pageSpec has optional args id printSpec defaultFont defaultSize 
+	  -                             margins
+	  -    'id', 'printSpec' not currently used
+	  -    'defaultFont' is e.g. "Times"
+	  -    'defaultSize' is e.g. "12"
+	  -    'margins' is left,right,top,bottom in points e.g. "54,54,72,72"
+	  -->
+
+	<tag name="paragraph" alias="paragraph"/>
+	<!-- paragraph has optional args size, style, align, font, leftIndent
+	  -    example args: size="14" font="Times" color="red"
+	  -->
+
+	<tag name="phrase" alias="phrase"/>
+
+	<tag name="newline" alias="br" />
+	<tag name="newpage" alias="page" />
+
+	<tag name="line" alias="line" />
+	<!-- contains a phrase followed by a newline only if non-empty -->
+
+	<tag name="var" alias="var" />
+	<!-- var substitutes a variable; args are name, default, (DB)table
+	  -  variables named 'argc', 'argv0', and 'argv1' are always set from cmd line 
+	  -->
+
+	<tag name="fn" alias="function" />
+	<!-- function invokes specified op; args are name, arg
+	  -  initially only name is 'date', for which 'arg' is ignored -->
+
+	<!-- tags with end tags - to be detailed later -->
+	<tag name="anchor" alias="anchor" />
+
+	<tag name="table" alias="table" />
+	<!--  table has optional attributes 
+	  -      columns= number of columns (works)
+	  -      widths="40;5;30;5;20"  percentage width of the columns in order
+	  -		if widths not specified, all are equal width
+	  -      lastHeaderRow=??
+	  -	 cellpadding		(in points)
+	  -      cellspacing
+	  -      align			(not tested)
+	  -      rectangle.attributes   (border apparently not working)
+	  -      color.attributes       (not tested)
+	  -   table has been extended to accept the following which act as
+	  -   defaults for each of the cells
+	  -      font
+	  -      size
+	  -      leading
+	  -->
+
+	<tag name="cell" alias="cell" />
+	<!--  cell has optional attributes 
+	  -      colspan= 		(works)
+	  -      rowspan=		(untested)
+	  -      header={true,false}	(boolean; HTML-only)
+	  -      nowrap={true,false}    (works)
+	  -      leading                (in points; works)
+	  -      rectangle.attributes   (border apparently not working)
+	  -      indentation.attributes (not tested)
+	  -      color.attributes 	
+	  -   cell has been augmented to automatically imply a paragraph,
+	  -   so that all paragraph attributes apply
+	  -->
+
+	<tag name="row" alias="row" />
+	<!-- not clear just what this element accomplishes -->
+
+	<!-- tags with no end tags - to be detailed later -->
+	<tag name="image" alias="image" />
+
+
+	<!--
+	  -	following are custom elements
+	  -->
+	<tag name="table" alias="tableCenter" >
+		<attribute name="align" value="Center" />
+		<attribute name="borderwidth" value="2" />
+		<attribute name="bordercolor" value="red" />
+	</tag>
+
+	<tag name="paragraph" alias="paragraph14">
+		<attribute name="size" value="14" />
+		<attribute name="align" value="Left" />
+		<attribute name="style" value="italic" />
+	</tag>
+	<tag name="list" alias="unNumberedList">
+		<attribute name="numbered" value="false" />
+		<attribute name="symbolindent" value="20" />
+		<attribute name="indentationleft" value="20" />
+		<attribute name="listsymbol" value="o" />
+		<attribute name="align" value="Left" />
+	</tag>
+	<tag name="list" alias="numberedList">
+		<attribute name="numbered" value="true" />
+		<attribute name="symbolindent" value="0" />
+	</tag>
+	<tag name="listitem" alias="listItem">
+		<attribute name="size" value="11" />
+		<attribute name="align" value="Left" />
+	</tag>
+	<tag name="chapter" alias="chapter">
+		<attribute name="numberdepth" value="0" />
+	</tag>
+	<tag name="section" alias="section">
+		<attribute name="numberdepth" value="0" />
+	</tag>
+</tagmap>
+
+
+
+
+

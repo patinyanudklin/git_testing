@@ -1,0 +1,42 @@
+filename:	jpeg.not
+created:	Aug 26, 2002 ktr
+revised:
+revision:	$Revision: 1.2 $
+subject:	jpeg image support in Dragon and jpeg utilities
+
+Introduction
+============
+
+JPEG image support in Dragon is provided by the open source libjpeg
+package. 
+
+The library itself, and a handful of jpeg utilities, come directly
+from the cygwin version of the package on
+ 	rom/unix/cygwin/contrib/jpeg
+
+which supplies the source code.
+
+A few wrapper and adaptation files provide the Dragon facility.
+
+Build
+=====
+
+On Linux, no modifications are needed to build this.
+
+On NT, a revised Makefile is provided.
+
+Thus, CVS contains :
+	dtk/jpeg-6b-4-src.tar.gz
+	dtk/Makejpeg.vc		# converted to use MKS make
+	dtk/jpeg-wrt.c
+
+To build under NT:
+	just invoke 'make' under MSC32
+
+	this is what 'make' does:
+	   unpack the .tar.gz file # which creates the subdir dtk/jpeg-6b
+	   copy Makejpeg.vc jpeg-6b/Makefile
+	   make -c jpeg-6b	   # which creates libjpeg + utilities 
+
+	NOTE that after building, you can test by:
+	   make -c jpeg-6b test

@@ -1,0 +1,3 @@
+( 12345678 20 3 )
+CMD>> D !BA -F FRED.IMG -H G -C R -CF "def1ba.clf"
+

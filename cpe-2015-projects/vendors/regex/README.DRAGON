@@ -1,0 +1,32 @@
+# filename: README.DRAGON
+# $Id: README.DRAGON,v 1.1 2007/05/14 03:10:04 rudahl Exp $
+# $Log: README.DRAGON,v $
+# Revision 1.1  2007/05/14 03:10:04  rudahl
+# initial from moochie
+#KREADME.DRAGON,v $
+#
+# To build the regex libraries for use with Dragon:
+# (Note that this only needs to be done once, or if it is
+# desired to update the version.)
+
+# 1. Checkout regex-2.3.90-1.tar.bz2 (or newer version) from CVS, and unpack
+# it into this directory
+
+# 2. Create some subdirectories
+    mkdir lib
+    mkdir lib/linux
+    mkdir lib/mingw
+    mkdir lib/include
+
+# 3. Make sure PLATFORM is set to 'linux' or 'mingw' as appropriate
+#    change into the regex-2.3.90-1 directory and run
+    cd regex-2.3.90-1; pwd; \
+    rm config.status; \
+    ./configure --prefix=`pwd`/../lib --exec-prefix=`pwd`/../lib/$PLATFORM \
+	--enable-incode-epsg --with-libtiff=`pwd`/../../libtiff/lib/$PLATFORM
+
+# 4. run Make 
+    make clean
+    make 
+    make check
+    make install

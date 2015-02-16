@@ -1,0 +1,225 @@
+( 000993578622 008289 10 )
+<calcResult calcType="WideMultiLineTable" identifier="" rowCount="1" >
+<title>
+<xlateText id="%h3200.0" tag="listItem" remind="FILE HEADER LISTING"/>
+</title>
+<resultHeader fieldCount="25" >
+<resultGroup id="B" >
+<resultField fieldId="Filename" display="yes">
+<xlateText id="%h3200.1" tag="listItem" remind="Filename"/>
+</resultField>
+<resultField fieldId="Lines" display="yes">
+<xlateText id="%h3200.2.0" tag="listItem" remind="Lines"/>
+</resultField>
+<resultField fieldId="Pix/line" display="yes">
+<xlateText id="%h3200.2.1" tag="listItem" remind="Pix/line"/>
+</resultField>
+<resultField fieldId="Bits/Pix" display="yes">
+<xlateText id="%h3200.3.0" tag="listItem" remind="Bits/Pix"/>
+</resultField>
+<resultField fieldId="Version" display="yes">
+<xlateText id="%h3200.3.1" tag="listItem" remind="Version"/>
+</resultField>
+<resultField fieldId="Filetype" display="yes">
+<xlateText id="%h3200.4.0" tag="listItem" remind="Filetype"/>
+</resultField>
+<resultField fieldId="ClfFile" display="yes">
+<xlateText id="%h3200.4.1" tag="listItem" remind="ClfFile"/>
+</resultField>
+</resultGroup>
+<resultGroup id="C" >
+<resultField fieldId="Scene" display="no">
+<xlateText id="%h3200.5.0" tag="listItem" remind="Scene"/>
+</resultField>
+<resultField fieldId="Subscene" display="no">
+<xlateText id="%h3200.5.1" tag="listItem" remind="Subscene"/>
+</resultField>
+<resultField fieldId="Band" display="no">
+<xlateText id="%h3200.6.1" tag="listItem" remind="Band"/>
+</resultField>
+<resultField fieldId="Source" display="no">
+<xlateText id="%h3200.6.2" tag="listItem" remind="Source"/>
+</resultField>
+<resultField fieldId="Comment" display="no">
+<xlateText id="%h3200.7" tag="listItem" remind="Comment"/>
+</resultField>
+</resultGroup>
+<resultGroup id="S" >
+<resultField fieldId="Mean" display="no">
+<xlateText id="%h3200.9.0" tag="listItem" remind="Mean"/>
+</resultField>
+<resultField fieldId="Min" display="no">
+<xlateText id="%h3200.9.1" tag="listItem" remind="Min"/>
+</resultField>
+<resultField fieldId="Max" display="no">
+<xlateText id="%h3200.9.2" tag="listItem" remind="Max"/>
+</resultField>
+<resultField fieldId="Variance" display="no">
+<xlateText id="%h3200.10.0" tag="listItem" remind="Variance"/>
+</resultField>
+<resultField fieldId="SD" display="no">
+<xlateText id="%h3200.10.1" tag="listItem" remind="SD"/>
+</resultField>
+</resultGroup>
+<resultGroup id="G" >
+<resultField fieldId="FixedPt" display="yes">
+<xlateText id="%h3200.12" tag="listItem" remind="FixedPt"/>
+</resultField>
+<resultField fieldId="MapCoord" display="yes">
+<xlateText id="%h3200.13" tag="listItem" remind="MapCoord"/>
+</resultField>
+<resultField fieldId="XCellSize" display="yes">
+<xlateText id="%h3200.14.0" tag="listItem" remind="XCellSize"/>
+</resultField>
+<resultField fieldId="YCellSize" display="yes">
+<xlateText id="%h3200.14.1" tag="listItem" remind="YCellSize"/>
+</resultField>
+<resultField fieldId="Units" display="yes">
+<xlateText id="%h3200.14.2" tag="listItem" remind="Units"/>
+</resultField>
+</resultGroup>
+<resultGroup id="L" >
+<resultField fieldId="CalibOffset" display="yes">
+<xlateText id="%h3200.17.0" tag="listItem" remind="CalibOffset"/>
+</resultField>
+<resultField fieldId="CalibMult" display="yes">
+<xlateText id="%h3200.17.1" tag="listItem" remind="CalibMult"/>
+</resultField>
+<resultField fieldId="CalibUnits" display="yes">
+<xlateText id="h3200.17.2" tag="listItem" remind="CalibUnits"/>
+</resultField>
+</resultGroup>
+<resultField fieldId="Class1" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class1" substitute=" 1"/>
+</resultField>
+<resultField fieldId="Class2" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class2" substitute=" 2"/>
+</resultField>
+<resultField fieldId="Class3" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class3" substitute=" 3"/>
+</resultField>
+<resultField fieldId="Class4" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class4" substitute=" 4"/>
+</resultField>
+<resultField fieldId="Class5" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class5" substitute=" 5"/>
+</resultField>
+<resultField fieldId="Class6" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class6" substitute=" 6"/>
+</resultField>
+<resultField fieldId="Class7" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class7" substitute=" 7"/>
+</resultField>
+<resultField fieldId="Class8" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class8" substitute=" 8"/>
+</resultField>
+<resultField fieldId="Class9" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class9" substitute=" 9"/>
+</resultField>
+<resultField fieldId="Class10" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class10" substitute="10"/>
+</resultField>
+<resultField fieldId="Class11" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class11" substitute="11"/>
+</resultField>
+<resultField fieldId="Class12" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class12" substitute="12"/>
+</resultField>
+<resultField fieldId="Class13" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class13" substitute="13"/>
+</resultField>
+<resultField fieldId="Class14" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class14" substitute="14"/>
+</resultField>
+<resultField fieldId="Class15" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class15" substitute="15"/>
+</resultField>
+<resultField fieldId="Class16" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class16" substitute="16"/>
+</resultField>
+<resultField fieldId="Class17" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class17" substitute="17"/>
+</resultField>
+<resultField fieldId="Class18" display="yes">
+<xlateText id="%e428" tag="listItem" remind="Class18" substitute="18"/>
+</resultField>
+</resultHeader>
+<resultRow >
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="h:\pix\TM-CAL-1.IMG"/>
+</resultItem>
+<resultItem dataType="integer" >
+<xlateText id="" tag="listItem" remind=" 512"/>
+</resultItem>
+<resultItem dataType="integer" >
+<xlateText id="" tag="listItem" remind=" 512"/>
+</resultItem>
+<resultItem dataType="integer" >
+<xlateText id="" tag="listItem" remind="8"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="1280.0"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="I"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=""/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="Y5026318101X0"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="CTR N35-21-40 W120"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="1"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="      "/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind="EOSAT sample data set , California"/>
+</resultItem>
+<resultItem dataType="integer" >
+<xlateText id="" tag="listItem" remind="70"/>
+</resultItem>
+<resultItem dataType="integer" >
+<xlateText id="" tag="listItem" remind="44"/>
+</resultItem>
+<resultItem dataType="integer" >
+<xlateText id="" tag="listItem" remind="255"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="346.535"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind="18.615"/>
+</resultItem>
+<resultItem dataType="point" >
+<xlateText id="" tag="listItem" remind="0, 0"/>
+</resultItem>
+<resultItem dataType="point" >
+<xlateText id="" tag="listItem" remind="       0.000,        0.000"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind=" 1.000"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind=" 1.000"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=""/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind=" 0.000"/>
+</resultItem>
+<resultItem dataType="double" >
+<xlateText id="" tag="listItem" remind=" 1.000"/>
+</resultItem>
+<resultItem dataType="string" >
+<xlateText id="" tag="listItem" remind=""/>
+</resultItem>
+</resultRow>
+</calcResult>
+

@@ -1,0 +1,182 @@
+Dragon Manual Reader Design Spec
+================================
+Last modified: 11/06/01 by KTR
+$Id: ManReader.txt,v 1.1 2001/12/07 12:14:43 goldin Exp $
+$Log: ManReader.txt,v $
+Revision 1.1  2001/12/07 12:14:43  goldin
+Move to new ManReader directory
+
+Revision 1.2  2001/11/06 10:57:58  rudahl
+incorp. Sally's comments
+
+
+Functional Summary
+------------------
+
+The Dragon manual reader (ManReader) is a Java application that can
+display the HTML version of the Dragon user manual in a structured
+fashion. ManReader can be used to browse the entire Dragon
+manual. Its most important function is to provide context-sensitive
+help, through the "User Manual" entry on the DragonUI help menu.
+
+When the user chooses the User Manual menu entry in Dragon, the
+ManReader will appear (if it is not already visible), displaying the
+Description pane with a description topic that corresponds to the
+currently-displayed response panel. (If there is no current response
+panel, it will display Chapter 1 of the manual.) This topic is
+referred to as the "original" topic.
+
+The ManReader has three tabbed panes:
+
+Contents - will show a tree of TOC headers and subheaders. Selecting a
+leaf item will cause the description section corresponding to that
+topic to be displayed (i.e. the tab will flip to the "Description"
+pane). It will not be possible to select a non-leaf item. The user
+must expand the item to the non-leaf level in order to be able to
+select a topic. The contents of the Description pane will not change
+until a non-leaf node is selected.
+
+Description - will show one "page" of HTML descriptive text. This may
+correspond to one or several TOC items, depending on the amount of
+text associated with each one. A page is defined to be the text which
+appears between two meta-PageBreak elements. A page is assumed to
+contain one (or occasionally more than one) complete topic. Thus, how
+much text is included in a particular page is determined by the
+PageBreak meta elements embedded in the HTML. The user may scroll up and
+down within one page, if it is too large to fit on the screen, but
+must use a Previous or Next button, or the TOC, to move to a different
+page.
+
+Details - will show the p-specificers and command line information for
+the currently displayed description topic, or other detailed
+information corresponding to the current description.
+
+The Description pane will include three navigation buttons: Next
+(page), Previous (page), and Original. Original will return to the
+topic that was used to first invoke the ManReader in the context
+sensitive situation.  (If the user brings up the ManReader
+independently, to browse or with no current panel, the "Original"
+button will be disabled.)
+
+If the user switches to a different page, using these buttons, and
+then clicks on the Contents tab, the Contents item corresponding to
+the first topic on that page will be highlighted in the tree.
+
+The ManReader will be designed as an applet so that it could
+potentially be used to read the Dragon manual on our web page; under
+those circumstances it will not be context sensitive. (The issues of
+Swing usage in a browser will not be initially addressed.)
+
+The ManReader will communicate with the main Dragon UI via IPC files.
+Thus, like any Dragon component, it must be able to respond to
+common commands such as -SETTIME, -GETTIME, and -ABEXIT.
+
+The request for context sensitive help display will be sent from the
+UI to the ManReader via a Cmd file. The command structure will be:
+            SHOW <url>
+
+The <url> argument will be a fully qualified file:// url, including
+both filename and section name (e.g. file:///|/dragon/dragman.html#intro).
+
+Manual Document Structure
+-------------------------
+
+There will be three separate documents that comprise the on-line 
+manual:
+
+1. The contents document will be an XML document which will be used
+to build the contents tree. Its structure is discussed in the 
+next section.
+
+2. The description document will be a normal HTML file that holds all
+the discursive text from the manual. Individual sections will be
+identified via "name=" anchors. It will contain two special Meta
+elements which will be interpreted by the ManReader.
+
+   <META name="PageBreak" content="" > (or content= something which
+can be ignored).
+
+This element will allow the ManReader to determine the end of a particular
+section. 
+
+   <META name="DetailURL" content="file://...." >
+
+This element will be used to identify the details that are associated
+with the currently displayed description. If there are no details
+associated with a particular section of the document, there will not
+be any "DetailURL" meta element and the Details tab will be
+disabled. This element will be in the HTML file following (but
+possibly not immediately following) the topic anchor.
+
+3. The details document will be a normal HTML file that holds all the
+details information, possibly in tabular form. Individual sctions will
+be identified via "name=" anchors. Sections will be delimited by
+"PageBreak" meta elements, as in the description file.
+
+Table of Contents XML Structure
+-------------------------------
+
+The table of contents will be defined by an XML file. The DTD for
+this file can be found in cvs\dragon\drag54\help\edit\dragon.dtd. (All
+XML used in DRAGON is defined in that DTD.) Below we provide an informal
+definition and an example.
+
+The top-level table of contents element is a <toc> element. 
+The <toc> can include 3 optional attributes: date, version and text.
+
+The rest of the table of contents is defined by nested <toc_section>
+elements. The toc_section element has the following structure:
+
+<toc_section id="uniqueid" level="number" url="file://..."
+             text="titletext" prefix="Chapter">
+
+The first four attributes are required. The prefix attribute is optional.
+
+The id attribute simply allows us to address each element uniquely.
+The level attribute defines the nesting level of the section. The
+lower the number (down to 1), the more major the section. The text
+attribute is the text that should be displayed to identify the item in
+the TOC tree.
+
+The url attribute identifies a location in the description document
+which is associated with this TOC item. When the user selects a TOC
+item, the url is used to find the section to display.
+
+Finally, the prefix attribute can be used as a category name or
+to generate a label such as "Chapter 4".
+
+An example TOC XML fragment follows:
+
+<toc date="05-June-2001" text="Dragon User Manual">
+<toc_section id="1.0" level="1" url="file:///e|/dragon/userman.html#chap1"
+             text="Introduction to Dragon" prefix="Chapter" >
+   <toc_section id="1.1" level=2 url="file:///e|/dragon/userman.html#intro"
+             text="What is Image Processing?">
+       <toc_section id="1.1.1" level=3 
+             url="file:///e|/dragon/userman.html#digimg"
+             text="Digital Images"/>
+       <toc_section id="1.1.2" level=3 
+             url="file:///e|/dragon/userman.html#pixels"
+             text="Pixels and Digital Numbers"/>
+       <toc_section id="1.1.3" level=3 
+             url="file:///e|/dragon/userman.html#resolution"
+             text="Image Resolution"/>
+   </toc_section>
+   <toc_section id="1.2" level=2 url="file:///e|/dragon/userman.html#concepts"
+             text="Dragon Concepts">
+       <toc_section id="1.2.1" level=3 ..../>
+        ...
+   </toc_section>
+</toc_section>
+  ...
+
+</toc>
+ 
+Deferred Functionality
+----------------------
+
+The original Dragon user manual had an index. In the future, we want
+to be able to use the index information within the ManReader 
+application, to allow the user to search for specific items of 
+information.
+

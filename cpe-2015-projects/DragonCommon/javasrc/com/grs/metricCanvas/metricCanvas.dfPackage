@@ -1,0 +1,123 @@
+package id2s2toctaegh47ctaesp6z;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.LinearPlaneSpace:oiref><oihard>
+@__modelType reference 
+*/
+class reference8 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.Space:oiref><oihard>
+@__modelType reference 
+*/
+class reference9 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.Metric:oiref><oihard>
+@__modelType reference 
+*/
+class reference1 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.LinearMetric:oiref><oihard>
+@__modelType reference 
+*/
+class reference2 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.Ruler:oiref><oihard>
+@__modelType reference 
+*/
+class reference6 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.PlaneSpace:oiref><oihard>
+@__modelType reference 
+*/
+class reference7 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.DefectiveStructureException:oiref><oihard>
+@__modelType reference 
+*/
+class reference10 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.PlotGraph:oiref><oihard>
+@__modelType reference 
+*/
+class reference3 {
+}/**
+@__ref <oiref:java#Class#StripChart:oiref><oihard>
+@__modelType reference 
+*/
+class reference4 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.GriddedMetric:oiref><oihard>
+@__modelType reference 
+*/
+class reference5 {
+}/**
+@__ref <oiref:java#Class#ColorRemap:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.ColorGridCanvas:oiref><oihard>
+@__modelType reference 
+*/
+class reference11 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.GriddedPlaneSpace:oiref><oihard>
+@__modelType reference 
+*/
+class reference12 {
+}/**
+@__ref <oiref:java#Class#com.grs.metricCanvas.ColorGrid:oiref><oihard>
+@__modelType reference 
+*/
+class reference13 {
+}}/**
+@__tags
+@shapeType ClassDiagram 
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:<oiref:java#Class#ColorRemap:oiref>=559,83,200,126,1:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.metricCanvas.ColorGrid#com.grs.metricCanvas.GriddedPlaneSpace:oiref>=689,791,689,823:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.metricCanvas.Space#m_Metric:oiref>=240,70,770,70:oigroup>
+<oigroup:<oiref:java#Implements#metricCanvas.GriddedMetric#com.grs.metricCanvas.Metric:oiref>=640,160,560,160:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.GriddedMetric:oiref>=650,240,200,302,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.metricCanvas.Space#m_Parent:oiref>=200,440,200,490,290,490,290,400,240,400:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.LinearMetric:oiref>=930,240,200,238,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.Ruler:oiref>=60,570,200,254,1:oigroup>
+<oigroup:Composite#supplierCardinality#MemberLink#<oiref:java#Member#com.grs.metricCanvas.GriddedPlaneSpace#m_gridM:oiref>=709,542,26,16,0:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.ColorGridCanvas:oiref>=279,833,200,270,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.DefectiveStructureException:oiref>=980,510,200,133,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#metricCanvas.MetricDimension#m_Metric:oiref>=414,38,414,70:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.metricCanvas.PlotGraph#com.grs.metricCanvas.LinearPlaneSpace:oiref>=455,561,455,491:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.metricCanvas.LinearMetric#com.grs.metricCanvas.Metric:oiref>=950,240,950,190:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.metricCanvas.PlaneSpace#m_parent:oiref>=230,472,230,522,320,522,320,432,270,432:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.PlaneSpace:oiref>=340,90,200,254,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.metricCanvas.GriddedPlaneSpace#m_gridM:oiref>=739,823,739,542:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.metricCanvas.PlaneSpace#com.grs.metricCanvas.Space:oiref>=109,168,109,108:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.PlotGraph:oiref>=370,561,200,254,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.Space:oiref>=40,10,200,430,1:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.metricCanvas.Ruler#com.grs.metricCanvas.LinearPlaneSpace:oiref>=160,570,397,491:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.metricCanvas.LinearPlaneSpace#com.grs.metricCanvas.PlaneSpace:oiref>=440,390,440,344:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.ColorGrid:oiref>=589,553,200,238,1:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.metricCanvas.PlaneSpace#com.grs.metricCanvas.Space:oiref>=340,217,240,217:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.LinearPlaneSpace:oiref>=340,390,200,101,1:oigroup>
+<oigroup:Composite#supplierCardinality#MemberLink#<oiref:java#Member#com.grs.metricCanvas.Space#m_Metric:oiref>=740,50,26,16,0:oigroup>
+<oigroup:<oiref:java#Class#StripChart:oiref>=991,700,152,206,1:oigroup>
+<oigroup:<oiref:java#Implements#com.grs.metricCanvas.GriddedMetric#com.grs.metricCanvas.Metric:oiref>=810,240,810,190:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.GriddedPlaneSpace:oiref>=589,823,200,126,1:oigroup>
+<oigroup:<oiref:java#Class#com.grs.metricCanvas.Metric:oiref>=770,10,200,180,0:oigroup>
+<oigroup:<oiref:java#Extends#com.grs.metricCanvas.GriddedPlaneSpace#com.grs.metricCanvas.PlaneSpace:oiref>=639,823,490,344:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#com.grs.metricCanvas.ColorGridCanvas#colorGrid:oiref>=379,833,639,791:oigroup>
+*/
+class __positions {
+}

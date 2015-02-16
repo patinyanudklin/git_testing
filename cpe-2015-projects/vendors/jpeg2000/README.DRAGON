@@ -1,0 +1,62 @@
+# filename: README.DRAGON
+# $Id: README.DRAGON,v 1.5 2012/12/23 10:55:03 rudahl Exp $
+
+# To build the jpeg2000 libraries for use with Dragon:
+# (Note that this only needs to be done once, or if it is
+# desired to update the version.)
+
+# NOTE - this requires cmake, which is built and installed on 
+#      - SuSE9-Dragon
+   if [ x$PLATFORM = xmingw ]; then
+	echo ""
+	echo "Can't seem to make cmake work on mingw"
+	exit 1
+   fi
+# 1. Checkout jpeg2000.tgz (or newer version) from CVS, and unpack
+# it into this directory
+# (this was obtained via subversion checkout 2012-Dec-03)
+   [ -d jpeg2000-v2 ] && rm -rf jpeg2000-v2
+   tar -xvzf jpeg2000-v2.tgz
+
+# 2. 
+   [ -d lib/$PLATFORM/bin ] || mkdir -p lib/$PLATFORM/bin
+   [ -d lib/$PLATFORM/lib ] || mkdir lib/$PLATFORM/lib
+   if [ x$PLATFORM = xlinux ]; then
+      [ -d lib/include ] || mkdir -p lib/include
+      [ -d lib/man/man1 ] || mkdir -p lib/man/man1
+      [ -d lib/doc ] || mkdir lib/doc
+   fi
+
+# 3. 
+#   change into the jpeg2000-1.2.7 directory and run
+   cd jpeg2000-v2
+   echo "about to cmake"
+   if [ x$PLATFORM = xlinux ]; then
+      cmake -DCMAKE_INSTALL_PREFIX=`pwd`/../lib -DBUILD_SHARED_LIBS:bool=off -DBUILD_DOC:bool=on .    
+   else
+      cmake -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX=`pwd`/../lib -DBUILD_SHARED_LIBS:bool=off \
+	-DBUILD_DOC:bool=on \
+	-DCMAKE_C_COMPILER=/c/Program\ Files/CMake/bin/cmake.exe .    
+   fi
+# 4. run
+   make
+   make install
+   mv ../lib/lib/*.a ../lib/$PLATFORM/lib
+   mv ../lib/bin/* ../lib/$PLATFORM/bin
+   if [ x$PLATFORM = xlinux ]; then
+     mv ../lib/share/man/* ../lib/man
+     mv ../lib/include/open*/* ../lib/include
+     rmdir ../lib/include/open*
+     cp -pRu doc/html ../lib/doc
+     cp -pRu doc/man/man1/* ../lib/man/man1
+     cp -pRu doc/man/man3/* ../lib/man/man3
+   fi
+   rm -r ../lib/lib ../lib/bin ../lib/share
+   cp LICENSE ../lib/JPEG2000.LICENSE
+   
+# This will put the include files in vendors/jpeg2000/lib/include
+#              the libraries in vendors/jpeg2000/lib/{linux|mingw}/lib
+#              the executables in vendors/jpeg2000/lib/{linux|mingw}/bin
+
+echo ""
+echo "Check the libraries (-kb) and include files into cvs"

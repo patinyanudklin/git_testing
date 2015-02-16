@@ -1,0 +1,28 @@
+#To build the proj4 libraries for use with Dragon:
+
+#1. Checkout proj-4.4.9.zip from CVS, and unpack it into this directory
+   unzip proj*
+
+#2. 
+   mkdir lib
+   mkdir lib/linux
+   mkdir lib/mingw
+
+#3. 
+# This builds the executables with static libraries for 32-bit processors
+#   change into the proj* directory and run
+      cd proj*
+      export CFLAGS=-m32 && ./configure --prefix=`pwd`/../lib \
+         --exec-prefix=`pwd`/../lib/$PLATFORM CFLAGS=-static  
+
+#4. run
+     make
+     make check
+     make install
+#     you can then delete the proj* directory
+
+#This will put the include files in vendors/libtiff/lib/include 
+#              the libraries in vendors/libtiff/lib/{linux|mingw}/lib 
+#              the executables in vendors/libtiff/lib/{linux|mingw}/bin
+
+#after building them, check the libraries into cvs

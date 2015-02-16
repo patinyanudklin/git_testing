@@ -1,0 +1,56 @@
+package ideab4ctaegh47ctaesh7m;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:design#Class#id2s2toctaegh47ctaesp6z.diagram:oiref><oihard>
+@__modelType reference
+@__fqn <oiref:#Package#metricCanvas:oiref> 
+*/
+class reference {
+}/**
+@__ref <oiref:design#Class#idn1irctm1kqqlctm1mp85.diagram:oiref><oihard>
+@__modelType reference
+@__fqn <oiref:#Package#com.grs.gui:oiref> 
+*/
+class reference1 {
+}/**
+@__ref <oiref:design#Class#id40l20ctm1kqqlctm1mp71.diagram:oiref><oihard>
+@__modelType reference
+@__fqn <oiref:#Package#com.grs.dragon:oiref> 
+*/
+class reference2 {
+}/**
+@__ref <oiref:design#Class#id4e7zcctm1kqqlctm1mp8z.diagram:oiref><oihard>
+@__modelType reference
+@__fqn <oiref:#Package#com.grs.i18n:oiref> 
+*/
+class reference3 {
+}/**
+@__ref <oiref:design#Class#idcjioctm1kqqlctm1mpb7.diagram:oiref><oihard>
+@__modelType reference
+@__fqn <oiref:#Package#com.grs.util:oiref> 
+*/
+class reference4 {
+}}/**
+@__tags
+@shapeType ClassDiagram 
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:<oiref:design#Class#id4e7zcctm1kqqlctm1mp8z.diagram:oiref>=423,197,53,57,1:oigroup>
+<oigroup:<oiref:design#Class#idcjioctm1kqqlctm1mpb7.diagram:oiref>=495,179,69,84,1:oigroup>
+<oigroup:<oiref:design#Class#id2s2toctaegh47ctaesp6z.diagram:oiref>=81,52,173,276,1:oigroup>
+<oigroup:<oiref:design#Class#id40l20ctm1kqqlctm1mp71.diagram:oiref>=329,173,80,142,1:oigroup>
+<oigroup:<oiref:design#Class#idn1irctm1kqqlctm1mp85.diagram:oiref>=423,267,53,57,1:oigroup>
+*/
+class __positions {
+}

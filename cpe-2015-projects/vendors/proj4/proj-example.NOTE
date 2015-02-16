@@ -1,0 +1,5 @@
+to convert a file where each line is a UTM pair such as
+   	   678207 1557601
+	   685474 1547770
+
+  vendors/proj4/lib/linux/bin/proj -E -I +proj=utm +ellps=WGS84 +zone=47 /tmp/coords.txt 

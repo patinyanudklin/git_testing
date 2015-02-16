@@ -1,0 +1,102 @@
+# filename: README.DRAGON
+# $Id: README.DRAGON,v 1.9 2014/12/05 07:20:28 rudahl Exp $
+
+# To build the hdf5 libraries for use with Dragon:
+# (Note that this only needs to be done once, or if it is
+# desired to update the version.)
+
+# the windows version is the precompiled cygwin download
+
+SRC=hdf5-1.8.1
+# There are two tar files to check out from CVS:
+#    hdf5-1.8.9.tar.gz    is the tarball from ...
+#    hdf5-makemingw.tgz   is some files which must replace those in hdf5-1.8.9
+   if [ x$PLATFORM != xlinux ]; then
+      if [ x$PLATFORM != xmingw ]; then
+           echo PLATFORM=$PLATFORM not valid
+	   echo Choices are linux or mingw
+           exit 1
+      fi
+   fi
+
+# 1. 
+# note we have separate include directories for linux and mingw
+   [ -d lib/$PLATFORM/bin ] || mkdir -p lib/$PLATFORM/bin
+   [ -d lib/$PLATFORM/lib ] || mkdir lib/$PLATFORM/lib
+   [ -d lib/$PLATFORM/include ] || mkdir lib/$PLATFORM/include
+   [ -d lib/$PLATFORM/doc ] || mkdir lib/$PLATFORM/doc
+   [ -d lib/man/man1 ] || mkdir -p lib/man/man1
+   [ -d lib/doc ] || mkdir lib/doc
+
+# 2. Checkout $SRC, hdf5-makemingw.tgz from CVS.
+#    Unpack the .tar.gz into this directory, then unpack the .tgz
+#    if appropriate
+# for linux zap previous if it exists
+# mingw requires empty directory tree before unpacking. why?
+   if [ x$MINGW != xCONFIGURED ]; then
+       [ -d $SRC ] && rm -r $SRC
+       tar -xvzf $SRC.tar.gz || exit 1
+       if [ x$PLATFORM = xmingw ]; then
+          echo " "
+          echo Modify makefiles per INSTALL_MinGW.txt steps 4 and 5
+	  echo and export MINGW=CONFIGURED before proceeding
+          exit 0
+       fi
+   fi
+
+# 3. 
+#   change into the hdf5- directory and run
+#   copy source code to home directory because weird VM file permissions
+# interfere with configure
+    CURDIR=`pwd`
+    if [ x$PLATFORM != xlinux ]; then
+        export CFLAGS="$CFLAGS -D __MINGCC__ "
+	export LIBS="-lws2_32 -ldl"
+    fi
+#       cp -R $SRC ~
+    pushd ./$SRC
+    ./configure --prefix=$CURDIR/lib --exec-prefix=$CURDIR/lib/$PLATFORM \
+       --enable-static-exec --enable-cxx --disable-shared --without-zlib
+#   else 
+#     tar -xvzf hdf5-makemingw.tgz
+#     cd hdf5-1.8.9
+#   fi
+
+echo "4. run make, etc"
+   make 2>&1 | tee /tmp/hdf5make$PLATFORM.log
+   make check 2>&1 | tee /tmp/hdf5makecheck$PLATFORM.log
+   make install 2>&1 | tee /tmp/hdf5makeinstall$PLATFORM.log
+#   if [ x$PLATFORM = xlinux ]; then
+     cp -p COPYING $CURDIR/lib/README.hdf5
+     mv $CURDIR/lib/include/* $CURDIR/lib/$PLATFORM/include
+     rmdir $CURDIR/lib/include
+     cp -p src/H5private.h src/H5win*.h $CURDIR/lib/$PLATFORM/include
+#   else
+#     cp -p src/* $CURDIR/lib/$PLATFORM/include
+#   fi
+   cp -p tools/h5dump/*.h $CURDIR/lib/$PLATFORM/include
+   cp -p tools/lib/h5tools.h tools/lib/h5tools_utils.h tools/lib/h5tools_ref.h $CURDIR/lib/$PLATFORM/include
+   cp -p tools/lib/h5tools_error.h tools/lib/h5tools_str.h tools/lib/h5trav.h $CURDIR/lib/$PLATFORM/include
+  cd $CURDIR
+  [ -d ~/$SRC ] && rm -rf ~/$SRC
+# This will put the include files in vendors/hdf5/lib/include
+#               the libraries in vendors/hdf5/lib/{linux|mingw}/lib
+#               the executables in vendors/hdf5/lib/{linux|mingw}/bin
+
+#5. 
+echo ""
+echo "The Makefiles and the configuration file H5pubconf.h are"
+echo "extracted from hdf5-makemingw.tgz."
+echo "If any of the mingw source files are changed, update hdf5-makemingw.tgz "
+echo "as described in README.DRAGON."
+echo ""
+echo "Now go to the host machine, chmod and chown if necessary,"
+echo "and check the libraries (-kb) and include files into cvs"
+
+# If any mingw files are changed, update hdf5-makemingw.tgz
+# as follows;
+# A. Be sure the revised file is listed in Makefiles.list
+# B. run
+#    tar -cvzf hdf5-makemingw.tgz -T Makefiles.list
+#     (ignore errors about file changes)
+# C. cvs update to hdf5-makemingw.tgz and Makefiles.list

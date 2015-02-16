@@ -1,0 +1,39 @@
+# Makefile for Dragon/common components under Linux or Mingw
+# using Java v 1.4 (for installer)
+# ~~ Copyright Sally Goldin Rudahl 2001-2014
+# ~~ EndC
+#
+# Sally Goldin 12/10/2004
+# $Id: MakeLinuxJ1.4,v 1.1.4.1 2015/01/01 10:32:30 rudahl Exp $
+# $Log: MakeLinuxJ1.4,v $
+# Revision 1.1.4.1  2015/01/01 10:32:30  rudahl
+# consolidating Dragon and OpenDragon
+#
+# Revision 1.2  2015/01/01 09:56:15  rudahl
+# consolidating Dragon and OpenDragon
+#
+# Revision 1.1  2004/12/10 12:15:31  goldin
+# Add new Make files for Linux
+#
+#
+
+
+
+.SUFFIXES : .java .class
+
+#rule for creating class files
+.java.class :
+	$(JAVA_1_4_HOME)/bin/javac $*.java
+
+CLASSFILES = \
+	ConfigFileProcessor.class \
+	PathChecker.class \
+	SimpleWindowMonitor.class \
+	Win32WindowRecorder.class 
+
+all : $(CLASSFILES)
+
+clean : 
+	-@rm *.class *.jar *.jnk *.tmp *.log
+
+

@@ -1,0 +1,259 @@
+package id3e5vuclhz10jyclhzcjcj;
+
+/**
+@version 2.0
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8:oiref><oihard>
+@__modelType reference 
+*/
+class reference9 {
+}/**
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref><oihard>
+@__modelType reference 
+*/
+class reference15 {
+}}/**
+@__tags
+@shapeType SequenceDiagram 
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions 
+<oigroup:Composite#$messageInplaceEditing#<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link25:oiref>=302,667,11,16,0:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link13:oiref>=:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link11:oiref>=298,222,298,217,338,217,338,227,307,227:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link18:oiref>=533,451,533,446,573,446,573,456,542,456:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link20:oiref>=:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.node12:oiref>=293,222,14,150,0:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.node26:oiref>=519,687,14,20,1:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref>=470,255,112,460,1:oigroup>
+<oigroup:Composite#$messageInplaceEditing#<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link113:oiref>=311,270,171,16,0:oigroup>
+<oigroup:Composite#$messageInplaceEditing#<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node.link:oiref>=89,95,154,16,0:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8:oiref>=246,80,90,707,1:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link108:oiref>=542,490,542,485,582,485,582,495,551,495:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link110:oiref>=537,563,298,563:oigroup>
+<oigroup:Composite#$messageInplaceEditing#<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link108:oiref>=555,495,177,16,0:oigroup>
+<oigroup:Composite#$messageInplaceEditing#<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link110:oiref>=345,543,188,16,0:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.node111:oiref>=284,563,14,20,1:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node.link:oiref>=85,115,246,115:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node:oiref>=33,30,90,757,1:oigroup>
+<oigroup:Composite#$messageInplaceEditing#<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link11:oiref>=311,227,69,16,0:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link25:oiref>=298,687,519,687:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.node:oiref>=284,115,14,50,1:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.node109:oiref>=537,490,14,126,0:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link17:oiref>=:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link113:oiref>=307,290,470,290:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.node:oiref>=519,290,14,50,1:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.node19:oiref>=528,451,14,175,0:oigroup>
+<oigroup:Composite#$messageInplaceEditing#<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link18:oiref>=546,456,114,16,0:oigroup>
+<oigroup:<oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node.link10:oiref>=:oigroup>
+*/
+class __positions {
+}/**
+@shapeType Object
+@__modelType node
+@name dragonUI 
+*/
+class node {
+/**
+@shapeType MessageLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8:oiref><oihard>
+@sendingInstant 115
+@processingDuration 50
+@sequenceNumber 1
+@creationMessage true
+@operation <oiref:java#Member#ProgressBar#$$constructor$$#(#DragonUI#)#:oiref>
+@operationNameAsText '<constructor>(DragonUI)' 
+*/
+class link {
+}/**
+@shapeType CollaborationLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8:oiref><oihard> 
+*/
+class link10 {
+}/**
+@shapeType DependencyLink
+@__modelType link
+@__ref <oiref:java#Class#DragonUI:oiref><oihard> 
+*/
+class link112 {
+}}/**
+@shapeType Object
+@__modelType node
+@name progBar
+@created true 
+*/
+class node8 {
+/**
+@shapeType Activation
+@__modelType node
+@name Activation1
+@activationMessage <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node.link:oiref> 
+*/
+class node {
+}/**
+@shapeType DependencyLink
+@__modelType link
+@__ref <oiref:java#Class#ProgressBar:oiref><oihard> 
+*/
+class link {
+}/**
+@shapeType MessageLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8:oiref><oihard>
+@sendingInstant 222
+@processingDuration 150
+@sequenceNumber 2
+@operation <oiref:java#Member#ProgressBar#run#(##)#:oiref>
+@operationNameAsText 'run():void' 
+@minProcessingDuration 150
+*/
+class link11 {
+}/**
+@shapeType Activation
+@__modelType node
+@name Activation2
+@activationMessage <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link11:oiref> 
+*/
+class node12 {
+}/**
+@shapeType CollaborationLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8:oiref><oihard> 
+*/
+class link13 {
+}/**
+@shapeType CollaborationLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref><oihard> 
+*/
+class link17 {
+}/**
+@shapeType MessageLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref><oihard>
+@sendingInstant 687
+@processingDuration 20
+@sequenceNumber 4
+@destructionMessage true 
+*/
+class link25 {
+}/**
+@shapeType Activation
+@__modelType node
+@name Activation6
+@activationMessage <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link110:oiref> 
+*/
+class node111 {
+}/**
+@shapeType MessageLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref><oihard>
+@sendingInstant 290
+@processingDuration 50
+@sequenceNumber 2.1
+@creationMessage true
+@operation <oiref:java#Member#ProgressDetector#$$constructor$$#(#ProgressBar#)#:oiref>
+@operationNameAsText '<constructor>(ProgressBar)'
+*/
+class link113 {
+}}/**
+@shapeType Object
+@__modelType node
+@name progressDetector
+@destroyed true 
+@created true
+*/
+class node14 {
+/**
+@shapeType DependencyLink
+@__modelType link
+@__ref <oiref:java#Class#ProgressDetector:oiref><oihard> 
+*/
+class link {
+}/**
+@shapeType MessageLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref><oihard>
+@sendingInstant 451
+@processingDuration 175
+@sequenceNumber 3
+@operation <oiref:java#Member#FileDetector#run#(##)#:oiref> 
+@label
+@operationNameAsText 'run():void'
+@minProcessingDuration 162
+*/
+class link18 {
+}/**
+@shapeType Activation
+@__modelType node
+@name Activation4
+@activationMessage <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link18:oiref> 
+*/
+class node19 {
+}/**
+@shapeType CollaborationLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref><oihard> 
+*/
+class link20 {
+}/**
+@shapeType Activation
+@__modelType node
+@name Activation7
+@activationMessage <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link25:oiref> 
+*/
+class node26 {
+}/**
+@shapeType MessageLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14:oiref><oihard>
+@sendingInstant 490
+@processingDuration 126
+@sequenceNumber 3.1
+@operation <oiref:java#Member#ProgressDetector#executeFileAction#(#java.lang.String#)#:oiref>
+@operationNameAsText 'executeFileAction(String):void'
+@minProcessingDuration 126
+@label
+*/
+class link108 {
+}/**
+@shapeType Activation
+@__modelType node
+@name Activation5
+@activationMessage <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node14.link108:oiref> 
+*/
+class node109 {
+}/**
+@shapeType MessageLink
+@__modelType link
+@__ref <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8:oiref><oihard>
+@sendingInstant 563
+@processingDuration 20 
+@sequenceNumber 3.1.1
+@operation <oiref:java#Member#ProgressBar#updateProgress#(#java.lang.String#int#)#:oiref>
+@operationNameAsText 'updateProgress(String,int):void'
+*/
+class link110 {
+}/**
+@shapeType Activation
+@__modelType node
+@name Activation3
+@activationMessage <oiref:design#Class#id3e5vuclhz10jyclhzcjcj.node8.link113:oiref> 
+*/
+class node {
+}}

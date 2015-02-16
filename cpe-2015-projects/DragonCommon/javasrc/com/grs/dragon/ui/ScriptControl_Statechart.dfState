@@ -1,0 +1,388 @@
+package id3m0vqcr9gd29xcr9gfxwk;
+
+/**
+@version 2.0
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1:oiref><oihard>
+@__modelType reference 
+*/
+class reference2 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3:oiref><oihard>
+@__modelType reference 
+*/
+class reference4 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node5:oiref><oihard>
+@__modelType reference 
+*/
+class reference6 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node7:oiref><oihard>
+@__modelType reference 
+*/
+class reference8 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9:oiref><oihard>
+@__modelType reference 
+*/
+class reference10 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node11:oiref><oihard>
+@__modelType reference 
+*/
+class reference12 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node21:oiref><oihard>
+@__modelType reference 
+*/
+class reference22 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node23:oiref><oihard>
+@__modelType reference 
+*/
+class reference24 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node27:oiref><oihard>
+@__modelType reference 
+*/
+class reference28 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node29:oiref><oihard>
+@__modelType reference 
+*/
+class reference30 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node31:oiref><oihard>
+@__modelType reference 
+*/
+class reference32 {
+}/**
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node33:oiref><oihard>
+@__modelType reference 
+*/
+class reference34 {
+}/**
+@shapeType Hyperlink
+@__modelType link
+@__ref <oiref:java#Class#ScriptControlPanel:oiref><oihard>
+@__reversed 
+*/
+class link {
+}}/**
+
+@__tags
+@shapeType StateDiagram 
+*/
+class __tags {
+}/**
+@__options option.orientation = Landscape 
+*/
+class __options {
+}/**
+@__positions <oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node33.link:oiref>=-8,610,287,300:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3.link16:oiref>=339,455,121,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref>=274,120,111,45,0:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link19:oiref>=306,320,121,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node27.link:oiref>=799,438,754,438:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node5:oiref>=274,490,110,40,0:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link13:oiref>=274,270,154,270,154,150,274,150:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link:oiref>=80,170,167,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node21:oiref>=338,7,168,43,0:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node11.link:oiref>=192,54,329,120:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3.link17:oiref>=30,370,139,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3.link:oiref>=384,390,630,390,630,230:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link15:oiref>=321,165,321,260:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link14:oiref>=384,290,584,290,584,230:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link20:oiref>=385,140,556,140,556,190:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node23.link:oiref>=776,200,644,200:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node11.link:oiref>=250,60,35,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node7:oiref>=644,420,110,40,0:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link15:oiref>=331,212,96,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node23:oiref>=776,170,117,40,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node7.link:oiref>=496,430,58,17,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link20:oiref>=416,150,128,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9.link:oiref>=594,190,594,100,385,130:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link18:oiref>=274,125,258,110,-3,110,-3,500,274,500:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9:oiref>=534,190,110,40,0:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node29.link:oiref>=506,510,384,510:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link:oiref>=756,320,109,17,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link18:oiref>=46,80,121,17,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3.link:oiref>=466,360,128,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node31:oiref>=66,560,211,42,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3.link16:oiref>=329,420,329,490:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link19:oiref>=301,300,301,490:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node31.link:oiref>=171,560,274,413:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node27:oiref>=799,417,117,40,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link13:oiref>=160,230,145,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3.link17:oiref>=274,400,10,400,10,130,274,130:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link14:oiref>=446,270,128,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node.link:oiref>=385,125,744,30,744,420:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node11:oiref>=186,42,12,12,1:oigroup>
+<oigroup:Composite#$transitionInplaceEditing#<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9.link:oiref>=598,111,58,17,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node33:oiref>=-114,610,213,42,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1.link:oiref>=274,280,70,280,70,140,274,140:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node29:oiref>=506,490,117,40,1:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1:oiref>=274,260,110,40,0:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node21.link:oiref>=361,50,361,120:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3:oiref>=274,380,110,40,0:oigroup>
+<oigroup:<oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node7.link:oiref>=644,430,384,410:oigroup>
+
+ 
+*/
+class __positions {
+}/**
+@shapeType State
+@__modelType node
+@name Running
+@explanation Script is running 
+*/
+class node {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node7:oiref><oihard>
+@name PauseBtn
+@event PauseBtn
+@action -PAUSE 
+*/
+class link {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1:oiref><oihard>
+@name
+@event -WAIT
+@eventArguments seconds 
+*/
+class link15 {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node5:oiref><oihard>
+@event CancelBtn
+@action -CANCEL
+@name 
+*/
+class link18 {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9:oiref><oihard>
+@event RestartBtn
+@action -RESTART
+@name 
+*/
+class link20 {
+}}/**
+@shapeType State
+@__modelType node
+@name Waiting 
+*/
+class node1 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref><oihard>
+@event secondsExpired
+@name secondsExpired
+@action -CONTINUE 
+*/
+class link {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref><oihard>
+@name 
+@event NextStepBtn
+@action -CONTINUE*/
+class link13 {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9:oiref><oihard>
+@name
+@event RestartBtn
+@action -RESTART 
+*/
+class link14 {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node5:oiref><oihard>
+@event CancelBtn
+@action -CANCEL
+@name 
+*/
+class link19 {
+}}/**
+@shapeType State
+@__modelType node
+@name Paused
+*/
+class node3 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9:oiref><oihard>
+@event RestartBtn
+@action -RESTART
+@name 
+*/
+class link {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node5:oiref><oihard>
+@event CancelBtn
+@action -CANCEL
+@name 
+*/
+class link16 {
+}/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref><oihard>
+@event ResumeBtn
+@action -UNPAUSE
+@name 
+*/
+class link17 {
+}}/**
+@shapeType State
+@__modelType node
+@name Cancelled
+*/
+class node5 {
+}/**
+@shapeType State
+@__modelType node
+@name PausePending
+*/
+class node7 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3:oiref><oihard>
+@event AckReply
+@name AckReply 
+*/
+class link {
+}}/**
+@shapeType State
+@__modelType node
+@name Rewinding
+*/
+class node9 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref><oihard>
+@name
+@event AckReply 
+*/
+class link {
+}}/**
+@shapeType StartState
+@__modelType node
+@name StartState1 
+*/
+class node11 {
+/**
+@shapeType TransitionLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref><oihard>
+@event RUN
+@name RUN 
+*/
+class link {
+}}/**
+@shapeType Note
+@__modelType node
+@name Note1
+@text Enabled: PauseBtn,
+CancelBtn, RestartBtn 
+*/
+class node21 {
+/**
+@shapeType NoteLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node:oiref><oihard> 
+*/
+class link {
+}}/**
+@shapeType Note
+@__modelType node
+@name Note2
+@text Enabled: NONE 
+*/
+class node23 {
+/**
+@shapeType NoteLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node9:oiref><oihard> 
+*/
+class link {
+}}/**
+@shapeType Note
+@__modelType node
+@name Note3
+@text Enabled: NONE 
+*/
+class node27 {
+/**
+@shapeType NoteLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node7:oiref><oihard> 
+*/
+class link {
+}}/**
+@shapeType Note
+@__modelType node
+@name Note4
+@text Enabled: NONE 
+*/
+class node29 {
+/**
+@shapeType NoteLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node5:oiref><oihard> 
+*/
+class link {
+}}/**
+@shapeType Note
+@__modelType node
+@name Note5
+@text Enabled: ResumeBtn,CancelBtn,
+RestartBtn 
+*/
+class node31 {
+/**
+@shapeType NoteLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node3:oiref><oihard> 
+*/
+class link {
+}}/**
+@shapeType Note
+@__modelType node
+@name Note6
+@text Enabled: ContinueBtn,CancelBtn,
+RestartBtn 
+*/
+class node33 {
+/**
+@shapeType NoteLink
+@__modelType link
+@__ref <oiref:design#Class#id3m0vqcr9gd29xcr9gfxwk.node1:oiref><oihard> 
+*/
+class link {
+}}

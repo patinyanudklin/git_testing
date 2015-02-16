@@ -1,0 +1,53 @@
+filename: README.DRAGON
+$Id: README.DRAGON,v 1.1 2012/12/10 13:26:45 rudahl Exp $
+$Log: README.DRAGON,v $
+Revision 1.1  2012/12/10 13:26:45  rudahl
+init from raul
+
+
+# To build the zlib libraries for use with Dragon:
+# (Note that this only needs to be done once, or if it is
+# desired to update the version.)
+
+# 1. Checkout zlib-1.2.7.tar.gz (or newer version) from CVS, and unpack
+# it into this directory
+   tar -xvzf zlib*.tar.gz
+
+# 2. 
+   mkdir lib
+   mkdir lib/linux
+   mkdir lib/linux/bin
+   mkdir lib/linux/lib
+   mkdir lib/mingw
+   mkdir lib/man
+   mkdir lib/man/man1
+   mkdir lib/doc
+
+# 3. 
+#   change into the zlib-1.2.7 directory and run
+   cd zlib-*
+   if [ $PLATFORM = linux ]; then
+       	./configure --prefix=`pwd`/../lib --eprefix=`pwd`/../lib/$PLATFORM \
+	   --static
+   else
+       	cp -p ../Makefile.gcc win32
+   fi
+# 4. run
+   if [ $PLATFORM = linux ]; then
+	make
+   	make check
+   	make install
+   	cp *.a ../lib/$PLATFORM/lib
+   	cp *.h ../lib/include
+   	cp README FAQ ../lib
+   	cp doc/* ../lib/doc
+   else
+	make -f win32/Makefile.gcc
+	make -f win32/Makefile.gcc install
+   fi
+   
+# This will put the include files in vendors/zlib/lib/include
+#              the libraries in vendors/zlib/lib/{linux|mingw}/lib
+#              the executables in vendors/zlib/lib/{linux|mingw}/bin
+
+# From there, check the libraries (-kb) and include files into cvs

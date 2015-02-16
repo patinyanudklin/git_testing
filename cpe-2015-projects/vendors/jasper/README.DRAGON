@@ -1,0 +1,42 @@
+# filename: README.DRAGON
+# $Id: README.DRAGON,v 1.7 2014/02/13 12:56:57 rudahl Exp $
+
+# To build the jasper libraries for use with Dragon:
+# (Note that this only needs to be done once, or if it is
+# desired to update the version.)
+
+# 1. Checkout jasper-1.900.1.zip (or newer version) from CVS, and unpack
+# it into this directory
+#   [ -d jasper*0 ] && rm -r jasper*.zip
+   unzip jasper-1.900.1.zip
+
+# 2. 
+   [ -d lib/$PLATFORM/bin ] || mkdir -p lib/$PLATFORM/bin
+   [ -d lib/$PLATFORM/lib ] || mkdir lib/$PLATFORM/lib
+   [ -d lib/$PLATFORM/include ] || mkdir lib/$PLATFORM/include
+   if [ x$PLATFORM = xlinux ]; then
+     [ -d lib/man/man1 ] || mkdir -p lib/man/man1
+     [ -d lib/doc ] || mkdir lib/doc
+   fi
+
+# 3. 
+#   change into the jasper-1.900.1 directory and run
+   cd jasper-*
+   cp LICENSE ../lib/doc 
+   ./configure --prefix=`pwd`/../lib --exec-prefix=`pwd`/../lib/$PLATFORM --includedir=`pwd`/../lib/$PLATFORM/include
+
+#4. run
+   make 
+   make install
+     # the jas*.h are excluded. Why? Maybe 'make install' copied them already
+   find . -name "[a-ik-z]*.h" -exec cp {} ../lib/$PLATFORM/include \;
+   find . -name "jp*.h" -exec cp {} ../lib/$PLATFORM/include \;
+   find . -name "jasper.h" -exec cp {} ../lib/$PLATFORM/include \;
+   cp -pR doc/*.pdf ../lib/doc
+
+# This will put the include files in vendors/jasper/lib/$PLATFORM/include
+#               the libraries in vendors/jasper/lib/{linux|mingw}/lib
+#               the executables in vendors/jasper/lib/{linux|mingw}/bin
+
+echo ""
+echo "Check the libraries (-kb) and include files into cvs"

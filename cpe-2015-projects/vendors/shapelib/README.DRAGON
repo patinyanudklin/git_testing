@@ -1,0 +1,19 @@
+#To build the shapelib library for use with Dragon:
+
+#1. Checkout shapelib-1.2.10 from CVS, and unpack it into this directory
+
+#2. change into the shapelib-1.2.10 directory and run make
+    cd shapelib-1.2.10
+    make
+    
+#3. Change back to this directory and run make
+    cd ..
+    make
+
+#4. You can then delete the shapelib-1.2.10 directory
+
+#This will put the include files in vendors/shapelib/lib/include 
+#              the libraries in vendors/shapelib/lib/{linux|mingw}/lib 
+#              the executables in vendors/shapelib/lib/{linux|mingw}/bin
+
+#after building them, check the libraries into cvs

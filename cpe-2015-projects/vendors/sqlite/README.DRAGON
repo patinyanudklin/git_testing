@@ -1,0 +1,38 @@
+# filename: README.DRAGON
+# $Id: README.DRAGON,v 1.1 2005/09/20 03:19:15 rudahl Exp $
+# $Log: README.DRAGON,v $
+# Revision 1.1  2005/09/20 03:19:15  rudahl
+# from moochie
+#
+# Revision 1.2  2005/07/20 11:25:33  rudahl
+# improved instructions
+#
+# Revision 1.1  2005/07/18 10:56:06  rudahl
+# from moochie
+#
+# Revision 1.2  2005/07/11 03:30:01  rudahl
+# added special steps for geotiff
+
+# To build the sqllite libraries for use with Dragon:
+# (Note that this only needs to be done once, or if it is
+# desired to update the version.)
+
+# 1. Checkout sqlite*gz (or newer version) from CVS, and unpack
+# it into this directory
+
+# 2. Create some subdirectories
+    mkdir lib
+    mkdir lib/linux
+    mkdir lib/mingw
+    mkdir lib/include
+
+# 3. Make sure PLATFORM is set to 'linux' or 'mingw' as appropriate
+#    change into the libgeotiff-1.2.2 directory and run
+    cd sqlite; pwd; \
+    rm config.status; \
+    ./configure --prefix=`pwd`/../lib --exec-prefix=`pwd`/../lib/$PLATFORM || exit 
+
+# 4. run Make (in mingw, the apps will probably fail to build)
+    make clean
+    make 
+    make install
