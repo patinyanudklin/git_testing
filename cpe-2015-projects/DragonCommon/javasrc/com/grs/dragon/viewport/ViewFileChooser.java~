@@ -45,7 +45,7 @@ import java.io.*;
  */
 public class ViewFileChooser extends DragonFileChooser
     {
-// This is the second change added by Patinya Nudklin 16-2-2015
+
     /**
      * Constructor builds the UI - frame parent
      * @param parent    Parent frame, used for centering.

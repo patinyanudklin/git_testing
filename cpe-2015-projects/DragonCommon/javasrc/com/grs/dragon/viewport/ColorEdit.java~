@@ -14,7 +14,7 @@
 package com.grs.dragon.viewport;
 import javax.swing.undo.*;
 import java.awt.*;
-// Well This is testing comment added by Patiyna Nudklin 16-2-2015
+
 /**
  * This class is used to undo or redo color changes
  * in the ColorChooser class.
